@@ -1,0 +1,18 @@
+{
+  "require": {
+    "squizlabs/php_codesniffer": "*"
+  },
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+    "phpcompatibility/phpcompatibility-wp": "*",
+    "wptrt/wpthemereview": "^0.2.1",
+    "wp-coding-standards/wpcs": "^2.3"
+  },
+  "scripts": {
+    "f": [
+      "phpcbf --standard=WordPress --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1",
+      "phpcs --standard=WordPress --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1"
+    ],
+    "formate": "phpcbf --standard=WordPress"
+  }
+}

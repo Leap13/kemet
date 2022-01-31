@@ -1,7 +1,27 @@
 <?php
+/**
+ * Kemet functions and definitions.
+ *
+ * @see https://developer.wordpress.org/themes/basics/theme-functions/
+ *
+ * @package Kemet
+ */
+
+/**
+ * Define Constants.
+ */
+define( 'KEMET_THEME_VERSION', '1.2.0' );
+define( 'KEMET_THEME_DIR', get_template_directory() . '/' );
+define( 'KEMET_THEME_URI', get_template_directory_uri() . '/' );
+
+/**
+ * Functions.
+ */
+require_once KEMET_THEME_DIR . 'inc/blocks/class-kemet-blocks-settings.php';
+
 
 if ( ! function_exists( 'kemet_support' ) ) :
-	function kemet_support()  {
+	function kemet_support() {
 
 		// Adding support for core block visual styles.
 		add_theme_support( 'wp-block-styles' );
