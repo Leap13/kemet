@@ -62,7 +62,7 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 			add_filter( 'block_type_metadata', array( $this, 'add_blocks_attrs' ) );
 			add_filter( 'pre_render_block', array( $this, 'edit_core_logo_block' ), 10, 2 );
 			add_filter( 'render_block_core/template-part', array( $this, 'edit_header_template' ), 10, 2 );
-			add_filter( 'enqueue_block_assets', array( $this, 'enqueue_block_assets' ) );
+			// add_filter( 'enqueue_block_assets', array( $this, 'enqueue_block_assets' ) );
 		}
 
 		public function edit_header_template( $block_content, $source_block ) {
