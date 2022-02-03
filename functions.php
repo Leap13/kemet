@@ -13,11 +13,17 @@
 define( 'KEMET_THEME_VERSION', '1.2.0' );
 define( 'KEMET_THEME_DIR', get_template_directory() . '/' );
 define( 'KEMET_THEME_URI', get_template_directory_uri() . '/' );
+define( 'KEMET_THEME_SETTINGS', 'kemet-settings' );
 
 /**
  * Functions.
  */
 require_once KEMET_THEME_DIR . 'inc/blocks/class-kemet-blocks-settings.php';
+
+/**
+ * Options.
+ */
+// require_once KEMET_THEME_DIR . 'inc/react-options/class-kemet-options.php';
 
 
 if ( ! function_exists( 'kemet_support' ) ) :

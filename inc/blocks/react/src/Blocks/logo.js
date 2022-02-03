@@ -1,7 +1,6 @@
 function addLogoAttribute(settings, name) {
     if (typeof settings.attributes !== 'undefined') {
         if (name == 'core/site-logo') {
-            console.log(settings);
             settings.attributes = Object.assign(settings.attributes, {
                 mobileLogoId: {
                     type: 'number',

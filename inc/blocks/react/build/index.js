@@ -86,6 +86,32 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/@babel/runtime/helpers/defineProperty.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/defineProperty.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+module.exports = _defineProperty, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
 /***/ "./src/Blocks/logo.js":
 /*!****************************!*\
   !*** ./src/Blocks/logo.js ***!
@@ -102,7 +128,6 @@ __webpack_require__.r(__webpack_exports__);
 function addLogoAttribute(settings, name) {
   if (typeof settings.attributes !== 'undefined') {
     if (name == 'core/site-logo') {
-      console.log(settings);
       settings.attributes = Object.assign(settings.attributes, {
         mobileLogoId: {
           type: 'number',
@@ -182,6 +207,80 @@ wp.hooks.addFilter('editor.BlockEdit', 'kemet/logo-advanced-control', logoAdvanc
 
 /***/ }),
 
+/***/ "./src/Blocks/template-parts.js":
+/*!**************************************!*\
+  !*** ./src/Blocks/template-parts.js ***!
+  \**************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+function addHeaderPartAttribute(settings, name) {
+  if (typeof settings.attributes !== 'undefined') {
+    if (name == 'core/template-part') {
+      settings.attributes = Object.assign(settings.attributes, {
+        enableStickyHeader: {
+          type: 'boolean',
+          default: false
+        },
+        enableOverlayHeader: {
+          type: 'boolean',
+          default: false
+        }
+      });
+    }
+  }
+
+  return settings;
+}
+
+wp.hooks.addFilter('blocks.registerBlockType', 'kemet/header-part-control', addHeaderPartAttribute);
+var headerPartControls = wp.compose.createHigherOrderComponent(function (BlockEdit) {
+  return function (props) {
+    var Fragment = wp.element.Fragment;
+    var _wp$components = wp.components,
+        PanelBody = _wp$components.PanelBody,
+        ToggleControl = _wp$components.ToggleControl;
+    var InspectorControls = wp.blockEditor.InspectorControls;
+    var attributes = props.attributes,
+        setAttributes = props.setAttributes,
+        isSelected = props.isSelected;
+    var __ = wp.i18n.__;
+
+    var onChangeHandler = function onChangeHandler(key, value) {
+      setAttributes(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()({}, key, value));
+    };
+
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(Fragment, null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(BlockEdit, props), isSelected && props.name == 'core/template-part' && attributes.slug === 'header' && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(InspectorControls, null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(PanelBody, {
+      title: __('Kemet Settings', 'kemet'),
+      initialOpen: true
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ToggleControl, {
+      label: __('Enable Sticky Header', 'kemet'),
+      checked: !!attributes.enableStickyHeader,
+      onChange: function onChange(newval) {
+        return onChangeHandler('enableStickyHeader', newval);
+      }
+    }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ToggleControl, {
+      label: __('Enable Overlay Header', 'kemet'),
+      checked: !!attributes.enableOverlayHeader,
+      onChange: function onChange(newval) {
+        return onChangeHandler('enableOverlayHeader', newval);
+      }
+    }))));
+  };
+}, 'headerPartControls');
+wp.hooks.addFilter('editor.BlockEdit', 'kemet/header-part-control', headerPartControls);
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -192,7 +291,9 @@ wp.hooks.addFilter('editor.BlockEdit', 'kemet/logo-advanced-control', logoAdvanc
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Blocks_logo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Blocks/logo */ "./src/Blocks/logo.js");
+/* harmony import */ var _Blocks_template_parts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Blocks/template-parts */ "./src/Blocks/template-parts.js");
 
+ // import './Templates/sidebar'
 
 /***/ }),
 

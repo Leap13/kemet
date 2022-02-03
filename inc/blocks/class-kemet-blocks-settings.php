@@ -61,8 +61,26 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 			// add_filter( 'render_block_{block_name}', array( $this, 'call_back' ), 10, 2 ); example
 			add_filter( 'block_type_metadata', array( $this, 'add_blocks_attrs' ) );
 			add_filter( 'pre_render_block', array( $this, 'edit_core_logo_block' ), 10, 2 );
+			add_filter( 'render_block_core/template-part', array( $this, 'edit_header_template' ), 10, 2 );
+			add_filter( 'enqueue_block_assets', array( $this, 'enqueue_block_assets' ) );
 		}
 
+		public function edit_header_template( $block_content, $source_block ) {
+			if ( 'header' === $source_block['attrs']['slug'] ) {
+				$sticky_header  = isset( $source_block['attrs']['enableStickyHeader'] ) ? $source_block['attrs']['enableStickyHeader'] : false;
+				$overlay_header = isset( $source_block['attrs']['enableOverlayHeader'] ) ? $source_block['attrs']['enableOverlayHeader'] : false;
+				$classes        = array();
+				if ( $sticky_header ) {
+					$classes[] = ' kmt-sticky-header';
+				}
+				if ( $overlay_header ) {
+					$classes[] = ' kmt-overlay-header';
+				}
+				$class         = trim( 'class="wp-block-template-part' . implode( '', $classes ) );
+				$block_content = str_replace( 'class="wp-block-template-part', $class, $block_content );
+			}
+			return $block_content;
+		}
 		/**
 		 * edit_core_logo_block
 		 *
@@ -170,14 +188,10 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 		 * Enqueue Script for Meta options
 		 */
 		public function script_enqueue() {
-			$post_type        = get_post_type();
-			$post_type_object = get_post_type_object( get_post_type() );
-			if ( is_object( $post_type_object ) ) {
-				$post_type_name = $post_type_object->labels->singular_name;
-			} else {
-				$post_type_name = $post_type;
+			$current_screen = get_current_screen();
+			if ( 'site-editor' !== $current_screen->id ) {
+				return;
 			}
-
 			wp_enqueue_script(
 				'kemet-blocks-settings',
 				KEMET_THEME_URI . 'inc/blocks/react/build/index.js',
@@ -197,8 +211,8 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 				'kemet-blocks-settings',
 				'KemetBlocksSettingsData',
 				array(
-					'post_type'      => $post_type,
-					'post_type_name' => $post_type_name,
+					'ajax_url' => admin_url( 'admin-ajax.php' ),
+					'nonce'    => wp_create_nonce( 'kemet-block-settings' ),
 				)
 			);
 		}
