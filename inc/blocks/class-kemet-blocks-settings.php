@@ -36,6 +36,17 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 		private static $blocks_attrs = array();
 
 		/**
+		 * Blocks Assets.
+		 *
+		 * @access private
+		 * @var array
+		 */
+		private static $blocks_assets = array(
+			'js'  => array(),
+			'css' => array(),
+		);
+
+		/**
 		 * Global Settings.
 		 *
 		 * @access private
@@ -58,29 +69,66 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 		 */
 		public function __construct() {
 			add_action( 'enqueue_block_editor_assets', array( $this, 'script_enqueue' ) );
-			// add_filter( 'render_block_{block_name}', array( $this, 'call_back' ), 10, 2 ); example
 			add_filter( 'block_type_metadata', array( $this, 'add_blocks_attrs' ) );
 			add_filter( 'pre_render_block', array( $this, 'edit_core_logo_block' ), 10, 2 );
 			add_filter( 'render_block_core/template-part', array( $this, 'edit_header_template' ), 10, 2 );
-			// add_filter( 'enqueue_block_assets', array( $this, 'enqueue_block_assets' ) );
+			add_action( 'enqueue_block_assets', array( $this, 'block_assets' ), 99 );
 		}
 
+		/**
+		 * edit_header_template
+		 *
+		 * @param  string $block_content
+		 * @param  array  $source_block
+		 * @return string
+		 */
 		public function edit_header_template( $block_content, $source_block ) {
 			if ( 'header' === $source_block['attrs']['slug'] ) {
 				$sticky_header  = isset( $source_block['attrs']['enableStickyHeader'] ) ? $source_block['attrs']['enableStickyHeader'] : false;
 				$overlay_header = isset( $source_block['attrs']['enableOverlayHeader'] ) ? $source_block['attrs']['enableOverlayHeader'] : false;
 				$classes        = array();
 				if ( $sticky_header ) {
-					$classes[] = ' kmt-sticky-header';
+					$classes[]                                        = 'kmt-sticky-header';
+					self::$blocks_assets['js']['kemet-sticky-header'] = 'sticky-header';
 				}
 				if ( $overlay_header ) {
-					$classes[] = ' kmt-overlay-header';
+					$classes[] = 'kmt-overlay-header';
 				}
-				$class         = trim( 'class="wp-block-template-part' . implode( '', $classes ) );
-				$block_content = str_replace( 'class="wp-block-template-part', $class, $block_content );
+				if ( ! empty( $classes ) ) {
+					$block_content = '<div class="' . esc_attr( implode( ' ', $classes ) ) . '"> ' . $block_content . ' </div>';
+				}
 			}
 			return $block_content;
 		}
+
+		/**
+		 * block_assets
+		 */
+		public function block_assets() {
+			$scripts = self::$blocks_assets['js'];
+			$css     = self::$blocks_assets['css'];
+
+			/*
+			 Directory and Extension */
+			$file_prefix = ( ! SCRIPT_DEBUG ) ? '' : '.min';
+			// $dir_name    = ( ! SCRIPT_DEBUG ) ? 'unminified' : 'minified';
+
+			$js_uri  = KEMET_THEME_URI . 'assets/js/';
+			$css_uri = KEMET_THEME_URI . 'assets/css/';
+
+			if ( is_array( $scripts ) && ! empty( $scripts ) ) {
+				// Register & Enqueue Scripts.
+				foreach ( $scripts as $key => $script ) {
+
+					// Register.
+					wp_register_script( $key, $js_uri . $script . $file_prefix . '.js', array(), KEMET_THEME_VERSION, true );
+
+					// Enqueue.
+					wp_enqueue_script( $key );
+				}
+			}
+		}
+
 		/**
 		 * edit_core_logo_block
 		 *
