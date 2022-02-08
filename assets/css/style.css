@@ -9,3 +9,9 @@
   left: 0;
   width: 100%;
 }
+.wp-block-buttons .wp-block-button .wp-block-button__link:hover {
+  opacity: 0.9;
+}
+.wp-block-post a:hover, a:hover {
+  color: var(--wp--preset--color--primary);
+}
