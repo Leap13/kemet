@@ -49,6 +49,12 @@ if ( ! class_exists( 'Kemet_After_Setup_Theme' ) ) {
 			// Adding support for core block visual styles.
 			add_theme_support( 'wp-block-styles' );
 
+			// Adding support for responsive embedded content.
+			add_theme_support( 'responsive-embeds' );
+
+			// Add support for editor styles.
+			add_theme_support( 'editor-styles' );
+
 			// Language support
 			load_theme_textdomain( 'kemet', KEMET_THEME_DIR . 'languages' );
 		}
