@@ -50,19 +50,28 @@ if ( ! class_exists( 'Kemet_Enqueue_Scripts' ) ) {
 		/**
 		 * Enqueue Editor styles.
 		 */
-		function editor_styles() {
+		public function editor_styles() {
+			/* Directory and Extension */
+			$file_prefix = ( SCRIPT_DEBUG ) ? '' : '.min';
+			$dir_name    = ( SCRIPT_DEBUG ) ? 'unminified' : 'minified';
+			// Generate CSS URL.
+			$css_file = './assets/css/editor' . $file_prefix . '.css';
+
 			add_editor_style(
 				array(
-					'./assets/css/editor.css',
+					$css_file,
 					$this->get_google_fonts_url(),
 				)
 			);
 		}
 
-		/*
-		* GET GOOGLE FONTS URL
-		*/
-		function get_google_fonts_url() {
+
+		/**
+		 * GET GOOGLE FONTS URL
+		 *
+		 * @return string
+		 */
+		public function get_google_fonts_url() {
 
 			if ( ! class_exists( 'WP_Theme_JSON_Resolver_Gutenberg' ) ) {
 				return '';
@@ -106,9 +115,7 @@ if ( ! class_exists( 'Kemet_Enqueue_Scripts' ) ) {
 			$default_assets = array(
 
 				// handle => location ( in /assets/js/ ) ( without .js ext).
-				'js'  => array(
-					'kemet-theme-js' => 'style',
-				),
+				'js'  => array(),
 
 				// handle => location ( in /assets/css/ ) ( without .css ext).
 				'css' => array(
@@ -130,6 +137,8 @@ if ( ! class_exists( 'Kemet_Enqueue_Scripts' ) ) {
 			}
 
 			/* Directory and Extension */
+			$file_prefix = ( SCRIPT_DEBUG ) ? '' : '.min';
+
 			$js_uri  = KEMET_THEME_URI . 'assets/js/';
 			$css_uri = KEMET_THEME_URI . 'assets/css/';
 
@@ -143,9 +152,9 @@ if ( ! class_exists( 'Kemet_Enqueue_Scripts' ) ) {
 				foreach ( $styles as $key => $style ) {
 
 					// Generate CSS URL.
-					$css_file = $css_uri . $style . '.css';
+					$css_file = $css_uri . $style . $file_prefix . '.css';
 
-					// Dependencies
+					// Dependencies.
 					$dependencies = apply_filters( 'kemet_style_dependencies', array( 'kemet-styles-google-fonts' ) );
 
 					// Register.
@@ -159,8 +168,8 @@ if ( ! class_exists( 'Kemet_Enqueue_Scripts' ) ) {
 				}
 			}
 
-			// Google Fonts support
-			wp_register_style( 'kemet-styles-google-fonts', $this->get_google_fonts_url() );
+			// Google Fonts support.
+			wp_register_style( 'kemet-styles-google-fonts', $this->get_google_fonts_url(), array(), KEMET_THEME_VERSION );
 
 			if ( is_array( $scripts ) && ! empty( $scripts ) ) {
 				// Register & Enqueue Scripts.

@@ -47,9 +47,43 @@ if ( ! class_exists( 'Kemet_Panel' ) ) {
 		 *  Constructor
 		 */
 		public function __construct() {
+			require_once KEMET_ADDONS_PANEL_DIR . 'helpers/class-kemet-plugins-data.php';
 			add_action( 'admin_menu', array( $this, 'register_custom_menu_page' ), 100 );
 			add_action( 'admin_bar_menu', array( $this, 'admin_bar_item' ), 1000 );
 			add_action( 'enable_kemet_admin_menu_item', '__return_true' );
+			add_action( 'wp_ajax_kemet-mail-subscribe', array( $this, 'subscribe_mail' ) );
+		}
+
+		/**
+		 * Subscribe mail
+		 *
+		 * @return void
+		 */
+		public function subscribe_mail() {
+			check_ajax_referer( 'kemet-panel', 'nonce' );
+
+			$email = isset( $_POST['email'] ) ? sanitize_text_field( wp_unslash( $_POST['email'] ) ) : '';
+
+			$api_url = 'https://premiumaddons.com/wp-json/mailchimp/v2/add';
+			$request = add_query_arg(
+				array(
+					'email' => $email,
+				),
+				$api_url
+			);
+
+			$response = wp_remote_get(
+				$request,
+				array(
+					'timeout'   => 60,
+					'sslverify' => true,
+				)
+			);
+
+			$body = wp_remote_retrieve_body( $response );
+			$body = json_decode( $body, true );
+
+			wp_send_json_success( $body );
 		}
 
 		/**
@@ -100,7 +134,7 @@ if ( ! class_exists( 'Kemet_Panel' ) ) {
 		}
 
 		/**
-		 * get_system_info
+		 * Get system info
 		 *
 		 * @return array
 		 */
@@ -167,7 +201,6 @@ if ( ! class_exists( 'Kemet_Panel' ) ) {
 		/**
 		 * Enqueue a script in the WordPress admin on edit.php
 		 *
-		 * @param string $hook current location.
 		 * @return void
 		 */
 		public function enqueue_admin_script() {
@@ -202,9 +235,15 @@ if ( ! class_exists( 'Kemet_Panel' ) ) {
 				'kemet-panel-js',
 				'KemetPanelData',
 				array(
-					'nonce'          => wp_create_nonce( 'kemet-panel' ),
-					'system_info'    => self::get_system_info(),
-					'kemet_redirect' => isset( $_GET['tab'] ) ? $_GET['tab'] : '',
+					'ajaxurl'              => admin_url( 'admin-ajax.php' ),
+					'nonce'                => wp_create_nonce( 'kemet-panel' ),
+					'system_info'          => self::get_system_info(),
+					'plugin_manager_nonce' => wp_create_nonce( 'kemet-plugins-manager' ),
+					'plugins_data'         => Kemet_Panel_Plugins_Data::get_instance()->get_plugins_data(),
+					'plugins_cache'        => Kemet_Panel_Plugins_Data::get_instance()->plugins_status(),
+					'images_url'           => KEMET_ADDONS_PANEL_URL . 'assets/images/',
+					'recommended_plugins'  => Kemet_Panel_Plugins_Data::get_instance()->get_recommended_plugins(),
+					'kemet_redirect'       => isset( $_GET['tab'] ) ? sanitize_text_field( wp_unslash( $_GET['tab'] ) ) : '',  // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 				)
 			);
 		}

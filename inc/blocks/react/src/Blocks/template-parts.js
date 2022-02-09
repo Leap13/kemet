@@ -1,3 +1,5 @@
+import { useBlockProps } from '@wordpress/block-editor';
+
 function addHeaderPartAttribute(settings, name) {
     if (typeof settings.attributes !== 'undefined') {
         if (name == 'core/template-part') {
@@ -28,6 +30,7 @@ const headerPartControls = wp.compose.createHigherOrderComponent((BlockEdit) => 
         const { PanelBody, ToggleControl } = wp.components;
         const { InspectorControls } = wp.blockEditor;
         const { attributes, setAttributes, isSelected } = props;
+        const blockProps = useBlockProps();
         const { __ } = wp.i18n;
 
         const onChangeHandler = (key, value) => {

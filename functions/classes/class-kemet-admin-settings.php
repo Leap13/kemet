@@ -67,7 +67,7 @@ if ( ! class_exists( 'Kemet_Admin_Settings' ) ) {
 		 *
 		 * @return void
 		 */
-		function remove_kemet_submenu_menu() {
+		public function remove_kemet_submenu_menu() {
 			if ( apply_filters( 'enable_kemet_admin_menu_item', false ) ) {
 				remove_submenu_page( 'kemet_panel', 'kemet_panel' );
 			}
@@ -78,7 +78,7 @@ if ( ! class_exists( 'Kemet_Admin_Settings' ) ) {
 		 *
 		 * @return void
 		 */
-		function register_kemet_custom_menu_page() {
+		public function register_kemet_custom_menu_page() {
 			if ( apply_filters( 'enable_kemet_admin_menu_item', false ) ) {
 				$icon = 'data:image/svg+xml;base64,PHN2ZyBjbGFzc05hbWU9ImttdC1zdmctaWNvbiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMyA1OC4wNCI+PHN0eWxlPi5jbHMtMXtmaWxsOiNmZmZmZmY7fTwvc3R5bGU+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMSwyOFY0NEgyLjU5YzcuNDYsMCwxMi43MS03LjE2LDE0Ljc5LTIwLjE1bC4zLTEuODVIMXYzSDEzLjE1QzEyLDMwLjY4LDkuNTQsMzguMzcsNCwzOS41NVYyOFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xIDAuMDQpIiAvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTQsMTIuMzZBOC4zMiw4LjMyLDAsMCwxLDUuNzksNy4ybDUuMTEsNS4zMmEyLjU2LDIuNTYsMCwwLDAsMS42NSwxLDEuNSwxLjUsMCwwLDAsMS0uMzlsLjE0LS4xM0wxOS4yMSw3LjJBOC4zMiw4LjMyLDAsMCwxLDIxLDEyLjM2VjEzaDN2LS42NEExMS41OSwxMS41OSwwLDAsMCwyMS4yOCw0LjlMMjMuOSwyLjEzLDIxLjY0LDAsMTksMi44QTExLjQzLDExLjQzLDAsMCwwLDYsMi44QzQuNTQsMS4yLDMuNCwwLDMuMzYsMEwxLjEsMi4xMywzLjcyLDQuOUExMS41OSwxMS41OSwwLDAsMCwxLDEyLjM2VjEzSDRabTguODEtOC43MUE4LjM0LDguMzQsMCwwLDEsMTcuMSw0LjgzTDEyLjgxLDkuMzQsOC41Myw0LjgzQTguMzEsOC4zMSwwLDAsMSwxMi44MSwzLjY1WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEgMC4wNCkiIC8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTgsNTUsMTQuNjQsNDQuOTJhMjkuMSwyOS4xLDAsMCwwLDYuNTMtMTEuNDRBNjAuNSw2MC41LDAsMCwwLDI0LDE3LjU5TDI0LDE2SDF2M0gyMC45MmMtLjQ1LDYuMTctMy4xMywyOC0xOC4zNSwyOEgxdjNIMi41NWExOCwxOCwwLDAsMCwzLjc4LS40TDguMTQsNTVIMXYzSDI0VjU1Wk05LjY0LDQ4LjU2QTE2LjM4LDE2LjM4LDAsMCwwLDEyLjQxLDQ3bDIuNjcsOEgxMS44WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEgMC4wNCkiIC8+PC9zdmc+';
 				add_menu_page( __( 'Settings', 'kemet' ), __( 'Kemet', 'kemet' ), 'manage_options', 'kemet_panel', null, $icon );

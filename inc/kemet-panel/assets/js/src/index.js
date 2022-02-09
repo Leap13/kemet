@@ -1,4 +1,5 @@
 import WelcomeTab from './tabs/welcome'
+import Plugins from './tabs/plugins'
 import System from './tabs/system'
 import Support from './tabs/support'
 import { render, Fragment, useContext } from '@wordpress/element'
@@ -30,6 +31,16 @@ const RendeTabs = () => {
             priority: 5,
             data: {
                 Component: WelcomeTab,
+                props: {}
+            }
+        },
+        {
+            name: 'plugins',
+            title: __('Recommended Plugins', 'kemet'),
+            className: 'plugins',
+            priority: 20,
+            data: {
+                Component: Plugins,
                 props: {}
             }
         },
@@ -88,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let sidebar = document.getElementById("adminmenuwrap"),
             sidebarHeight = sidebar.offsetHeight + 'px';
         document.getElementById("wpbody").style.minHeight = sidebarHeight
-        render(<PanelProvider><RendeTabs /></PanelProvider>, document.getElementById('kmt-dashboard'))
+        render(<PanelProvider><RendeTabs options={KemetPanelData.options} /></PanelProvider>, document.getElementById('kmt-dashboard'))
     }
 })
 

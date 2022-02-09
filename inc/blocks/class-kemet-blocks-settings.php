@@ -76,10 +76,10 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 		}
 
 		/**
-		 * edit_header_template
+		 * Edit _header template
 		 *
-		 * @param  string $block_content
-		 * @param  array  $source_block
+		 * @param  string $block_content content.
+		 * @param  array  $source_block block.
 		 * @return string
 		 */
 		public function edit_header_template( $block_content, $source_block ) {
@@ -102,16 +102,14 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 		}
 
 		/**
-		 * block_assets
+		 * Block assets
 		 */
 		public function block_assets() {
 			$scripts = self::$blocks_assets['js'];
 			$css     = self::$blocks_assets['css'];
 
-			/*
-			 Directory and Extension */
-			$file_prefix = ( ! SCRIPT_DEBUG ) ? '' : '.min';
-			// $dir_name    = ( ! SCRIPT_DEBUG ) ? 'unminified' : 'minified';
+			/* Directory and Extension */
+			$file_prefix = ( SCRIPT_DEBUG ) ? '' : '.min';
 
 			$js_uri  = KEMET_THEME_URI . 'assets/js/';
 			$css_uri = KEMET_THEME_URI . 'assets/css/';
@@ -130,10 +128,10 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 		}
 
 		/**
-		 * edit_core_logo_block
+		 * Bdit core logo block
 		 *
-		 * @param  string $block_content
-		 * @param  array  $block
+		 * @param  string $block_content content.
+		 * @param  array  $block block.
 		 * @return string
 		 */
 		public function edit_core_logo_block( $block_content, $block ) {
@@ -150,7 +148,7 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 		}
 
 		/**
-		 * mobile header markup
+		 * Mobile header markup
 		 *
 		 * @param string $html logo html.
 		 * @return string
@@ -177,14 +175,14 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 		/**
 		 * Replace mobile header attributes
 		 *
-		 * @param object $attr
-		 * @param object $attachment
-		 * @param mixed  $size
+		 * @param object $attr attributes.
+		 * @param object $attachment attachment object.
+		 * @param mixed  $size attachment size.
 		 * @return object
 		 */
 		public function replace_mobile_logo_attr( $attr, $attachment, $size ) {
 			$custom_logo_id = self::$global_settings['mobile_logo'];
-			if ( $custom_logo_id == $attachment->ID ) {
+			if ( $custom_logo_id === $attachment->ID ) {
 				$attach_data = array();
 				if ( ! is_customize_preview() ) {
 					$attach_data = wp_get_attachment_image_src( $attachment->ID, 'full' );
@@ -205,9 +203,9 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 		}
 
 		/**
-		 * add_blocks_attrs
+		 * Add blocks attrs
 		 *
-		 * @param  array $block_data
+		 * @param  array $block_data block.
 		 * @return array
 		 */
 		public function add_blocks_attrs( $block_data ) {
@@ -216,9 +214,9 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 		}
 
 		/**
-		 * get_default_attrs_values
+		 * Get default attrs values
 		 *
-		 * @param  array $attrs
+		 * @param  array $attrs block attributes.
 		 * @return array
 		 */
 		public function get_default_attrs_values( $attrs ) {

@@ -30,5 +30,6 @@ if ( is_admin() ) {
 }
 
 // Required files.
+require_once KEMET_THEME_DIR . 'functions/classes/plugins-manager/class-kemet-plugins-manager.php';
 require_once KEMET_THEME_DIR . 'inc/kemet-panel/class-kemet-panel.php';
 

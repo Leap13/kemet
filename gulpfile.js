@@ -1,10 +1,23 @@
 const gulp = require('gulp'),
-	clean = require('gulp-clean'),
-	concatCss = require('gulp-concat-css'),
 	cssnano = require('gulp-cssnano'),
 	uglify = require('gulp-uglify'),
 	zip = require('gulp-zip'),
+	sass = require('gulp-sass')(require('sass')),
 	rename = require('gulp-rename');
+
+
+gulp.task('sass', function () {
+	return gulp.src('./inc/kemet-panel/scss/kemet-panel.scss')
+		.pipe(sass().on('error', sass.logError))
+		.pipe(gulp.dest('./inc/kemet-panel/assets/css/unminified/kemet-panel.css'));
+});
+
+gulp.task('minify-panel', function () {
+	return gulp.src('inc/kemet-panel/assets/css/unminified/*.css')
+		.pipe(cssnano())
+		.pipe(rename({ suffix: '.min' }))
+		.pipe(gulp.dest('inc/kemet-panel/assets/css/minified'));
+});
 
 gulp.task('watch', function () {
 	gulp.watch(['assets/css/**/*.css', 'assets/js/**/*.js']).on(
