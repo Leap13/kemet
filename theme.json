@@ -28,7 +28,6 @@
     "appearanceTools": true,
     "color": {
       "link": true,
-      "custom": true,
       "palette": [
         {
           "slug": "foreground",
