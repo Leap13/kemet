@@ -266,7 +266,7 @@
 			"fontFamily": "var(--wp--preset--font-family--system-font)",
 			"lineHeight": "var(--wp--custom--typography--line-height--medium)",
 			"fontSize": "var(--wp--preset--font-size--small)",
-			"fontWeight": ""
+			"fontWeight": "300"
 		}
 	}
 }
