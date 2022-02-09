@@ -185,7 +185,7 @@
         "typography": {
           "fontFamily": "var(--wp--preset--font-family--system-font)",
           "fontWeight": "300",
-          "lineHeight": "var(--wp--custom--typography--line-height--small)",
+          "lineHeight": "var(--wp--custom--typography--line-height--normal)",
           "fontSize": "var(--wp--preset--font-size--huge)"
         }
       },
@@ -193,7 +193,7 @@
         "typography": {
           "fontFamily": "var(--wp--preset--font-family--system-font)",
           "fontWeight": "300",
-          "lineHeight": "var(--wp--custom--typography--line-height--tiny)",
+          "lineHeight": "var(--wp--custom--typography--line-height--normal)",
           "fontSize": "var(--wp--preset--font-size--large)"
         }
       },
@@ -201,15 +201,14 @@
         "typography": {
           "fontFamily": "var(--wp--preset--font-family--system-font)",
           "fontWeight": "300",
-          "lineHeight": "var(--wp--custom--typography--line-height--tiny)",
-          "fontSize": "var(--wp--preset--font-size--medium)"
+          "lineHeight": "var(--wp--custom--typography--line-height--normal)",
+          "fontSize": "var(--wp--preset--font-size--medium-large)"
         }
       },
       "h5": {
         "typography": {
           "fontFamily": "var(--wp--preset--font-family--system-font)",
           "fontWeight": "700",
-          "textTransform": "uppercase",
           "lineHeight": "var(--wp--custom--typography--line-height--normal)",
           "fontSize": "var(--wp--preset--font-size--normal)"
         }
@@ -218,7 +217,6 @@
         "typography": {
           "fontFamily": "var(--wp--preset--font-family--system-font)",
           "fontWeight": "400",
-          "textTransform": "uppercase",
           "lineHeight": "var(--wp--custom--typography--line-height--normal)",
           "fontSize": "var(--wp--preset--font-size--small)"
         }
@@ -265,9 +263,9 @@
     },
     "typography": {
       "fontFamily": "var(--wp--preset--font-family--system-font)",
-      "lineHeight": "var(--wp--custom--typography--line-height--medium)",
+      "lineHeight": "var(--wp--custom--typography--line-height--normal)",
       "fontSize": "var(--wp--preset--font-size--small)",
-      "fontWeight": ""
+      "fontWeight": "300"
     }
   }
 }
