@@ -4,21 +4,26 @@ import {
     __experimentalGrid as Grid,
 } from '@wordpress/components';
 const { __ } = wp.i18n;
-const { Dashicon, Notice } = wp.components;
+const { Dashicon } = wp.components;
 import { useState } from "@wordpress/element";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 const Support = () => {
+    const Alert = withReactContent(Swal)
     const [email, setEmail] = useState('');
-    const [success, setSuccess] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
     const submitHandler = async () => {
         if (isLoading) {
             return;
         }
-        setSuccess(null);
         setIsLoading(true);
         if (!checkEmail(email)) {
-            alert(__('Please Enter Valid Email', 'kemet-addons'));
+            Alert.fire({
+                icon: 'error',
+                title: __('Invalid Email Address...', 'kemet-addons'),
+                text: __('Please enter a valid email address!', 'kemet-addons'),
+            })
             setIsLoading(false);
             return;
         }
@@ -35,11 +40,22 @@ const Support = () => {
             })
 
             if (response.status === 200) {
-                const { success, data } = await response.json();
-                if (success) {
-                    setSuccess(__('Success', 'kemet-addons'));
+                const { success, data: { status } } = await response.json();
+                if (success && status) {
+                    Alert.fire({
+                        icon: 'success',
+                        title: __('Success', 'kemet-addons'),
+                        text: __('Thanks for your subscribe!', 'kemet-addons'),
+                        timer: 3000
+                    })
+                    setEmail('');
+                } else {
+                    Alert.fire({
+                        icon: 'error',
+                        title: __('Invalid Email Address...', 'kemet-addons'),
+                        text: __('Please enter a valid email address!', 'kemet-addons'),
+                    })
                 }
-                console.log(data);
             }
         } catch (e) {
             alert(e);
@@ -58,19 +74,28 @@ const Support = () => {
             <Card>
                 <div className='kmt-card-title'>
                     <span className="icon">
-                        <Dashicon icon="email" />
+                        <svg
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width={40}
+                            height={40}
+                            viewBox="0 0 512 512"
+                        >
+                            <path
+                                d="M205.5,308.5l3.1,13.9h94.6l3.1-13.9c2.1-9.4,6.6-18.3,13.6-24.9c18.4-17.4,29.1-41.8,29.1-67.5c0-51.3-41.7-92.8-93-92.9
+                                    c-51.3,0-93,41.6-93,92.9c0,25.7,10.7,50,29,67.5C198.9,290.3,203.4,299.1,205.5,308.5z M213,342.4l6.3,28.3
+                                    c2.4,10.6,11.8,18.2,22.7,18.2h27.8c10.9,0,20.3-7.6,22.7-18.2l6.3-28.3H213z"
+                            />
+                        </svg>
                     </span>
-                    <h2>{__('Subscribe to Our Newsletter', 'kemet')}</h2>
+                    <h2>{__('Knowledge Base', 'kemet')}</h2>
                 </div>
                 <div className='kmt-card-body'>
-                    <p>{__('Enter your email address and be the first to know the latest features, offers, and updates.', 'kemet')}</p>
+                    <p>{__('Kemet Theme documentation library will guide you to build your next Kemet website easily without any need to touch a single line of code.', 'kemet')}</p>
                 </div>
-                <div className='kmt-card-action kmt-subscribe'>
-                    {success && <p className="success">{success}</p>}
-                    <div className="subscribe-form">
-                        <input type='text' value={email} onChange={(e) => setEmail(e.target.value)} readOnly={isLoading} />
-                        <button className={`kmt-button primary${loadingClass}`} onClick={submitHandler} disabled={isLoading}>{__('Submit', 'kemet')}</button>
-                    </div>
+                <div className='kmt-card-action'>
+                    <a className='kmt-button primary' target='_blank' href="#">{__('Documentation', 'kemet')}</a>
                 </div>
             </Card>
             <Card>
@@ -143,6 +168,25 @@ const Support = () => {
                 </div>
                 <div className='kmt-card-action'>
                     <a className='kmt-button primary' target='_blank' href="#">{__('Facebook Group', 'kemet')}</a>
+                </div>
+            </Card>
+        </Grid>
+        <Grid columns={1} style={{ marginTop: '30px' }} className='kmt-support'>
+            <Card>
+                <div className='kmt-card-title'>
+                    <span className="icon">
+                        <Dashicon icon="email" />
+                    </span>
+                    <h2>{__('Subscribe to Our Newsletter', 'kemet')}</h2>
+                </div>
+                <div className='kmt-card-body'>
+                    <p>{__('Enter your email address and be the first to know the latest features, offers, and updates.', 'kemet')}</p>
+                </div>
+                <div className='kmt-card-action kmt-subscribe'>
+                    <div className="subscribe-form">
+                        <input type='text' value={email} onChange={(e) => setEmail(e.target.value)} readOnly={isLoading} />
+                        <button className={`kmt-button primary${loadingClass}`} onClick={submitHandler} disabled={isLoading}>{__('Submit', 'kemet')}</button>
+                    </div>
                 </div>
             </Card>
         </Grid>

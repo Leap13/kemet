@@ -38,6 +38,15 @@ const headerPartControls = wp.compose.createHigherOrderComponent((BlockEdit) => 
                 [key]: value
             });
         }
+        console.log(props.name);
+        if ((props.name == 'core/template-part')) {
+            const user = document.querySelector("[data-block='9d2998c5-7680-49ee-984e-d2d03c537174']");
+            if (user) {
+                console.log(user);
+
+            }
+            console.log(blockProps);
+        }
         return (
             <Fragment>
                 <BlockEdit {...props} />

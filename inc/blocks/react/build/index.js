@@ -263,6 +263,18 @@ var headerPartControls = wp.compose.createHigherOrderComponent(function (BlockEd
       setAttributes(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()({}, key, value));
     };
 
+    console.log(props.name);
+
+    if (props.name == 'core/template-part') {
+      var user = document.querySelector("[data-block='9d2998c5-7680-49ee-984e-d2d03c537174']");
+
+      if (user) {
+        console.log(user);
+      }
+
+      console.log(blockProps);
+    }
+
     return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(Fragment, null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(BlockEdit, props), isSelected && props.name == 'core/template-part' && attributes.slug === 'header' && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(InspectorControls, null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(PanelBody, {
       title: __('Kemet Settings', 'kemet'),
       initialOpen: true
