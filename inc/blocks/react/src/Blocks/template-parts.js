@@ -30,22 +30,12 @@ const headerPartControls = wp.compose.createHigherOrderComponent((BlockEdit) => 
         const { PanelBody, ToggleControl } = wp.components;
         const { InspectorControls } = wp.blockEditor;
         const { attributes, setAttributes, isSelected } = props;
-        const blockProps = useBlockProps();
         const { __ } = wp.i18n;
 
         const onChangeHandler = (key, value) => {
             setAttributes({
                 [key]: value
             });
-        }
-        console.log(props.name);
-        if ((props.name == 'core/template-part')) {
-            const user = document.querySelector("[data-block='9d2998c5-7680-49ee-984e-d2d03c537174']");
-            if (user) {
-                console.log(user);
-
-            }
-            console.log(blockProps);
         }
         return (
             <Fragment>

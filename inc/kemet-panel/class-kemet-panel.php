@@ -64,7 +64,7 @@ if ( ! class_exists( 'Kemet_Panel' ) ) {
 
 			$email = isset( $_POST['email'] ) ? sanitize_text_field( wp_unslash( $_POST['email'] ) ) : '';
 
-			$api_url = 'https://premiumaddons.com/wp-json/mailchimp/v2/add';
+			$api_url = 'https://kemet.io/wp-json/mailchimp/v2/add';
 			$request = add_query_arg(
 				array(
 					'email' => $email,

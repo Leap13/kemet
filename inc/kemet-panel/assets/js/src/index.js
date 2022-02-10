@@ -1,7 +1,6 @@
 import WelcomeTab from './tabs/welcome'
 import Plugins from './tabs/plugins'
 import System from './tabs/system'
-import Support from './tabs/support'
 import { render, Fragment, useContext } from '@wordpress/element'
 import Header from './layout/Header';
 import Card from './common/Card';
@@ -41,16 +40,6 @@ const RendeTabs = () => {
             priority: 20,
             data: {
                 Component: Plugins,
-                props: {}
-            }
-        },
-        {
-            name: 'support',
-            title: __('Support', 'kemet'),
-            className: 'support',
-            priority: 25,
-            data: {
-                Component: Support,
                 props: {}
             }
         },

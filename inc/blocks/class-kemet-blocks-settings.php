@@ -248,6 +248,7 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 					'wp-element',
 					'wp-media-utils',
 					'wp-block-editor',
+					'lodash',
 				),
 				KEMET_THEME_VERSION,
 				true

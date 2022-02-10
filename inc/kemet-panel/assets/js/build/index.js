@@ -4211,13 +4211,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _tabs_welcome__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./tabs/welcome */ "./src/tabs/welcome.js");
 /* harmony import */ var _tabs_plugins__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tabs/plugins */ "./src/tabs/plugins.js");
 /* harmony import */ var _tabs_system__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./tabs/system */ "./src/tabs/system.js");
-/* harmony import */ var _tabs_support__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./tabs/support */ "./src/tabs/support.js");
-/* harmony import */ var _layout_Header__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./layout/Header */ "./src/layout/Header.js");
-/* harmony import */ var _common_Card__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./common/Card */ "./src/common/Card.js");
-/* harmony import */ var _common_Container__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./common/Container */ "./src/common/Container.js");
-/* harmony import */ var _store_panel_store__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./store/panel-store */ "./src/store/panel-store.js");
-/* harmony import */ var _common_push_history__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./common/push-history */ "./src/common/push-history.js");
-
+/* harmony import */ var _layout_Header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./layout/Header */ "./src/layout/Header.js");
+/* harmony import */ var _common_Card__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./common/Card */ "./src/common/Card.js");
+/* harmony import */ var _common_Container__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./common/Container */ "./src/common/Container.js");
+/* harmony import */ var _store_panel_store__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./store/panel-store */ "./src/store/panel-store.js");
+/* harmony import */ var _common_push_history__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./common/push-history */ "./src/common/push-history.js");
 
 
 
@@ -4236,7 +4234,7 @@ var _wp$components = wp.components,
     PanelBody = _wp$components.PanelBody;
 
 var RendeTabs = function RendeTabs() {
-  var _useContext = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_store_panel_store__WEBPACK_IMPORTED_MODULE_9__["default"]),
+  var _useContext = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_store_panel_store__WEBPACK_IMPORTED_MODULE_8__["default"]),
       tabs = _useContext.tabs;
 
   var compare = function compare(a, b) {
@@ -4270,15 +4268,6 @@ var RendeTabs = function RendeTabs() {
       props: {}
     }
   }, {
-    name: 'support',
-    title: __('Support', 'kemet'),
-    className: 'support',
-    priority: 25,
-    data: {
-      Component: _tabs_support__WEBPACK_IMPORTED_MODULE_5__["default"],
-      props: {}
-    }
-  }, {
     name: 'system',
     title: __('System Info', 'kemet'),
     className: 'system',
@@ -4297,10 +4286,10 @@ var RendeTabs = function RendeTabs() {
   tabs = mergedTabs;
 
   var onSelectHandler = function onSelectHandler(tabName) {
-    Object(_common_push_history__WEBPACK_IMPORTED_MODULE_10__["default"])(tabName);
+    Object(_common_push_history__WEBPACK_IMPORTED_MODULE_9__["default"])(tabName);
   };
 
-  return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_layout_Header__WEBPACK_IMPORTED_MODULE_6__["default"], null), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(TabPanel, {
+  return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_layout_Header__WEBPACK_IMPORTED_MODULE_5__["default"], null), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(TabPanel, {
     className: "kemet-dashboard-tab-panel",
     activeClass: "active-tab",
     initialTabName: KemetPanelData.kemet_redirect,
@@ -4323,14 +4312,14 @@ document.addEventListener('DOMContentLoaded', function () {
     var sidebar = document.getElementById("adminmenuwrap"),
         sidebarHeight = sidebar.offsetHeight + 'px';
     document.getElementById("wpbody").style.minHeight = sidebarHeight;
-    Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["render"])(Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_store_panel_store__WEBPACK_IMPORTED_MODULE_9__["PanelProvider"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(RendeTabs, {
+    Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["render"])(Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_store_panel_store__WEBPACK_IMPORTED_MODULE_8__["PanelProvider"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(RendeTabs, {
       options: KemetPanelData.options
     })), document.getElementById('kmt-dashboard'));
   }
 });
 window.KmtAdminComponents = {
-  Card: _common_Card__WEBPACK_IMPORTED_MODULE_7__["default"],
-  Container: _common_Container__WEBPACK_IMPORTED_MODULE_8__["default"]
+  Card: _common_Card__WEBPACK_IMPORTED_MODULE_6__["default"],
+  Container: _common_Container__WEBPACK_IMPORTED_MODULE_7__["default"]
 };
 
 /***/ }),
@@ -4616,113 +4605,6 @@ var Plugins = function Plugins() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Plugins);
-
-/***/ }),
-
-/***/ "./src/tabs/support.js":
-/*!*****************************!*\
-  !*** ./src/tabs/support.js ***!
-  \*****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _common_Card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../common/Card */ "./src/common/Card.js");
-/* harmony import */ var _common_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/Container */ "./src/common/Container.js");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
-
-
-
-
-var __ = wp.i18n.__;
-var Dashicon = wp.components.Dashicon;
-
-var Support = function Support() {
-  return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_common_Container__WEBPACK_IMPORTED_MODULE_2__["default"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("h2", {
-    className: "kmt-section-title"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("span", {
-    className: "icon"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(Dashicon, {
-    icon: "sos"
-  })), __('Have a Question?', 'kemet-addons')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["__experimentalGrid"], {
-    columns: 3,
-    gap: 8,
-    className: "kmt-support"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_common_Card__WEBPACK_IMPORTED_MODULE_1__["default"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-    className: "kmt-card-title"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("span", {
-    className: "icon"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("svg", {
-    version: "1.1",
-    id: "Layer_1",
-    xmlns: "http://www.w3.org/2000/svg",
-    width: 40,
-    height: 40,
-    viewBox: "0 0 512 512"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("path", {
-    d: "M205.5,308.5l3.1,13.9h94.6l3.1-13.9c2.1-9.4,6.6-18.3,13.6-24.9c18.4-17.4,29.1-41.8,29.1-67.5c0-51.3-41.7-92.8-93-92.9\r c-51.3,0-93,41.6-93,92.9c0,25.7,10.7,50,29,67.5C198.9,290.3,203.4,299.1,205.5,308.5z M213,342.4l6.3,28.3\r c2.4,10.6,11.8,18.2,22.7,18.2h27.8c10.9,0,20.3-7.6,22.7-18.2l6.3-28.3H213z"
-  }))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("h2", null, __('Knowledge Base', 'kemet'))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-    className: "kmt-card-body"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, __('Kemet Theme documentation library will guide you to build your next Kemet website easily without any need to touch a single line of code.', 'kemet'))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-    className: "kmt-card-action"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("a", {
-    className: "kmt-button primary",
-    target: "_blank",
-    href: "#"
-  }, __('Documentation', 'kemet')))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_common_Card__WEBPACK_IMPORTED_MODULE_1__["default"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-    className: "kmt-card-title"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("span", {
-    className: "icon"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("svg", {
-    version: "1.1",
-    id: "Layer_1",
-    xmlns: "http://www.w3.org/2000/svg",
-    width: 40,
-    height: 40,
-    viewBox: "0 0 512 512"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("path", {
-    class: "st0",
-    d: "M252.8,123.7c-64.4,0-102.9,36-102.9,96.3v23.4c-8.3,6.2-13.3,15.8-13.3,26.4c0,15.6,10.9,28.8,25.5,32.3\r c13.2,52.5,47.7,87.2,87.4,87.2c5.5,0,10-4.5,10-10s-4.5-10-10-10c-31.2,0-59.8-32.3-69.5-78.4c-1-4.6-5-7.9-9.7-7.9\r c-0.2,0-0.5,0-0.8,0c-7.1-0.2-12.9-6.1-12.9-13.3c0-5.1,2.9-9.6,7.6-11.8c3.5-1.7,5.7-5.2,5.7-9V231c25.6-6.7,41.6-20.4,50.2-29.9\r c10.9,6.6,32.4,15.5,69.3,15.5c14.3,0,26.6-1.3,36.5-2.9c1.6,4.7,3.3,11.5,3.3,19.5v66.4c0,16.6-13.3,29.9-29.9,29.9h-12.2\r c-3.8-8.1-12-13.3-21-13.3c-12.8,0-23.2,10.4-23.2,23.2c0,12.8,10.4,23.2,23.2,23.2c9,0,17.1-5.2,21-13.3h12.2\r c26.3,0,47.9-20.6,49.6-46.5h0.2c14.7,0,26.6-11.9,26.6-26.6v-13.3c0-14.7-11.9-26.6-26.6-26.6V233c0-9.7-1.9-18.3-3.9-24.5\r c3.9-2.2,7-5.5,8.8-9.6c2.4-5.4,2.3-11.5-0.2-16.8C336,145.1,299.2,123.7,252.8,123.7z M216.3,256.5c-7.3,0-13.3,5.9-13.3,13.3\r s5.9,13.3,13.3,13.3c7.3,0,13.3-5.9,13.3-13.3S223.7,256.5,216.3,256.5z M282.7,256.5c-7.3,0-13.3,6-13.2,13.3\r c0,7.1,5.6,12.9,12.7,13.2c0.2,0,0.4,0,0.6,0c7.3,0,13.3-5.9,13.3-13.3S290.1,256.5,282.7,256.5z"
-  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("path", {
-    d: "M252.6,123.2c-64.4,0-102.9,36-102.9,96.3v23.4c-8.3,6.2-13.3,15.8-13.3,26.4c0,15.6,10.9,28.8,25.5,32.3\r c13.2,52.5,47.7,87.2,87.4,87.2c5.5,0,10-4.5,10-10s-4.5-10-10-10c-31.2,0-59.8-32.3-69.5-78.4c-1-4.6-5-7.9-9.7-7.9\r c-0.2,0-0.5,0-0.8,0c-7.1-0.2-12.9-6.1-12.9-13.3c0-5.1,2.9-9.6,7.6-11.8c3.5-1.7,5.7-5.2,5.7-9v-17.9c25.6-6.7,41.6-20.4,50.2-29.9\r c10.9,6.6,32.4,15.5,69.3,15.5c14.3,0,26.6-1.3,36.5-2.9c1.6,4.7,3.3,11.5,3.3,19.5v66.4c0,16.6-13.3,29.9-29.9,29.9h-12.2\r c-3.8-8.1-12-13.3-21-13.3c-12.8,0-23.2,10.4-23.2,23.2s10.4,23.2,23.2,23.2c9,0,17.1-5.2,21-13.3h12.2c26.3,0,47.9-20.6,49.6-46.5\r h0.2c14.7,0,26.6-11.9,26.6-26.6v-13.3c0-14.7-11.9-26.6-26.6-26.6v-3.3c0-9.7-1.9-18.3-3.9-24.5c3.9-2.2,7-5.5,8.8-9.6\r c2.4-5.4,2.3-11.5-0.2-16.8C335.8,144.6,299,123.2,252.6,123.2z M216.1,256c-7.3,0-13.3,5.9-13.3,13.3s5.9,13.3,13.3,13.3\r c7.3,0,13.3-5.9,13.3-13.3S223.5,256,216.1,256z M282.5,256c-7.3,0-13.3,6-13.2,13.3c0,7.1,5.6,12.9,12.7,13.2c0.2,0,0.4,0,0.6,0\r c7.3,0,13.3-5.9,13.3-13.3S289.9,256,282.5,256z"
-  }))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("h2", null, __('Need Help?', 'kemet'))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-    className: "kmt-card-body"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, __('Have a question? Kemet support team is here to help you by answering your questions and handling your issues within 24-48 hours.', 'kemet'))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-    className: "kmt-card-action"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("a", {
-    className: "kmt-button primary",
-    target: "_blank",
-    href: "#"
-  }, __('Submit a Ticket', 'kemet')))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_common_Card__WEBPACK_IMPORTED_MODULE_1__["default"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-    className: "kmt-card-title"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("span", {
-    className: "icon"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("svg", {
-    version: "1.1",
-    id: "Layer_1",
-    xmlns: "http://www.w3.org/2000/svg",
-    width: 40,
-    height: 40,
-    viewBox: "0 0 512 512"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("path", {
-    id: "svgexport-28_2_",
-    d: "M163.1,222.8c-18.3,0-33.2,14.9-33.2,33.2s14.9,33.2,33.2,33.2s33.2-14.9,33.2-33.2\r S181.4,222.8,163.1,222.8z M256,222.8c-22,0-39.8,17.8-39.8,39.8s17.8,39.8,39.8,39.8s39.8-17.8,39.8-39.8S278,222.8,256,222.8z\r M206.1,311.7c-3-1.7-6.4-2.6-9.8-2.6h-66.4c-11,0-19.9,8.9-19.9,19.9v4c0,20.1,23.3,35.9,53.1,35.9c7.9,0,15.7-1.1,23.2-3.5\r c-2.2-5.2-3.3-10.8-3.3-16.4v-3.3C183,330.7,192.1,317.2,206.1,311.7z M348.9,222.8c-18.3,0-33.2,14.9-33.2,33.2\r s14.9,33.2,33.2,33.2s33.2-14.9,33.2-33.2S367.3,222.8,348.9,222.8z M382.1,309h-66.4c-3.4,0-6.8,0.9-9.8,2.6\r c13.9,5.5,23.1,18.9,23.1,33.9v3.3c0,5.6-1.1,11.2-3.3,16.4c7.5,2.4,15.4,3.6,23.2,3.5c29.8,0,53.1-15.7,53.1-35.9v-4\r C402,318,393.1,309,382.1,309z M305.8,222.8c-2.6,0-5.2-1-7-2.9l-17-17h-22.4c-12.8,0-23.2-10.4-23.2-23.2v-33.2\r c0-12.8,10.4-23.2,23.2-23.2h92.9c12.8,0,23.2,10.4,23.2,23.2v33.2c0,12.8-10.4,23.2-23.2,23.2h-22.4l-17,17\r C311,221.8,308.4,222.8,305.8,222.8z M256,388.8c-33.5,0-59.8-17.5-59.8-39.8v-3.3c0-12.8,10.4-23.2,23.2-23.2h73\r c12.8,0,23.2,10.4,23.2,23.2v3.3C315.8,371.2,289.5,388.8,256,388.8z"
-  }))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("h2", null, __('Follow us', 'kemet'))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-    className: "kmt-card-body"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, __('Come and join our Facebook group! Share your thoughts, opinions, suggestions, and help others. You will always be more than welcome!', 'kemet'))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-    className: "kmt-card-action"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("a", {
-    className: "kmt-button primary",
-    target: "_blank",
-    href: "#"
-  }, __('Facebook Group', 'kemet'))))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Support);
 
 /***/ }),
 

@@ -1,2 +1,3 @@
 import './Blocks/logo'
-import './Blocks/template-parts'
+import './Blocks/separator'
+import './Blocks/logo'
