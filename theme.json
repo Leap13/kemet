@@ -4,12 +4,12 @@
     {
       "name": "post-sidebar-right",
       "title": "Two Columns, Right Sidebar",
-      "postTypes": ["post"]
+      "postTypes": ["page"]
     },
     {
       "name": "post-sidebar-left",
       "title": "Two Columns, Left Sidebar",
-      "postTypes": ["post"]
+      "postTypes": ["page"]
     }
   ],
   "templateParts": [
@@ -145,10 +145,6 @@
 		  "customRadius": true,
 		  "customStyle": true,
 		  "customWidth": true
-		},
-		"custom": {
-			"hspacing": "2.375rem",
-			"vspacing": "1.25rem"
 		}
 	},
 	"styles": {
