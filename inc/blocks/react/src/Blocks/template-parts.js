@@ -40,7 +40,7 @@ const headerPartControls = wp.compose.createHigherOrderComponent((BlockEdit) => 
         return (
             <Fragment>
                 <BlockEdit {...props} />
-                {isSelected && (props.name == 'core/template-part') && attributes.slug === 'header' &&
+                {isSelected && (props.name == 'core/template-part') && attributes.slug === 'header' && attributes.tagName === 'header' &&
                     <InspectorControls>
                         <PanelBody
                             title={__('Kemet Settings', 'kemet')}

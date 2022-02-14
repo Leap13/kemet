@@ -4391,6 +4391,10 @@ var PanelContext = React.createContext({
 });
 var PanelProvider = function PanelProvider(props) {
   var tabs = [];
+  var event = new CustomEvent('kmt:dashboard:customtabs', {
+    detail: tabs
+  });
+  document.dispatchEvent(event);
   var plugins = KemetPanelData.plugins_data;
   var pluginsCache = KemetPanelData.plugins_cache;
 
