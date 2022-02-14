@@ -23,7 +23,7 @@
       "area": "header",
       "name": "header-with-top-bar",
       "title": "Header With Top Bar",
-	    "slug": "header"
+	    "slug": "header-with-top-bar"
     },
 	{
       "area": "footer",
