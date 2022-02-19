@@ -1,4 +1,6 @@
-import { useBlockProps } from '@wordpress/block-editor';
+import { __ } from '@wordpress/i18n';
+import { store as coreStore } from '@wordpress/core-data';
+import { useSelect } from '@wordpress/data';
 
 function addHeaderPartAttribute(settings, name) {
     if (typeof settings.attributes !== 'undefined') {
@@ -32,6 +34,24 @@ const headerPartControls = wp.compose.createHigherOrderComponent((BlockEdit) => 
         const { attributes, setAttributes, isSelected } = props;
         const { __ } = wp.i18n;
 
+        const templateType = useSelect((select) => {
+            if (!select('core/edit-site')) {
+                return;
+            }
+            const { template: theme } = select(coreStore).getCurrentTheme();
+            const {
+                getEditedEntityRecord,
+            } = select(coreStore);
+            const getEntityArgs = [
+                'postType',
+                'wp_template_part',
+                `${theme}//${attributes.slug}`
+            ];
+            const entityRecord = getEditedEntityRecord(...getEntityArgs);
+            const type = entityRecord?.area || entityRecord?.slug;
+            return type;
+        }, []);
+
         const onChangeHandler = (key, value) => {
             setAttributes({
                 [key]: value
@@ -40,7 +60,7 @@ const headerPartControls = wp.compose.createHigherOrderComponent((BlockEdit) => 
         return (
             <Fragment>
                 <BlockEdit {...props} />
-                {isSelected && (props.name == 'core/template-part') && attributes.slug === 'header' && attributes.tagName === 'header' &&
+                {isSelected && (props.name == 'core/template-part') && templateType === 'header' &&
                     <InspectorControls>
                         <PanelBody
                             title={__('Kemet Settings', 'kemet')}

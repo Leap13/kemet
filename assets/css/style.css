@@ -12,10 +12,29 @@
 .wp-block-buttons .wp-block-button .wp-block-button__link:hover {
   opacity: 0.9;
 }
-.wp-block-post a:hover, a:hover, .wp-block-navigation .wp-block-navigation-item__content:hover {
+.wp-block-post a:hover,
+a:hover,
+.wp-block-navigation .wp-block-navigation-item__content:hover {
   color: var(--wp--preset--color--primary);
 }
 .wp-block-button__link:hover {
   background-color: var(--wp--preset--color--primary);
   color: var(--wp--preset--color--foreground);
+}
+.kemet-breadcrumb-trail ul {
+  list-style: none;
+}
+.kemet-breadcrumb-trail .trail-items,
+.kemet-breadcrumb-trail li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.kemet-breadcrumb-trail .breadcrumb-sep {
+  padding: 0 0.4em;
+}
+.kemet-breadcrumb-trail > .prefix {
+  margin-right: 0.4em;
 }

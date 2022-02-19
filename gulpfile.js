@@ -37,7 +37,7 @@ gulp.task('uglify', function () {
 });
 
 gulp.task('minify', function () {
-	return gulp.src('assets/css/*.css')
+	return gulp.src(['assets/css/*.css', '!./assets/css/*.min.css'])
 		.pipe(cssnano())
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(gulp.dest('assets/css'));
