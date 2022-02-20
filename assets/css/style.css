@@ -21,20 +21,3 @@ a:hover,
   background-color: var(--wp--preset--color--primary);
   color: var(--wp--preset--color--foreground);
 }
-.kemet-breadcrumb-trail ul {
-  list-style: none;
-}
-.kemet-breadcrumb-trail .trail-items,
-.kemet-breadcrumb-trail li {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.kemet-breadcrumb-trail .breadcrumb-sep {
-  padding: 0 0.4em;
-}
-.kemet-breadcrumb-trail > .prefix {
-  margin-right: 0.4em;
-}

@@ -548,22 +548,26 @@ var headerPartControls = wp.compose.createHigherOrderComponent(function (BlockEd
         setAttributes = props.setAttributes,
         isSelected = props.isSelected;
     var __ = wp.i18n.__;
-    var templateType = Object(_wordpress_data__WEBPACK_IMPORTED_MODULE_4__["useSelect"])(function (select) {
-      if (!select('core/edit-site')) {
-        return;
-      }
+    var templateType;
 
-      var _select$getCurrentThe = select(_wordpress_core_data__WEBPACK_IMPORTED_MODULE_3__["store"]).getCurrentTheme(),
-          theme = _select$getCurrentThe.template;
+    if (props.name == 'core/template-part') {
+      templateType = Object(_wordpress_data__WEBPACK_IMPORTED_MODULE_4__["useSelect"])(function (select) {
+        if (!select('core/edit-site')) {
+          return;
+        }
 
-      var _select = select(_wordpress_core_data__WEBPACK_IMPORTED_MODULE_3__["store"]),
-          getEditedEntityRecord = _select.getEditedEntityRecord;
+        var _select$getCurrentThe = select(_wordpress_core_data__WEBPACK_IMPORTED_MODULE_3__["store"]).getCurrentTheme(),
+            theme = _select$getCurrentThe.template;
 
-      var getEntityArgs = ['postType', 'wp_template_part', "".concat(theme, "//").concat(attributes.slug)];
-      var entityRecord = getEditedEntityRecord.apply(void 0, getEntityArgs);
-      var type = (entityRecord === null || entityRecord === void 0 ? void 0 : entityRecord.area) || (entityRecord === null || entityRecord === void 0 ? void 0 : entityRecord.slug);
-      return type;
-    }, []);
+        var _select = select(_wordpress_core_data__WEBPACK_IMPORTED_MODULE_3__["store"]),
+            getEditedEntityRecord = _select.getEditedEntityRecord;
+
+        var getEntityArgs = ['postType', 'wp_template_part', "".concat(theme, "//").concat(attributes.slug)];
+        var entityRecord = getEditedEntityRecord.apply(void 0, getEntityArgs);
+        var type = (entityRecord === null || entityRecord === void 0 ? void 0 : entityRecord.area) || (entityRecord === null || entityRecord === void 0 ? void 0 : entityRecord.slug);
+        return type;
+      }, [attributes]);
+    }
 
     var onChangeHandler = function onChangeHandler(key, value) {
       setAttributes(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()({}, key, value));

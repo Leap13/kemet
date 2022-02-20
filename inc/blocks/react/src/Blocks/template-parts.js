@@ -33,30 +33,34 @@ const headerPartControls = wp.compose.createHigherOrderComponent((BlockEdit) => 
         const { InspectorControls } = wp.blockEditor;
         const { attributes, setAttributes, isSelected } = props;
         const { __ } = wp.i18n;
+        let templateType;
 
-        const templateType = useSelect((select) => {
-            if (!select('core/edit-site')) {
-                return;
-            }
-            const { template: theme } = select(coreStore).getCurrentTheme();
-            const {
-                getEditedEntityRecord,
-            } = select(coreStore);
-            const getEntityArgs = [
-                'postType',
-                'wp_template_part',
-                `${theme}//${attributes.slug}`
-            ];
-            const entityRecord = getEditedEntityRecord(...getEntityArgs);
-            const type = entityRecord?.area || entityRecord?.slug;
-            return type;
-        }, []);
+        if (props.name == 'core/template-part') {
+            templateType = useSelect((select) => {
+                if (!select('core/edit-site')) {
+                    return;
+                }
+                const { template: theme } = select(coreStore).getCurrentTheme();
+                const {
+                    getEditedEntityRecord,
+                } = select(coreStore);
+                const getEntityArgs = [
+                    'postType',
+                    'wp_template_part',
+                    `${theme}//${attributes.slug}`
+                ];
+                const entityRecord = getEditedEntityRecord(...getEntityArgs);
+                const type = entityRecord?.area || entityRecord?.slug;
+                return type;
+            }, [attributes]);
+        }
 
         const onChangeHandler = (key, value) => {
             setAttributes({
                 [key]: value
             });
         }
+
         return (
             <Fragment>
                 <BlockEdit {...props} />
