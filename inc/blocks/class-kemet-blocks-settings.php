@@ -83,20 +83,18 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 		 * @return string
 		 */
 		public function edit_header_template( $block_content, $source_block ) {
-			if ( 'header' === $source_block['attrs']['slug'] ) {
-				$sticky_header  = isset( $source_block['attrs']['enableStickyHeader'] ) ? $source_block['attrs']['enableStickyHeader'] : false;
-				$overlay_header = isset( $source_block['attrs']['enableOverlayHeader'] ) ? $source_block['attrs']['enableOverlayHeader'] : false;
-				$classes        = array();
-				if ( $sticky_header ) {
-					$classes[]                                        = 'kmt-sticky-header';
-					self::$blocks_assets['js']['kemet-sticky-header'] = 'sticky-header';
-				}
-				if ( $overlay_header ) {
-					$classes[] = 'kmt-overlay-header';
-				}
-				if ( ! empty( $classes ) ) {
-					$block_content = '<div class="' . esc_attr( implode( ' ', $classes ) ) . '"> ' . $block_content . ' </div>';
-				}
+			$sticky_header  = isset( $source_block['attrs']['enableStickyHeader'] ) ? $source_block['attrs']['enableStickyHeader'] : false;
+			$overlay_header = isset( $source_block['attrs']['enableOverlayHeader'] ) ? $source_block['attrs']['enableOverlayHeader'] : false;
+			$classes        = array();
+			if ( $sticky_header ) {
+				$classes[]                                        = 'kmt-sticky-header';
+				self::$blocks_assets['js']['kemet-sticky-header'] = 'sticky-header';
+			}
+			if ( $overlay_header ) {
+				$classes[] = 'kmt-overlay-header';
+			}
+			if ( ! empty( $classes ) ) {
+				$block_content = '<div class="' . esc_attr( implode( ' ', $classes ) ) . '"> ' . $block_content . ' </div>';
 			}
 			return $block_content;
 		}
