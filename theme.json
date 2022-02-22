@@ -29,10 +29,6 @@
       "area": "footer",
       "name": "footer",
       "title": "Footer"
-    },
-	{
-      "name": "sidebar",
-      "title": "Sidebar"
     }
   ],
   "settings": {
