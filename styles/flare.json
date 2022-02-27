@@ -27,6 +27,16 @@
                     "slug": "tertiary",
                     "color": "#626262",
                     "name": "Tertiary"
+                },
+                {
+                    "slug": "quinary",
+                    "color": "#a63130",
+                    "name": "Quinary"
+                },
+                {
+                    "slug": "senary",
+                    "color": "#fefefe",
+                    "name": "Senary"
                 }
             ]
         }

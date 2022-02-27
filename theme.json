@@ -39,7 +39,6 @@
 	"settings": {
 	  "appearanceTools": true,
 	  "color": {
-		"link": true,
 		"custom": true,
 		"palette": [
 		  {
@@ -66,7 +65,17 @@
 			"slug": "tertiary",
 			"color": "#244c60",
 			"name": "Tertiary"
-		  }
+		  },
+		  {
+			"slug": "quinary",
+			"color": "#022538",
+			"name": "Quinary"
+			},
+			{
+			"slug": "senary",
+			"color": "#fcfcfc",
+			"name": "Senary"
+			}
 		]
 	  },
 	  "spacing": {
