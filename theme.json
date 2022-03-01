@@ -34,6 +34,11 @@
 		"name": "sidebar",
 		"title": "Sidebar",
 		"area": "uncategorized"
+	  },
+	  {
+		"name": "query-loop",
+		"title": "Query Loop",
+		"area": "uncategorized"
 	  }
 	],
 	"settings": {
@@ -79,11 +84,7 @@
 		]
 	  },
 	  "spacing": {
-		  "blockGap": false,
-		  "margin": true,
-		  "padding": true,
-		  "customPadding": true,
-		  "customMargin": true,
+		  "blockGap": true,
 		  "units": ["%", "px", "em", "rem", "vh", "vw"]
 		  },
 		  "layout": {
@@ -245,10 +246,7 @@
 		  },
 		  "blocks": {
 			  "core/button": {
-			  "color": {
-				"background": "var(--wp--preset--color--foreground)",
-				"text": "var(--wp--preset--color--secondary)"
-			  },
+
 			  "typography": {
 				"fontSize": "var(--wp--preset--font-size--small)"
 			  },

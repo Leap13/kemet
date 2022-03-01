@@ -12,6 +12,14 @@
 .wp-block-buttons .wp-block-button .wp-block-button__link:hover {
   opacity: 0.9;
 }
+.wp-block-button.is-style-fill .wp-block-button__link {
+	color: #ffffff;
+}
+.wp-block-button.is-style-fill .wp-block-button__link:focus,
+.wp-block-button.is-style-fill .wp-block-button__link:hover {
+	color: #ffffff;
+  opacity: 0.9;
+}
 .wp-block-post a:hover,
 a:hover,
 .wp-block-navigation .wp-block-navigation-item__content:hover {
@@ -21,8 +29,8 @@ a:hover,
   background-color: var(--wp--preset--color--primary);
   color: var(--wp--preset--color--foreground);
 }
-@media only screen and (max-width: 600px) {
-  .hide-in-mobile {
-    display: none;
-  }
+@media (max-width: 600px) {
+	.hide-on-mobile {
+		display: none !important;
+	}
 }
