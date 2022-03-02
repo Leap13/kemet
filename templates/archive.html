@@ -1,7 +1,11 @@
 <!-- wp:template-part {"slug":"header","tagName":"header","className":"kemet-header"} /-->
 
-<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"bottom":"2rem","top":"1.5rem"}}},"layout":{"inherit":true}} -->
-<main class="wp-block-group" style="padding-top:1.5rem;padding-bottom:2rem"><!-- wp:query {"queryId":23,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"displayLayout":{"type":"list"},"layout":{"inherit":false}} -->
+<!-- wp:group {"tagName":"main","layout":{"inherit":true}} -->
+<main class="wp-block-group"><!-- wp:spacer {"height":"2rem"} -->
+<div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:query {"queryId":23,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"displayLayout":{"type":"list"},"layout":{"inherit":false}} -->
 <div class="wp-block-query"><!-- wp:post-template -->
 <!-- wp:group -->
 <div class="wp-block-group"><!-- wp:group -->
@@ -18,12 +22,16 @@
 
 <!-- wp:group -->
 <div class="wp-block-group"><!-- wp:post-excerpt /--></div>
-<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:spacer {"height":"30px"} -->
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></div>
 <!-- /wp:group -->
 <!-- /wp:post-template -->
 
-<!-- wp:spacer -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":"3rem"} -->
+<div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:query-pagination {"paginationArrow":"arrow","layout":{"type":"flex","justifyContent":"space-between"}} -->
@@ -31,7 +39,11 @@
 
 <!-- wp:query-pagination-next /-->
 <!-- /wp:query-pagination --></div>
-<!-- /wp:query --></main>
+<!-- /wp:query -->
+
+<!-- wp:spacer {"height":"2rem"} -->
+<div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></main>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
