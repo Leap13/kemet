@@ -33,3 +33,6 @@ if ( is_admin() ) {
 require_once KEMET_THEME_DIR . 'functions/classes/plugins-manager/class-kemet-plugins-manager.php';
 require_once KEMET_THEME_DIR . 'inc/kemet-panel/class-kemet-panel.php';
 
+// Add Kemet block patterns
+require get_template_directory() . '/inc/block-patterns.php';
+
