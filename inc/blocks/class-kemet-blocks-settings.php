@@ -233,7 +233,7 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 		 */
 		public function script_enqueue() {
 			$current_screen = get_current_screen();
-			var_dump( $current_screen->id );
+
 			if ( 'site-editor' !== $current_screen->id && 'appearance_page_gutenberg-edit-site' !== $current_screen->id ) {
 				return;
 			}
