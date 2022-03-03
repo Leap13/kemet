@@ -14,7 +14,8 @@ if ( ! function_exists( 'kemet_register_block_patterns' ) ) :
  */
 function kemet_register_block_patterns() {
 	$block_pattern_categories = array(
-		'header' => array( 'label' => __( 'Headers', 'kemet' ) ),
+		'header' => array( 'label' => __( 'Header', 'kemet' ) ),
+		'footer' => array( 'label' => __( 'Footer', 'kemet' ) ),
 	);
 
 	
@@ -32,7 +33,8 @@ function kemet_register_block_patterns() {
 
 	$block_patterns = array(
 		'header-with-top-bar',
-
+		'header',
+		'footer'
 	);
 
 	/**
