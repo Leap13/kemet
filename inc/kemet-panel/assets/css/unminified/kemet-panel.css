@@ -82,29 +82,6 @@
   margin-bottom: 25px;
 }
 
-#kmt-dashboard .kmt-subscribe .success {
-  color: var(--e-context-success-color);
-}
-
-#kmt-dashboard .kmt-subscribe .subscribe-form {
-  display: flex;
-  align-items: center;
-}
-
-#kmt-dashboard .kmt-subscribe .subscribe-form button {
-  display: inline-flex;
-}
-
-#kmt-dashboard .kmt-subscribe .subscribe-form input {
-  border-radius: 0;
-  border-color: #cdcdcd;
-  padding: 4px;
-  margin: 0;
-  flex: 1;
-  box-shadow: none !important;
-  outline: none !important;
-}
-
 #kmt-dashboard .overlay-actions {
   position: absolute;
   width: 100%;
@@ -329,6 +306,7 @@
   letter-spacing: 0.3;
   text-transform: uppercase;
   color: #7e848c !important;
+  cursor: pointer;
 }
 
 #kmt-dashboard
