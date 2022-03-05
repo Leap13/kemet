@@ -163,6 +163,14 @@
 				  "spacing": {
 					  "margin": true
 				  }
+			  },
+			  "core/heading": {
+				"border": {
+					"color": true,
+					"radius": true,
+					"style": true,
+					"width": true
+				}
 			  }
 		}
 	  },

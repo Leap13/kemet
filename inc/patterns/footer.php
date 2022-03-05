@@ -1,6 +1,6 @@
 <?php
 /**
- * Default Header
+ * Default Footer
  */
 return array(
 	'title'      => __( 'Default Footer', 'kemet' ),
