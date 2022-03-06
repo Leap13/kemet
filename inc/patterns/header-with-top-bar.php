@@ -39,7 +39,9 @@ return array(
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","allowOrientation":false,"justifyContent":"right"}} -->
-<div class="wp-block-group"><!-- wp:navigation {"ref":657,"layout":{"type":"flex","justifyContent":"right"}} /--></div>
+<div class="wp-block-group"><!-- wp:navigation -->
+<!-- wp:page-list /-->
+<!-- /wp:navigation --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
