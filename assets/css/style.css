@@ -27,7 +27,13 @@ a:hover,
 }
 .wp-block-button__link:hover {
   background-color: var(--wp--preset--color--primary);
-  color: var(--wp--preset--color--foreground);
+}
+.wp-block-search__input {
+  background: transparent;
+}
+[type="reset"], [type="submit"]{
+  background-color: var(--wp--preset--color--quinary);
+  color: var(--wp--preset--color--background);
 }
 @media (max-width: 600px) {
 	.hide-on-mobile {

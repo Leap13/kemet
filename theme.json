@@ -63,7 +63,7 @@
 		  },
 		  {
 			"slug": "secondary",
-			"color": "#eaeaea",
+			"color": "#dedede",
 			"name": "Secondary"
 		  },
 		  {
@@ -261,7 +261,13 @@
 			  "border": {
 				"radius": "0"
 			  }
-			}
+			},
+			"core/search": {
+				"color": {
+				  "text": "var(--wp--preset--color--foreground)",
+				  "background": "var(--wp--preset--color--background)"
+				}
+			  }
 		  }
 	  }
 	  
