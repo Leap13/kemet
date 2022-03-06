@@ -36,7 +36,8 @@ function kemet_register_block_patterns() {
 		'header-with-top-bar',
 		'header',
 		'footer',
-		'sidebar'
+		'sidebar',
+		'404-content'
 	);
 
 	/**
