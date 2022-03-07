@@ -83,12 +83,17 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 		 * @return string
 		 */
 		public function edit_header_template( $block_content, $source_block ) {
+			$sticky_footer  = isset( $source_block['attrs']['enableStickyFooter'] ) ? $source_block['attrs']['enableStickyFooter'] : false;
 			$sticky_header  = isset( $source_block['attrs']['enableStickyHeader'] ) ? $source_block['attrs']['enableStickyHeader'] : false;
 			$overlay_header = isset( $source_block['attrs']['enableOverlayHeader'] ) ? $source_block['attrs']['enableOverlayHeader'] : false;
 			$classes        = array();
 			if ( $sticky_header ) {
 				$classes[]                                        = 'kmt-sticky-header';
 				self::$blocks_assets['js']['kemet-sticky-header'] = 'sticky-header';
+			}
+			if ( $sticky_footer ) {
+				$classes[]                                        = 'kmt-sticky-footer';
+				self::$blocks_assets['js']['kemet-sticky-footer'] = 'sticky-footer';
 			}
 			if ( $overlay_header ) {
 				$classes[] = 'kmt-overlay-header';
