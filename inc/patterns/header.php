@@ -7,8 +7,8 @@ return array(
 	'categories' => array( 'kemet', 'header' ),
 	'blockTypes' => array( 'core/template-part/header' ),
 	'content'    => '
-    <!-- wp:group {"tagName":"header","style":{"spacing":{"blockGap":"0px"}},"layout":{"inherit":true}} -->
-<header class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","allowOrientation":false,"justifyContent":"space-between"}} -->
+    <!-- wp:group {"tagName":"header","style":{"spacing":{"blockGap":"0px","padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}},"backgroundColor":"background","layout":{"inherit":true}} -->
+<header class="wp-block-group has-background-background-color has-background" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><!-- wp:group {"layout":{"type":"flex","allowOrientation":false,"justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","allowOrientation":false}} -->
 <div class="wp-block-group"><!-- wp:spacer -->
 <div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
