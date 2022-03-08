@@ -32,6 +32,7 @@ if ( is_admin() ) {
 // Required files.
 require_once KEMET_THEME_DIR . 'functions/classes/plugins-manager/class-kemet-plugins-manager.php';
 require_once KEMET_THEME_DIR . 'inc/kemet-panel/class-kemet-panel.php';
+require_once KEMET_THEME_DIR . 'inc/blocks-styles.php';
 
 // Add Kemet block patterns
 require get_template_directory() . '/inc/block-patterns.php';

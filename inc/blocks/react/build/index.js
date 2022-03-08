@@ -528,6 +528,10 @@ function addHeaderPartAttribute(settings, name) {
         enableOverlayHeader: {
           type: 'boolean',
           default: false
+        },
+        enableStickyFooter: {
+          type: 'boolean',
+          default: false
         }
       });
     }
@@ -587,6 +591,15 @@ var headerPartControls = wp.compose.createHigherOrderComponent(function (BlockEd
       checked: !!attributes.enableOverlayHeader,
       onChange: function onChange(newval) {
         return onChangeHandler('enableOverlayHeader', newval);
+      }
+    }))), isSelected && props.name == 'core/template-part' && templateType === 'footer' && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(InspectorControls, null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(PanelBody, {
+      title: __('Kemet Settings', 'kemet'),
+      initialOpen: true
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ToggleControl, {
+      label: __('Enable Sticky Footer', 'kemet'),
+      checked: !!attributes.enableStickyFooter,
+      onChange: function onChange(newval) {
+        return onChangeHandler('enableStickyFooter', newval);
       }
     }))));
   };

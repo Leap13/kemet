@@ -14,6 +14,10 @@ function addHeaderPartAttribute(settings, name) {
                     type: 'boolean',
                     default: false
                 },
+                enableStickyFooter: {
+                    type: 'boolean',
+                    default: false
+                },
             });
         }
     }
@@ -79,6 +83,20 @@ const headerPartControls = wp.compose.createHigherOrderComponent((BlockEdit) => 
                                 label={__('Enable Overlay Header', 'kemet')}
                                 checked={!!attributes.enableOverlayHeader}
                                 onChange={(newval) => onChangeHandler('enableOverlayHeader', newval)}
+                            />
+                        </PanelBody>
+                    </InspectorControls>
+                }
+                {isSelected && (props.name == 'core/template-part') && templateType === 'footer' &&
+                    <InspectorControls>
+                        <PanelBody
+                            title={__('Kemet Settings', 'kemet')}
+                            initialOpen={true}
+                        >
+                            <ToggleControl
+                                label={__('Enable Sticky Footer', 'kemet')}
+                                checked={!!attributes.enableStickyFooter}
+                                onChange={(newval) => onChangeHandler('enableStickyFooter', newval)}
                             />
                         </PanelBody>
                     </InspectorControls>

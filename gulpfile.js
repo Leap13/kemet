@@ -30,7 +30,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('uglify', function () {
-	return gulp.src('assets/js/*.js')
+	return gulp.src(['assets/js/*.js', '!./assets/js/*.min.js'])
 		.pipe(uglify())
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(gulp.dest('assets/js'));
