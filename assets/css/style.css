@@ -31,12 +31,41 @@ a:hover,
 .wp-block-search__input {
   background: transparent;
 }
-[type="reset"], [type="submit"]{
-  background-color: var(--wp--preset--color--quinary);
-  color: var(--wp--preset--color--background);
+input[type="button"],
+input[type="submit"],
+.wp-block-button__link,
+.wp-block-post-comments input[type="submit"],
+.wp-block-search__button {
+	background-color: var(--wp--preset--color--foreground);
+	color: #fff;
+	cursor: pointer;
+	font-family: var(--wp--preset--font-family--system-font);
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: var(--wp--preset--font-size--normal);
+  line-height: 1.6;
+	padding: 10px 25px;
+	text-decoration: none;
+	white-space: normal;
+	width: auto;
+}
+
+input[type="button"]:focus,
+input[type="button"]:hover,
+input[type="submit"]:focus,
+input[type="submit"]:hover,
+.wp-block-button__link:focus,
+.wp-block-button__link:hover,
+.wp-block-search__button:focus,
+.wp-block-search__button:hover {
+	background-color: var(--wp--preset--color--primary);
+	color: #fff;
 }
 @media (max-width: 600px) {
 	.hide-on-mobile {
 		display: none !important;
 	}
+}
+
+.kemet-right-left-loop > ul > li:nth-child(even) > div {
+  flex-direction:row-reverse;
 }

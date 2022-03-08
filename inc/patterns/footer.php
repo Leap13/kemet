@@ -53,8 +53,8 @@ return array(
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|background"}}}},"fontSize":"tiny"} -->
 <p class="has-link-color has-tiny-font-size">' .
 sprintf(
-    esc_html__( 'Copyright © 2022 | ', 'kemet'), 
-    '<a href="' . esc_url( __( 'https://kemet.io/', 'kemet' ) ) . '">Kemet</a>') . ' WordPress Theme</p>
+    esc_html__( 'Copyright © 2022 | ', 'kemet') .
+    '<a href="' . esc_url( __( 'https://kemet.io/', 'kemet' )) . '">Kemet</a>' . esc_html__( 'WordPress Theme', 'kemet' ) ) . '</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

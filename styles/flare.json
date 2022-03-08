@@ -66,13 +66,6 @@
                    "text": "var(--wp--preset--color--foreground)"
                }
            }
-        },
-        "blocks": {
-            "core/button": {
-                "color": {
-                    "background": "var(--wp--preset--color--primary)"
-                }
-            }
         }
     }
 }
