@@ -62,8 +62,6 @@ if ( ! class_exists( 'Kemet_Panel_Plugins_Data' ) ) {
 		 */
 		public static function get_plugins() {
 			$plugins = array(
-				'kemet-addons',
-				'kemet-sites',
 				'elementor',
 				'premium-addons-for-elementor',
 				'premium-blocks-for-gutenberg',

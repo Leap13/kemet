@@ -73,6 +73,7 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 			add_filter( 'pre_render_block', array( $this, 'edit_core_logo_block' ), 10, 2 );
 			add_filter( 'render_block_core/template-part', array( $this, 'edit_header_template' ), 10, 2 );
 			add_action( 'enqueue_block_assets', array( $this, 'block_assets' ), 99 );
+			add_filter( 'render_block_core/group', array( $this, 'edit_group' ), 10, 2 );
 		}
 
 		/**
@@ -100,6 +101,20 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 			}
 			if ( ! empty( $classes ) ) {
 				$block_content = '<div class="' . esc_attr( implode( ' ', $classes ) ) . '"> ' . $block_content . ' </div>';
+			}
+			return $block_content;
+		}
+
+		/**
+		 * Edit _header template
+		 *
+		 * @param  string $block_content content.
+		 * @param  array  $source_block block.
+		 * @return string
+		 */
+		public function edit_group( $block_content, $source_block ) {
+			if ( str_contains( $block_content, 'is-style-fit-to-screen' ) ) {
+				self::$blocks_assets['js']['fit-screen'] = 'fit-screen';
 			}
 			return $block_content;
 		}

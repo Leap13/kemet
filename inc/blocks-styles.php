@@ -15,8 +15,10 @@ function register_block_styles() {
 			'name'         => 'fit-to-screen',
 			'label'        => __( 'Fit to Screen', 'kemet' ),
 			'inline_style' => '
-			.is-style-fit-to-screen > * {
-				max-width: 100vw;
+			.is-style-fit-to-screen {
+				height: 100vh;
+				margin: 0 !important;
+				position: relative;
 			}',
 		),
 	);

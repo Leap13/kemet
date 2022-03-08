@@ -4599,7 +4599,7 @@ var Plugins = function Plugins() {
     className: "icon"
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(Dashicon, {
     icon: "admin-plugins"
-  })), Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Build Your Website With No Limits', 'kemet-addons')), Object.keys(plugins).length > 0 && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+  })), Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Build Your Website With No Limits', 'kemet')), Object.keys(plugins).length > 0 && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
     className: "kmt-plugins-list"
   }, recommendedPlugins.map(function (plugin) {
     return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_common_SinglePlugins__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -4641,7 +4641,7 @@ var System = function System() {
     className: "icon"
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(Dashicon, {
     icon: "edit"
-  })), Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Useful Information', 'kemet-addons')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+  })), Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Useful Information', 'kemet')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
     id: "system-info"
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("table", {
     className: "widefat",
@@ -4764,8 +4764,8 @@ var Support = function Support() {
 
               Alert.fire({
                 icon: 'error',
-                title: __('Invalid Email Address...', 'kemet-addons'),
-                text: __('Please enter a valid email address!', 'kemet-addons')
+                title: __('Invalid Email Address...', 'kemet'),
+                text: __('Please enter a valid email address!', 'kemet')
               });
               setIsLoading(false);
               return _context.abrupt("return");
@@ -4801,16 +4801,16 @@ var Support = function Support() {
               if (success && status) {
                 Alert.fire({
                   icon: 'success',
-                  title: __('Success', 'kemet-addons'),
-                  text: __('Thanks for your subscribe!', 'kemet-addons'),
+                  title: __('Success', 'kemet'),
+                  text: __('Thanks for your subscribe!', 'kemet'),
                   timer: 3000
                 });
                 setEmail('');
               } else {
                 Alert.fire({
                   icon: 'error',
-                  title: __('Invalid Email Address...', 'kemet-addons'),
-                  text: __('Please enter a valid email address!', 'kemet-addons')
+                  title: __('Invalid Email Address...', 'kemet'),
+                  text: __('Please enter a valid email address!', 'kemet')
                 });
               }
 
@@ -4851,7 +4851,7 @@ var Support = function Support() {
     className: "icon"
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])(Dashicon, {
     icon: "sos"
-  })), __('Have a Question?', 'kemet-addons')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_6__["__experimentalGrid"], {
+  })), __('Have a Question?', 'kemet')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_6__["__experimentalGrid"], {
     columns: 3,
     gap: 8,
     className: "kmt-support"

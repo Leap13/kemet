@@ -21,8 +21,8 @@ const Support = () => {
         if (!checkEmail(email)) {
             Alert.fire({
                 icon: 'error',
-                title: __('Invalid Email Address...', 'kemet-addons'),
-                text: __('Please enter a valid email address!', 'kemet-addons'),
+                title: __('Invalid Email Address...', 'kemet'),
+                text: __('Please enter a valid email address!', 'kemet'),
             })
             setIsLoading(false);
             return;
@@ -44,16 +44,16 @@ const Support = () => {
                 if (success && status) {
                     Alert.fire({
                         icon: 'success',
-                        title: __('Success', 'kemet-addons'),
-                        text: __('Thanks for your subscribe!', 'kemet-addons'),
+                        title: __('Success', 'kemet'),
+                        text: __('Thanks for your subscribe!', 'kemet'),
                         timer: 3000
                     })
                     setEmail('');
                 } else {
                     Alert.fire({
                         icon: 'error',
-                        title: __('Invalid Email Address...', 'kemet-addons'),
-                        text: __('Please enter a valid email address!', 'kemet-addons'),
+                        title: __('Invalid Email Address...', 'kemet'),
+                        text: __('Please enter a valid email address!', 'kemet'),
                     })
                 }
             }
@@ -69,7 +69,7 @@ const Support = () => {
 
     const loadingClass = isLoading ? ' loading' : '';
     return <Container>
-        <h2 className="kmt-section-title"><span className='icon'><Dashicon icon="sos" /></span>{__('Have a Question?', 'kemet-addons')}</h2>
+        <h2 className="kmt-section-title"><span className='icon'><Dashicon icon="sos" /></span>{__('Have a Question?', 'kemet')}</h2>
         <Grid columns={3} gap={8} className='kmt-support'>
             <Card>
                 <div className='kmt-card-title'>

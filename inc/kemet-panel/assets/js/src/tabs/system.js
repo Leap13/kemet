@@ -7,7 +7,7 @@ const System = () => {
     const { system_info } = KemetPanelData;
 
     return <Container>
-        <h2 className="kmt-section-title"><span className='icon'><Dashicon icon="edit" /></span>{__('Useful Information', 'kemet-addons')}</h2>
+        <h2 className="kmt-section-title"><span className='icon'><Dashicon icon="edit" /></span>{__('Useful Information', 'kemet')}</h2>
         <div id='system-info'>
             <table className="widefat" cellspacing="0">
                 <thead>

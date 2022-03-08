@@ -10,7 +10,7 @@ const Plugins = () => {
 
     return (
         <Container>
-            <h2 className="kmt-section-title"><span className='icon'><Dashicon icon="admin-plugins" /></span>{__('Build Your Website With No Limits', 'kemet-addons')}</h2>
+            <h2 className="kmt-section-title"><span className='icon'><Dashicon icon="admin-plugins" /></span>{__('Build Your Website With No Limits', 'kemet')}</h2>
             {Object.keys(plugins).length > 0 && (
                 <Fragment>
                     <div className="kmt-plugins-list">
