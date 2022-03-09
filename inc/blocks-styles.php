@@ -20,7 +20,7 @@ function register_block_styles() {
 				margin: 0 !important;
 				position: relative;
 			}',
-		),
+		)
 	);
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/group',
@@ -31,7 +31,33 @@ function register_block_styles() {
 			.is-style-full-height {
 				height: 100vh;
 			}',
-		),
+		)
+	);
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/button',
+		array(
+			'name'         => 'kmt-rounded',
+			'label'        => __( 'Rounded', 'kemet' ),
+			'inline_style' => '
+			.is-style-kmt-rounded .wp-block-button__link{
+				border-radius: 9999px;
+			}
+			.block-editor-block-list__block.is-style-kmt-rounded .wp-block-button__link{
+				border-radius: 9999px !important;
+			}
+			',
+		)
+	);
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/button',
+		array(
+			'name'         => 'kmt-has-shadow',
+			'label'        => __( 'With Shadow', 'kemet' ),
+			'inline_style' => '
+			.is-style-kmt-has-shadow .wp-block-button__link{
+				box-shadow: 0px 2px 4px rgb(45 35 66 / 10%), 0px 7px 13px -3px rgb(45 35 66 / 30%);
+			}',
+		)
 	);
 }
 add_action( 'init', 'register_block_styles' );
