@@ -106,7 +106,7 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 		}
 
 		/**
-		 * Edit _header template
+		 * Edit group
 		 *
 		 * @param  string $block_content content.
 		 * @param  array  $source_block block.
