@@ -25,6 +25,19 @@ function register_block_styles() {
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/group',
 		array(
+			'name'         => 'kmt-sticky',
+			'label'        => __( 'Sticky', 'kemet' ),
+			'inline_style' => '
+			.is-style-kmt-sticky {
+				position: sticky;
+				top: 0px;
+				height: 100vh;
+			}',
+		)
+	);
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/group',
+		array(
 			'name'         => 'full-height',
 			'label'        => __( 'Full Height', 'kemet' ),
 			'inline_style' => '
@@ -55,7 +68,7 @@ function register_block_styles() {
 			'label'        => __( 'With Shadow', 'kemet' ),
 			'inline_style' => '
 			.is-style-kmt-has-shadow .wp-block-button__link{
-				box-shadow: 0px 2px 4px rgb(45 35 66 / 10%), 0px 7px 13px -3px rgb(45 35 66 / 30%);
+				box-shadow: 0px 15px 25px 0px rgb(0 0 0 / 25%);
 			}',
 		)
 	);
