@@ -1,7 +1,7 @@
 import './Blocks/logo'
 import './Blocks/separator'
 import './Blocks/template-parts'
-
+import './EditorSidebar';
 // Test
 // import { compose } from '@wordpress/compose'
 // import { withSelect, withDispatch } from '@wordpress/data'
