@@ -637,6 +637,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _wordpress_block_library__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @wordpress/block-library */ "@wordpress/block-library");
+/* harmony import */ var _wordpress_block_library__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_library__WEBPACK_IMPORTED_MODULE_10__);
 
 
 /**
@@ -652,10 +654,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 var MyPluginSidebar = function MyPluginSidebar() {
   var _useDispatch = Object(_wordpress_data__WEBPACK_IMPORTED_MODULE_2__["useDispatch"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__["store"]),
       removeBlocks = _useDispatch.removeBlocks,
-      insertBlocks = _useDispatch.insertBlocks;
+      insertBlocks = _useDispatch.insertBlocks,
+      replaceBlocks = _useDispatch.replaceBlocks;
 
   var _useSelect = Object(_wordpress_data__WEBPACK_IMPORTED_MODULE_2__["useSelect"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__["store"]),
       getSelectedBlockClientIds = _useSelect.getSelectedBlockClientIds,
@@ -666,29 +671,17 @@ var MyPluginSidebar = function MyPluginSidebar() {
   var allBlockClientIds = allBlocks.map(function (block) {
     return block.clientId;
   });
-  var registry = Object(_wordpress_data__WEBPACK_IMPORTED_MODULE_2__["useRegistry"])();
-
-  var _registry$dispatch = registry.dispatch(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__["store"]),
-      resetBlocks = _registry$dispatch.resetBlocks,
-      resetSelection = _registry$dispatch.resetSelection,
-      replaceInnerBlocks = _registry$dispatch.replaceInnerBlocks,
-      setHasControlledInnerBlocks = _registry$dispatch.setHasControlledInnerBlocks,
-      __unstableMarkNextChangeAsNotPersistent = _registry$dispatch.__unstableMarkNextChangeAsNotPersistent;
-
-  var _registry$select = registry.select(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__["store"]),
-      getBlockName = _registry$select.getBlockName;
-
-  var test2 = Object(_wordpress_data__WEBPACK_IMPORTED_MODULE_2__["useSelect"])(function (select) {
-    return select('core/block-editor');
-  }); // console.log(allBlocks);
-
-  console.log(registry.select(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__["store"]).getBlocks());
-  var test3 = Object(_wordpress_data__WEBPACK_IMPORTED_MODULE_2__["useSelect"])(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_9__["store"]).getBlockTypes()[0];
+  var gbCodeBlockHtml = '<!-- wp:pattern {"slug":"kemet/footer"} /-->';
+  var codeBlockInstance = Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_9__["parse"])(gbCodeBlockHtml);
+  var nallBlockClientIds = codeBlockInstance.map(function (block) {
+    return block.clientId;
+  });
+  console.log(Object(_wordpress_data__WEBPACK_IMPORTED_MODULE_2__["useDispatch"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__["store"]));
 
   var test = function test() {
     if (allBlockClientIds.length) {
       // removeBlocks(allBlockClientIds);
-      insertBlocks([test3]);
+      replaceBlocks(allBlockClientIds, codeBlockInstance, codeBlockInstance.length - 1);
     }
   };
 
@@ -939,6 +932,17 @@ function getInlineStyles() {
 /***/ (function(module, exports) {
 
 (function() { module.exports = window["wp"]["blockEditor"]; }());
+
+/***/ }),
+
+/***/ "@wordpress/block-library":
+/*!**************************************!*\
+  !*** external ["wp","blockLibrary"] ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+(function() { module.exports = window["wp"]["blockLibrary"]; }());
 
 /***/ }),
 

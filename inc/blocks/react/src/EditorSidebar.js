@@ -14,9 +14,11 @@ import { Fragment } from 'react';
 import {
     store as blocksStore,
 } from '@wordpress/blocks';
+import { __experimentalGetCoreBlocks } from '@wordpress/block-library';
+import { parse } from '@wordpress/blocks';
 
 const MyPluginSidebar = () => {
-    const { removeBlocks, insertBlocks } = useDispatch(blockEditorStore);
+    const { removeBlocks, insertBlocks, replaceBlocks } = useDispatch(blockEditorStore);
     const { getSelectedBlockClientIds, getBlockRootClientId, getBlocks } = useSelect(
         blockEditorStore
     );
@@ -24,26 +26,19 @@ const MyPluginSidebar = () => {
     const allBlockClientIds = allBlocks.map(
         (block) => block.clientId
     );
-    const registry = useRegistry();
-    const {
-        resetBlocks,
-        resetSelection,
-        replaceInnerBlocks,
-        setHasControlledInnerBlocks,
-        __unstableMarkNextChangeAsNotPersistent,
-    } = registry.dispatch(blockEditorStore);
-    const { getBlockName } = registry.select(blockEditorStore);
-    const test2 = useSelect((select) => select('core/block-editor'));
-    // console.log(allBlocks);
-    console.log(registry.select(blockEditorStore).getBlocks());
-    const test3 = useSelect(
-        blocksStore
-    ).getBlockTypes()[0];
+
+    const gbCodeBlockHtml = '<!-- wp:pattern {"slug":"kemet/footer"} /-->';
+    const codeBlockInstance = parse(gbCodeBlockHtml);
+    const nallBlockClientIds = codeBlockInstance.map(
+        (block) => block.clientId
+    );
+    console.log(useDispatch(blockEditorStore));
+
     const test = () => {
         if (allBlockClientIds.length) {
 
             // removeBlocks(allBlockClientIds);
-            insertBlocks([test3]);
+            replaceBlocks(allBlockClientIds, codeBlockInstance, codeBlockInstance.length - 1);
         }
     }
 
