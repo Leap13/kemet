@@ -29,15 +29,15 @@ return array(
 
 <!-- wp:group {"layout":{"type":"flex","allowOrientation":false,"justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"quinary"} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-quinary-background-color has-background">Click Here</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"tertiary"} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-tertiary-background-color has-background">Click Here</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></header>
 <!-- /wp:group -->
 
-<!-- wp:separator {"color":"secondary","className":"is-style-wide"} -->
-<hr class="wp-block-separator has-text-color has-background has-secondary-background-color has-secondary-color is-style-wide"/>
+<!-- wp:separator {"color":"#dedede","className":"is-style-wide"} -->
+<hr class="wp-block-separator has-text-color has-background is-style-wide"/>
 <!-- /wp:separator -->',
 );

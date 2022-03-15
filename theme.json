@@ -63,24 +63,14 @@
 		  },
 		  {
 			"slug": "secondary",
-			"color": "#dedede",
+			"color": "#fcfcfc",
 			"name": "Secondary"
 		  },
 		  {
 			"slug": "tertiary",
-			"color": "#244c60",
+			"color": "#023047",
 			"name": "Tertiary"
-		  },
-		  {
-			"slug": "quinary",
-			"color": "#022538",
-			"name": "Quinary"
-			},
-			{
-			"slug": "senary",
-			"color": "#fcfcfc",
-			"name": "Senary"
-			}
+		}
 		]
 	  },
 	  "spacing": {

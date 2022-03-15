@@ -44,7 +44,7 @@ return array(
 	<p>Vestibulum ante ipsum primis in faucibus orci luctus et.</p>
 	<!-- /wp:paragraph -->
 	
-	<!-- wp:social-links {"iconColor":"background","iconColorValue":"#ffffff","iconBackgroundColor":"quinary","iconBackgroundColorValue":"#022538","className":"is-style-default"} -->
+	<!-- wp:social-links {"iconColor":"background","iconColorValue":"#ffffff","iconBackgroundColor":"tertiary","iconBackgroundColorValue":"#022538","className":"is-style-default"} -->
 	<ul class="wp-block-social-links has-icon-color has-icon-background-color is-style-default"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
 	
 	<!-- wp:social-link {"url":"#","service":"twitter"} /-->

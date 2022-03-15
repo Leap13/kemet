@@ -7,11 +7,11 @@ return array(
 	'categories' => array( 'kemet', 'footer' ),
 	'blockTypes' => array( 'core/template-part/footer' ),
 	'content'    => '
-    <!-- wp:group {"style":{"spacing":{"blockGap":"0px","padding":{"bottom":"0px"}}},"backgroundColor":"quinary","textColor":"senary","layout":{"inherit":true}} -->
-<div class="wp-block-group has-senary-color has-quinary-background-color has-text-color has-background" style="padding-bottom:0px"><!-- wp:columns {"style":{"spacing":{"padding":{"bottom":"10px"}}}} -->
+    <!-- wp:group {"style":{"spacing":{"blockGap":"0px","padding":{"bottom":"0px"}}},"backgroundColor":"tertiary","textColor":"secondary","layout":{"inherit":true}} -->
+<div class="wp-block-group has-secondary-color has-tertiary-background-color has-text-color has-background" style="padding-bottom:0px"><!-- wp:columns {"style":{"spacing":{"padding":{"bottom":"10px"}}}} -->
 <div class="wp-block-columns" style="padding-bottom:10px"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading {"level":4,"textColor":"senary"} -->
-<h4 class="has-senary-color has-text-color" id="about-us">' . esc_html__( 'About Us', 'kemet' ) . '</h4>
+<div class="wp-block-column"><!-- wp:heading {"level":4,"textColor":"secondary"} -->
+<h4 class="has-secondary-color has-text-color" id="about-us">' . esc_html__( 'About Us', 'kemet' ) . '</h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -24,8 +24,8 @@ return array(
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading {"level":4,"textColor":"senary"} -->
-<h4 class="has-senary-color has-text-color" id="join-the-community">' . esc_html__( 'Join The Community', 'kemet' ) . '</h4>
+<div class="wp-block-column"><!-- wp:heading {"level":4,"textColor":"secondary"} -->
+<h4 class="has-secondary-color has-text-color" id="join-the-community">' . esc_html__( 'Join The Community', 'kemet' ) . '</h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
