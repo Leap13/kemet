@@ -56,7 +56,7 @@ function register_block_styles() {
 				border-radius: 9999px;
 			}
 			.block-editor-block-list__block.is-style-kmt-rounded .wp-block-button__link{
-				border-radius: 9999px !important;
+				border-radius: 9999px;
 			}
 			',
 		)
