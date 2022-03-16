@@ -30,14 +30,14 @@ return array(
 <!-- wp:group {"layout":{"type":"flex","allowOrientation":false,"justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"tertiary"} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-tertiary-background-color has-background">Click Here</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link has-secondary-color has-tertiary-background-color has-text-color has-background">' . esc_html__('Click Here', 'kemet') . '</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></header>
 <!-- /wp:group -->
 
-<!-- wp:separator {"color":"#dedede","className":"is-style-wide"} -->
-<hr class="wp-block-separator has-text-color has-background is-style-wide"/>
+<!-- wp:separator {"color":"cyan-bluish-gray","className":"is-style-wide eplus-wrapper"} -->
+<hr class="wp-block-separator has-text-color has-background has-cyan-bluish-gray-background-color has-cyan-bluish-gray-color is-style-wide eplus-wrapper"/>
 <!-- /wp:separator -->',
 );

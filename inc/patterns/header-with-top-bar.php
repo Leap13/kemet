@@ -47,8 +47,8 @@ return array(
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"border":{"radius":"0px"},"spacing":{"blockGap":"0px"}}} -->
-<div class="wp-block-group" style="border-radius:0px"><!-- wp:separator {"color":"#dedede","className":"is-style-wide"} -->
-<hr class="wp-block-separator has-text-color has-background is-style-wide"/>
+<div class="wp-block-group" style="border-radius:0px"><!-- wp:separator {"color":"cyan-bluish-gray","className":"is-style-wide eplus-wrapper"} -->
+<hr class="wp-block-separator has-text-color has-background has-cyan-bluish-gray-background-color has-cyan-bluish-gray-color is-style-wide eplus-wrapper"/>
 <!-- /wp:separator --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->',

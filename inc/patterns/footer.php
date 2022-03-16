@@ -50,7 +50,7 @@ return array(
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"15px","bottom":"15px"},"blockGap":"0px"}},"layout":{"type":"flex","allowOrientation":false,"justifyContent":"space-between"}} -->
 <div class="wp-block-group" style="padding-top:15px;padding-bottom:15px"><!-- wp:group {"layout":{"type":"flex","allowOrientation":false}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|background"}}}},"fontSize":"tiny"} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|secondary"}}}},"fontSize":"tiny"} -->
 <p class="has-link-color has-tiny-font-size">' .
 sprintf(
     esc_html__( 'Copyright © 2022 | ', 'kemet') .
@@ -60,7 +60,7 @@ sprintf(
 
 <!-- wp:group {"layout":{"type":"flex","allowOrientation":false}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"align":"right","fontSize":"tiny"} -->
-<p class="has-text-align-right has-tiny-font-size">' . esc_html__('Block WordPress Theme', 'kemet') . '</p>
+<p class="has-text-align-right has-tiny-font-size">' . esc_html__('Kemet WordPress Block Theme', 'kemet') . '</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>

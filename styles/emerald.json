@@ -30,32 +30,5 @@
                 }
             ]
         }
-    },
-    "styles": {
-        "color": {
-            "text": "var(--wp--preset--color--secondary)"
-        },
-        "elements": {
-            "h1": {
-                "color": {
-                    "text": "var(--wp--preset--color--foreground)"
-                }
-             },
-           "h2": {
-                "color": {
-                    "text": "var(--wp--preset--color--foreground)"
-                }
-           },
-           "h3": {
-                "color": {
-                    "text": "var(--wp--preset--color--foreground)"
-                }
-           },
-           "link": {
-               "color": {
-                   "text": "var(--wp--preset--color--foreground)"
-               }
-           }
-        }
     }
 }
