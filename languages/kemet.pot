@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kemet 1.1.17\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/kemet\n"
-"POT-Creation-Date: 2022-02-08 17:38+0200\n"
+"POT-Creation-Date: 2022-03-16 10:51+0200\n"
 "PO-Revision-Date: 2021-10-10 16:57+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -23,221 +23,260 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #: functions/classes/class-kemet-admin-settings.php:84
-#: inc/kemet-panel/class-kemet-panel.php:85
+#: inc/kemet-panel/class-kemet-panel.php:119
 msgid "Settings"
 msgstr ""
 
 #: functions/classes/class-kemet-admin-settings.php:84
-#: inc/kemet-panel/class-kemet-panel.php:70
-#: inc/kemet-panel/class-kemet-panel.php:73
+#: inc/kemet-panel/class-kemet-panel.php:104
+#: inc/kemet-panel/class-kemet-panel.php:107
 msgid "Kemet"
 msgstr ""
 
-#: inc/blocks/react/build/index.js:179 inc/blocks/react/src/Blocks/logo.js:50
+#: inc/block-patterns.php:17
+msgid "Header"
+msgstr ""
+
+#: inc/block-patterns.php:18
+msgid "Footer"
+msgstr ""
+
+#: inc/block-patterns.php:19
+msgid "Sidebar"
+msgstr ""
+
+#: inc/blocks-styles.php:16
+msgid "Fit to Screen"
+msgstr ""
+
+#: inc/blocks-styles.php:29
+msgid "Sticky"
+msgstr ""
+
+#: inc/blocks-styles.php:42
+msgid "Full Height"
+msgstr ""
+
+#: inc/blocks-styles.php:53
+msgid "Rounded"
+msgstr ""
+
+#: inc/blocks-styles.php:68
+msgid "With Shadow"
+msgstr ""
+
+#: inc/blocks-styles.php:79
+msgid "Mask Flower"
+msgstr ""
+
+#: inc/blocks-styles.php:94
+msgid "Mask Sketch"
+msgstr ""
+
+#: inc/blocks-styles.php:109
+msgid "Mask Blob"
+msgstr ""
+
+#: inc/blocks-styles.php:124
+msgid "Shadow"
+msgstr ""
+
+#: inc/blocks/react/build/index.js:316
 msgid "Mobile logo"
 msgstr ""
 
-#: inc/blocks/react/build/index.js:192 inc/blocks/react/src/Blocks/logo.js:64
+#: inc/blocks/react/build/index.js:329
 msgid "Choose an logo"
 msgstr ""
 
-#: inc/blocks/react/build/index.js:203 inc/blocks/react/src/Blocks/logo.js:79
+#: inc/blocks/react/build/index.js:340
 msgid "Remove logo"
 msgstr ""
 
-#: inc/blocks/react/build/index.js:263
-#: inc/blocks/react/src/Blocks/template-parts.js:44
+#: inc/blocks/react/build/index.js:437
+msgid "Dimensions"
+msgstr ""
+
+#: inc/blocks/react/build/index.js:443 inc/blocks/react/build/index.js:448
+msgid "Padding"
+msgstr ""
+
+#: inc/blocks/react/build/index.js:457 inc/blocks/react/build/index.js:462
+msgid "Margin"
+msgstr ""
+
+#: inc/blocks/react/build/index.js:581 inc/blocks/react/build/index.js:596
 msgid "Kemet Settings"
 msgstr ""
 
-#: inc/blocks/react/build/index.js:266
-#: inc/blocks/react/src/Blocks/template-parts.js:48
+#: inc/blocks/react/build/index.js:584
 msgid "Enable Sticky Header"
 msgstr ""
 
-#: inc/blocks/react/build/index.js:272
-#: inc/blocks/react/src/Blocks/template-parts.js:53
+#: inc/blocks/react/build/index.js:590
 msgid "Enable Overlay Header"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:451
-#: inc/kemet-panel/assets/js/build/index.js:792
-#: inc/kemet-panel/assets/js/src/index.js:28
-#: inc/kemet-panel/assets/js/src/tabs/welcome.js:8
+#: inc/blocks/react/build/index.js:599
+msgid "Enable Sticky Footer"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4254
 msgid "Welcome"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:460
-#: inc/kemet-panel/assets/js/src/index.js:38
-msgid "Support"
+#: inc/kemet-panel/assets/js/build/index.js:4263
+msgid "Recommended Plugins"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:469
-#: inc/kemet-panel/assets/js/src/index.js:48
+#: inc/kemet-panel/assets/js/build/index.js:4272
 msgid "System Info"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:547
-#: inc/kemet-panel/assets/js/src/layout/Header.js:9
+#: inc/kemet-panel/assets/js/build/index.js:4352
 msgid "Theme Documentation"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:612
-#: inc/kemet-panel/assets/js/src/tabs/support.js:11
+#: inc/kemet-panel/assets/js/build/index.js:4767
+#: inc/kemet-panel/assets/js/build/index.js:4812
+msgid "Invalid Email Address..."
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4768
+#: inc/kemet-panel/assets/js/build/index.js:4813
+msgid "Please enter a valid email address!"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4804
+msgid "Success"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4805
+msgid "Thanks for your subscribe!"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4854
 msgid "Have a Question?"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:629
-#: inc/kemet-panel/assets/js/src/tabs/support.js:31
+#: inc/kemet-panel/assets/js/build/index.js:4871
 msgid "Knowledge Base"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:631
-#: inc/kemet-panel/assets/js/src/tabs/support.js:34
+#: inc/kemet-panel/assets/js/build/index.js:4873
 msgid ""
 "Kemet Theme documentation library will guide you to build your next Kemet "
 "website easily without any need to touch a single line of code."
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:637
-#: inc/kemet-panel/assets/js/src/tabs/support.js:37
+#: inc/kemet-panel/assets/js/build/index.js:4879
 msgid "Documentation"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:653
-#: inc/kemet-panel/assets/js/src/tabs/support.js:71
+#: inc/kemet-panel/assets/js/build/index.js:4895
 msgid "Need Help?"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:655
-#: inc/kemet-panel/assets/js/src/tabs/support.js:74
+#: inc/kemet-panel/assets/js/build/index.js:4897
 msgid ""
 "Have a question? Kemet support team is here to help you by answering your "
 "questions and handling your issues within 24-48 hours."
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:661
-#: inc/kemet-panel/assets/js/src/tabs/support.js:77
+#: inc/kemet-panel/assets/js/build/index.js:4903
 msgid "Submit a Ticket"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:675
-#: inc/kemet-panel/assets/js/src/tabs/support.js:103
+#: inc/kemet-panel/assets/js/build/index.js:4917
 msgid "Follow us"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:677
-#: inc/kemet-panel/assets/js/src/tabs/support.js:106
+#: inc/kemet-panel/assets/js/build/index.js:4919
 msgid ""
 "Come and join our Facebook group! Share your thoughts, opinions, "
 "suggestions, and help others. You will always be more than welcome!"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:683
-#: inc/kemet-panel/assets/js/src/tabs/support.js:109
+#: inc/kemet-panel/assets/js/build/index.js:4925
 msgid "Facebook Group"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/src/tabs/system.js:10
-msgid "Useful Information"
+#: inc/kemet-panel/assets/js/build/index.js:4937
+msgid "Subscribe to Our Newsletter"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/src/tabs/system.js:15
-msgid "WordPress Environment"
+#: inc/kemet-panel/assets/js/build/index.js:4939
+msgid ""
+"Enter your email address and be the first to know the latest features, "
+"offers, and updates."
 msgstr ""
 
-#: inc/kemet-panel/assets/js/src/tabs/system.js:20
-msgid "Home URL"
+#: inc/kemet-panel/assets/js/build/index.js:4954
+msgid "Submit"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/src/tabs/system.js:24
-msgid "Site URL"
+#: inc/patterns/404-content.php:6
+msgid "404 content"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/src/tabs/system.js:28
-msgid "WP Version"
+#: inc/patterns/404-content.php:10
+msgid "Oops! This page can't be found."
 msgstr ""
 
-#: inc/kemet-panel/assets/js/src/tabs/system.js:32
-msgid "WP Multisite"
+#: inc/patterns/404-content.php:15
+msgid ""
+"The page you are looking for does not exist or may have been moved/renamed. "
+"Please try a search."
 msgstr ""
 
-#: inc/kemet-panel/assets/js/src/tabs/system.js:36
-msgid "WP Memory Limit"
+#: inc/patterns/footer.php:6
+msgid "Default Footer"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/src/tabs/system.js:37
-msgid "We recommend setting wp memory at least 64MB."
+#: inc/patterns/footer.php:14
+msgid "About Us"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/src/tabs/system.js:40
-msgid "Theme Version"
+#: inc/patterns/footer.php:18
+msgid ""
+"Leap13 is a 5 Stars rated WordPress-focused web development firm "
+"specialized in building Premium WordPress Themes and Plugins."
 msgstr ""
 
-#: inc/kemet-panel/assets/js/src/tabs/system.js:44
-msgid "WP Path"
+#: inc/patterns/footer.php:28
+msgid "Join The Community"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/src/tabs/system.js:48
-msgid "WP Debug Mode"
+#: inc/patterns/footer.php:32
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua."
 msgstr ""
 
-#: inc/kemet-panel/assets/js/src/tabs/system.js:52
-msgid "Language"
+#: inc/patterns/footer.php:56
+msgid "Copyright © 2022 | "
 msgstr ""
 
-#: inc/kemet-panel/assets/js/src/tabs/system.js:60
-msgid "Server Environment"
+#: inc/patterns/footer.php:57
+msgid "https://kemet.io/"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/src/tabs/system.js:65
-msgid "Server Info"
+#: inc/patterns/footer.php:57
+msgid " WordPress Theme"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/src/tabs/system.js:69
-msgid "PHP Version"
+#: inc/patterns/footer.php:63
+msgid "Kemet WordPress Block Theme"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/src/tabs/system.js:70
-msgid "Couldn't determine PHP version because phpversion() doesn't exist."
+#: inc/patterns/header-with-top-bar.php:6
+msgid "Header with top bar"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/src/tabs/system.js:74
-msgid "PHP Memory Limit"
+#: inc/patterns/header.php:6 inc/patterns/sidebar.php:6
+msgid "Default Header"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/src/tabs/system.js:78
-msgid "PHP Post Max Size"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/src/tabs/system.js:82
-msgid "PHP Time Limit"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/src/tabs/system.js:83
-msgid "We recommend setting max execution time at least 60."
-msgstr ""
-
-#: inc/kemet-panel/assets/js/src/tabs/system.js:86
-msgid "PHP Max Input Vars"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/src/tabs/system.js:90
-msgid "SUHOSIN Installed"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/src/tabs/system.js:94
-msgid "MySQL Version"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/src/tabs/system.js:103
-msgid "Active Plugins"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/src/tabs/system.js:110
-msgid "Visit plugin homepage"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/src/tabs/system.js:111
-msgid "by"
+#: inc/patterns/header.php:33
+msgid "Click Here"
 msgstr ""
