@@ -272,13 +272,14 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 				KEMET_THEME_VERSION,
 				true
 			);
-
+			wp_enqueue_style( 'kemet-blocks-settings', KEMET_THEME_URI . 'inc/blocks/react/build/index.css', array(), KEMET_THEME_VERSION );
 			wp_localize_script(
 				'kemet-blocks-settings',
 				'KemetBlocksSettingsData',
 				array(
 					'ajax_url' => admin_url( 'admin-ajax.php' ),
 					'nonce'    => wp_create_nonce( 'kemet-block-settings' ),
+					'themeUrl' => KEMET_THEME_URI,
 				)
 			);
 		}

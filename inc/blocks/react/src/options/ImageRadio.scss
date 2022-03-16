@@ -1,0 +1,30 @@
+.kmt-image-radio-control {
+  label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    line-height: 1.75;
+    margin-bottom: 4px;
+    color: #50575e;
+  }
+  .kmt-control-content {
+    .kmt-radio-option {
+      width: 100%;
+      cursor: pointer;
+      img {
+        max-width: 100%;
+        border: 1px solid #f1f1f1;
+        background-color: #ccc;
+      }
+      &.active {
+        img {
+          border: 1px solid #0085ba;
+          background-color: #0085ba;
+          -webkit-box-shadow: 0 0 3px 1px rgba(195, 195, 195, 0.5);
+          box-shadow: 0 0 3px 1px rgba(195, 195, 195, 0.5);
+        }
+      }
+    }
+  }
+}
