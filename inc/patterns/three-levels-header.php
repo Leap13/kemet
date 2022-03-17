@@ -49,9 +49,13 @@ return array(
 <div class="wp-block-group has-background" style="background-color:#2b2b2b05;padding-right:0px;padding-left:0px"><!-- wp:group {"layout":{"inherit":true}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"layout":{"type":"flex","allowOrientation":false,"justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","allowOrientation":false}} -->
-<div class="wp-block-group"><!-- wp:navigation {"ref":96,"overlayMenu":"always"} /-->
+<div class="wp-block-group"><!-- wp:navigation {"overlayMenu":"always"} /-->
+<!-- wp:page-list /-->
+<!-- /wp:navigation -->
 
-<!-- wp:navigation {"ref":96} /--></div>
+<!-- wp:navigation -->
+<!-- wp:page-list /-->
+<!-- /wp:navigation --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","allowOrientation":false,"justifyContent":"space-between"}} -->

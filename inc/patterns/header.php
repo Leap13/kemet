@@ -29,7 +29,7 @@ return array(
 
 <!-- wp:group {"layout":{"type":"flex","allowOrientation":false,"justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"tertiary","className":"hide-on-mobile"} -->
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"tertiary","textColor":"secondary"} -->
 <div class="wp-block-button"><a class="wp-block-button__link has-secondary-color has-tertiary-background-color has-text-color has-background">' . esc_html__('Click Here', 'kemet') . '</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
