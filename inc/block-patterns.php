@@ -35,10 +35,12 @@ function kemet_register_block_patterns() {
 	$block_patterns = array(
 		'header-with-top-bar',
 		'header',
+		'threelevelsheader',
 		'footer',
 		'sidebar',
 		'404-content'
 	);
+
 
 	/**
 	 * Filters the theme block patterns.

@@ -77,6 +77,10 @@ input[type="submit"]:hover,
   z-index: 1;
   background-color: var(--wp--preset--color--background);
 }
+
+.wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {
+  border-color: #ddd !important;
+}
 @media (max-width: 600px) {
   .hide-on-mobile {
     display: none !important;
