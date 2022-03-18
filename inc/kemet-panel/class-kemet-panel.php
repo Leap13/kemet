@@ -143,7 +143,6 @@ if ( ! class_exists( 'Kemet_Panel' ) ) {
 
 			$info = array(
 				'home_url'          => home_url(),
-				'site_url'          => get_option( 'siteurl' ),
 				'version'           => get_bloginfo( 'version' ),
 				'multisite'         => is_multisite(),
 				'memory_limit'      => wp_convert_hr_to_bytes( WP_MEMORY_LIMIT ),

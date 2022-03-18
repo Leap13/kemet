@@ -21,10 +21,6 @@ const System = () => {
                         <td>{system_info.home_url}</td>
                     </tr>
                     <tr>
-                        <td>{__('Site URL', 'kemet')}</td>
-                        <td>{system_info.site_url}</td>
-                    </tr>
-                    <tr>
                         <td>{__('WP Version', 'kemet')}</td>
                         <td>{system_info.version}</td>
                     </tr>
