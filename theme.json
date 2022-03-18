@@ -31,6 +31,12 @@
 		"slug": "header-with-top-bar"
 	  },
 	  {
+		"area": "header",
+		"name": "three-levels-header",
+		"title": "Three Levels Header",
+		"slug": "three-levels-header"
+	  },
+	  {
 		"area": "footer",
 		"name": "footer",
 		"title": "Footer"
