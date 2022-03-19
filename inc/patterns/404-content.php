@@ -5,7 +5,7 @@
 return array(
 	'title'    => __( '404 content', 'kemet' ),
 	'inserter' => false,
-	'content'  => '<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"4rem","bottom":"6rem"}}},"layout":{"inherit":true}} -->
+	'content'  => '<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"5rem","bottom":"7rem"}}},"layout":{"inherit":true}} -->
 	<main class="wp-block-group" style="padding-top:4rem;padding-bottom:6rem"><!-- wp:heading {"textAlign":"center","align":"wide"} -->
 	<h2 class="alignwide has-text-align-center" id="oops-this-page-can-t-be-found-1">' . esc_html__( "Oops! This page can't be found.", "kemet" ) . '</h2>
 	<!-- /wp:heading -->

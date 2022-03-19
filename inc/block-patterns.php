@@ -37,7 +37,8 @@ function kemet_register_block_patterns() {
 		'header',
 		'footer',
 		'sidebar',
-		'404-content'
+		'404-content',
+		'kemet-left-right-loop'
 	);
 
 
