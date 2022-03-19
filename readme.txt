@@ -15,21 +15,18 @@ Kemet is a Fast, Reliable, and World-Class Full Site Editing WordPress Block The
 
 = 1.2.0 =
 
+* New: Support WordPress Full Site Editing
+* New: Blank Canvas, Post With Left Sidebar, Post With Right Sidebar and Search template layouts.
+* New: Default Header, Header with Top Bar, Three Levels Header, Sidebar and Left/Right Blog template parts.
+* New: Responsive Logo option.
+* New: Three Global Color Palletes.
+* New: Styles for Group, Button, Image Blocks.
+* New: Sticky Option for Header & Footer template parts.
+* Tweak: Translation Ready
+* Tweak: Compatibility With Gutenberg 12.8.0
 * Deprecated: Customizer Options
 * Deprecated: Support Sidebars & Widgets.
 * Deprecated: Menu Areas
-* Added: Support WordPress Full Site Editing
-* Added: Blank Canvas, Post With Left Sidebar, Post With Right Sidebar and Search template layouts.
-* Added: Default Header, Header with Top Bar, Three Levels Header, Sidebar and Left/Right Blog template parts.
-* Added: Responsive Logo option.
-* Added: Three Global Color Palletes.
-* Added: Styles for Group, Button, Image Blocks.
-* Added: Sticky Option for Header & Footer template parts.
-* Tweak: Translation Ready
-* Tweak: Compatibility With Gutenberg 12.8.0
-
-
-
 
 
 

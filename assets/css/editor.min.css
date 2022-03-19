@@ -1,1 +1,1 @@
-.kemet-right-left-loop>ul>li:nth-child(2n)>div{flex-direction:row-reverse}
+.kemet-right-left-loop>ul>li:nth-child(2n)>div{flex-direction:row-reverse}@media (max-width:600px){.hide-on-mobile{display:none!important}}
