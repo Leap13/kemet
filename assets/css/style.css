@@ -116,7 +116,7 @@ input[type="submit"],
   margin-bottom: 2em;
 }
 .woocommerce .quantity .qty {
-  padding: 12px 0;
+  height: 42px;
   border-radius: 0px;
   border: 1px solid var(--wp--preset--color--foreground);
 }
@@ -243,6 +243,10 @@ input[type="submit"],
   color:  var(--wp--preset--color--foreground);
 }
 
+.woocommerce .woocommerce-breadcrumb a:hover,
+.woocommerce .woocommerce-breadcrumb a:focus {
+  color:  var(--wp--preset--color--primary);
+}
 .woocommerce div.product p.price ins, .woocommerce div.product span.price ins {
   text-decoration: none;
 }
