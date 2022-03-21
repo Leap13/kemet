@@ -110,6 +110,7 @@ input[type="submit"],
 
 .woocommerce span.onsale {
   background-color: var(--wp--preset--color--tertiary);
+  font-weight: 400;
 }
 
 .woocommerce-product-details__short-description {
