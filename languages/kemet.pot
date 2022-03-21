@@ -1,0 +1,282 @@
+# <!=Copyright (C) 2021 Leap13
+# This file is distributed under the GNU General Public License v2 or later.=!>
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kemet 1.1.17\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/kemet\n"
+"POT-Creation-Date: 2022-03-16 10:51+0200\n"
+"PO-Revision-Date: 2021-10-10 16:57+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: functions/classes/class-kemet-admin-settings.php:84
+#: inc/kemet-panel/class-kemet-panel.php:119
+msgid "Settings"
+msgstr ""
+
+#: functions/classes/class-kemet-admin-settings.php:84
+#: inc/kemet-panel/class-kemet-panel.php:104
+#: inc/kemet-panel/class-kemet-panel.php:107
+msgid "Kemet"
+msgstr ""
+
+#: inc/block-patterns.php:17
+msgid "Header"
+msgstr ""
+
+#: inc/block-patterns.php:18
+msgid "Footer"
+msgstr ""
+
+#: inc/block-patterns.php:19
+msgid "Sidebar"
+msgstr ""
+
+#: inc/blocks-styles.php:16
+msgid "Fit to Screen"
+msgstr ""
+
+#: inc/blocks-styles.php:29
+msgid "Sticky"
+msgstr ""
+
+#: inc/blocks-styles.php:42
+msgid "Full Height"
+msgstr ""
+
+#: inc/blocks-styles.php:53
+msgid "Rounded"
+msgstr ""
+
+#: inc/blocks-styles.php:68
+msgid "With Shadow"
+msgstr ""
+
+#: inc/blocks-styles.php:79
+msgid "Mask Flower"
+msgstr ""
+
+#: inc/blocks-styles.php:94
+msgid "Mask Sketch"
+msgstr ""
+
+#: inc/blocks-styles.php:109
+msgid "Mask Blob"
+msgstr ""
+
+#: inc/blocks-styles.php:124
+msgid "Shadow"
+msgstr ""
+
+#: inc/blocks/react/build/index.js:316
+msgid "Mobile logo"
+msgstr ""
+
+#: inc/blocks/react/build/index.js:329
+msgid "Choose an logo"
+msgstr ""
+
+#: inc/blocks/react/build/index.js:340
+msgid "Remove logo"
+msgstr ""
+
+#: inc/blocks/react/build/index.js:437
+msgid "Dimensions"
+msgstr ""
+
+#: inc/blocks/react/build/index.js:443 inc/blocks/react/build/index.js:448
+msgid "Padding"
+msgstr ""
+
+#: inc/blocks/react/build/index.js:457 inc/blocks/react/build/index.js:462
+msgid "Margin"
+msgstr ""
+
+#: inc/blocks/react/build/index.js:581 inc/blocks/react/build/index.js:596
+msgid "Kemet Settings"
+msgstr ""
+
+#: inc/blocks/react/build/index.js:584
+msgid "Enable Sticky Header"
+msgstr ""
+
+#: inc/blocks/react/build/index.js:590
+msgid "Enable Overlay Header"
+msgstr ""
+
+#: inc/blocks/react/build/index.js:599
+msgid "Enable Sticky Footer"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4254
+msgid "Welcome"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4263
+msgid "Recommended Plugins"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4272
+msgid "System Info"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4352
+msgid "Theme Documentation"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4767
+#: inc/kemet-panel/assets/js/build/index.js:4812
+msgid "Invalid Email Address..."
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4768
+#: inc/kemet-panel/assets/js/build/index.js:4813
+msgid "Please enter a valid email address!"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4804
+msgid "Success"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4805
+msgid "Thanks for your subscribe!"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4854
+msgid "Have a Question?"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4871
+msgid "Knowledge Base"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4873
+msgid ""
+"Kemet Theme documentation library will guide you to build your next Kemet "
+"website easily without any need to touch a single line of code."
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4879
+msgid "Documentation"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4895
+msgid "Need Help?"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4897
+msgid ""
+"Have a question? Kemet support team is here to help you by answering your "
+"questions and handling your issues within 24-48 hours."
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4903
+msgid "Submit a Ticket"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4917
+msgid "Follow us"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4919
+msgid ""
+"Come and join our Facebook group! Share your thoughts, opinions, "
+"suggestions, and help others. You will always be more than welcome!"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4925
+msgid "Facebook Group"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4937
+msgid "Subscribe to Our Newsletter"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4939
+msgid ""
+"Enter your email address and be the first to know the latest features, "
+"offers, and updates."
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4954
+msgid "Submit"
+msgstr ""
+
+#: inc/patterns/404-content.php:6
+msgid "404 content"
+msgstr ""
+
+#: inc/patterns/404-content.php:10
+msgid "Oops! This page can't be found."
+msgstr ""
+
+#: inc/patterns/404-content.php:15
+msgid ""
+"The page you are looking for does not exist or may have been moved/renamed. "
+"Please try a search."
+msgstr ""
+
+#: inc/patterns/footer.php:6
+msgid "Default Footer"
+msgstr ""
+
+#: inc/patterns/footer.php:14
+msgid "About Us"
+msgstr ""
+
+#: inc/patterns/footer.php:18
+msgid ""
+"Leap13 is a 5 Stars rated WordPress-focused web development firm "
+"specialized in building Premium WordPress Themes and Plugins."
+msgstr ""
+
+#: inc/patterns/footer.php:28
+msgid "Join The Community"
+msgstr ""
+
+#: inc/patterns/footer.php:32
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua."
+msgstr ""
+
+#: inc/patterns/footer.php:56
+msgid "Copyright © 2022 | "
+msgstr ""
+
+#: inc/patterns/footer.php:57
+msgid "https://kemet.io/"
+msgstr ""
+
+#: inc/patterns/footer.php:57
+msgid " WordPress Theme"
+msgstr ""
+
+#: inc/patterns/footer.php:63
+msgid "Kemet WordPress Block Theme"
+msgstr ""
+
+#: inc/patterns/header-with-top-bar.php:6
+msgid "Header with top bar"
+msgstr ""
+
+#: inc/patterns/header.php:6 inc/patterns/sidebar.php:6
+msgid "Default Header"
+msgstr ""
+
+#: inc/patterns/header.php:33
+msgid "Click Here"
+msgstr ""

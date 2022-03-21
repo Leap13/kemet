@@ -1,0 +1,8 @@
+.kemet-right-left-loop > ul > li:nth-child(even) > div {
+    flex-direction:row-reverse;
+  }
+  @media (max-width: 600px) {
+    .hide-on-mobile {
+      display: none !important;
+    }
+  }
