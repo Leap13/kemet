@@ -181,7 +181,7 @@
 }
 
 .woocommerce .woocommerce-result-count {
-  margin: 0px;
+  margin-top: 10px;
 }
 
 .woocommerce .woocommerce-ordering select {
@@ -210,4 +210,17 @@
 
 .comment-form-author {
   display: flex;
+}
+
+.woocommerce-info {
+  border-top-color: var(--wp--preset--color--foreground);
+}
+
+.woocommerce form .form-row {
+  margin-bottom: 20px;
+}
+
+.woocommerce form .form-row input.input-text, 
+.woocommerce form .form-row textarea {
+  padding: 10px;
 }
