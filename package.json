@@ -35,5 +35,8 @@
 		"lint-fix:css": "stylelint **/*.css --fix",
 		"lint:js": "eslint .",
 		"lint-fix:js": "eslint --fix ."
+	},
+	"dependencies": {
+		"gulp-rtlcss": "^1.4.2"
 	}
 }

@@ -54,8 +54,16 @@ if ( ! class_exists( 'Kemet_Enqueue_Scripts' ) ) {
 			/* Directory and Extension */
 			$file_prefix = ( SCRIPT_DEBUG ) ? '' : '.min';
 			$dir_name    = ( SCRIPT_DEBUG ) ? 'unminified' : 'minified';
+
+			if ( is_rtl() ) {
+				$css_prefix = '-rtl.min.css';
+				if ( SCRIPT_DEBUG ) {
+					$css_prefix = '-rtl.css';
+				}
+			}
+
 			// Generate CSS URL.
-			$css_file = './assets/css/editor' . $file_prefix . '.css';
+			$css_file = './assets/css/' . $dir_name . '/editor' . $file_prefix;
 
 			add_editor_style(
 				array(
@@ -138,9 +146,10 @@ if ( ! class_exists( 'Kemet_Enqueue_Scripts' ) ) {
 
 			/* Directory and Extension */
 			$file_prefix = ( SCRIPT_DEBUG ) ? '' : '.min';
+			$dir_name    = ( SCRIPT_DEBUG ) ? 'unminified' : 'minified';
 
-			$js_uri  = KEMET_THEME_URI . 'assets/js/';
-			$css_uri = KEMET_THEME_URI . 'assets/css/';
+			$js_uri  = KEMET_THEME_URI . 'assets/js/' . $dir_name . '/';
+			$css_uri = KEMET_THEME_URI . 'assets/css/' . $dir_name . '/';
 
 			// All assets.
 			$all_assets = self::theme_assets();

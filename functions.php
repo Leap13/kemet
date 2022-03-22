@@ -37,3 +37,7 @@ require_once KEMET_THEME_DIR . 'inc/blocks-styles.php';
 // Add Kemet block patterns
 require get_template_directory() . '/inc/block-patterns.php';
 
+/**
+ * Compatibility.
+ */
+require_once KEMET_THEME_DIR . 'inc/compatibility/woocommerce/class-kemet-woocommerce.php';
