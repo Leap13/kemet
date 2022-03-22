@@ -671,8 +671,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_block_library__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_library__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _readymade_templates__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./readymade-templates */ "./src/readymade-templates.js");
 /* harmony import */ var _options_ImageRadio__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./options/ImageRadio */ "./src/options/ImageRadio.js");
-/* harmony import */ var _test_css__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./test.css */ "./src/test.css");
-/* harmony import */ var _test_css__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_test_css__WEBPACK_IMPORTED_MODULE_14__);
 
 
 
@@ -693,8 +691,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-console.log(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__["BlockPattern"]);
 
 var MyPluginSidebar = function MyPluginSidebar() {
   var readymadeHeaders = _readymade_templates__WEBPACK_IMPORTED_MODULE_12__["default"].headers;
@@ -766,16 +762,7 @@ var MyPluginSidebar = function MyPluginSidebar() {
       d: "M18,55,14.64,44.92a29.1,29.1,0,0,0,6.53-11.44A60.5,60.5,0,0,0,24,17.59L24,16H1v3H20.92c-.45,6.17-3.13,28-18.35,28H1v3H2.55a18,18,0,0,0,3.78-.4L8.14,55H1v3H24V55ZM9.64,48.56A16.38,16.38,0,0,0,12.41,47l2.67,8H11.8Z",
       transform: "translate(-1 0.04)"
     }))
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__["PanelBody"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_options_ImageRadio__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    title: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('Header Templates', 'kemet'),
-    options: readymadeHeaders,
-    onChange: function onChange(headerContent) {
-      return test(headerContent);
-    },
-    getValue: getBlocks
-  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
-    className: "block-editor-tw-patterns"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__["__unstableCompositeItem"], _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({
+  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__["PanelBody"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__["__unstableCompositeItem"], _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({
     role: "option",
     as: "div"
   }, composite, {
@@ -988,17 +975,6 @@ var readymadeTemplates = {
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (readymadeTemplates);
-
-/***/ }),
-
-/***/ "./src/test.css":
-/*!**********************!*\
-  !*** ./src/test.css ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
 
 /***/ }),
 
