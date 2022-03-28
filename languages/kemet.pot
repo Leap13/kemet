@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kemet 1.1.17\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/kemet\n"
-"POT-Creation-Date: 2022-03-16 10:51+0200\n"
+"POT-Creation-Date: 2022-03-28 10:58+0200\n"
 "PO-Revision-Date: 2021-10-10 16:57+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -233,24 +233,19 @@ msgstr ""
 msgid "Default Footer"
 msgstr ""
 
-#: inc/patterns/footer.php:14
+#: inc/patterns/footer.php:14 inc/patterns/sidebar.php:18
 msgid "About Us"
 msgstr ""
 
-#: inc/patterns/footer.php:18
+#: inc/patterns/footer.php:18 inc/patterns/footer.php:32
+#: inc/patterns/sidebar.php:22
 msgid ""
-"Leap13 is a 5 Stars rated WordPress-focused web development firm "
-"specialized in building Premium WordPress Themes and Plugins."
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua."
 msgstr ""
 
 #: inc/patterns/footer.php:28
 msgid "Join The Community"
-msgstr ""
-
-#: inc/patterns/footer.php:32
-msgid ""
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "
-"tempor incididunt ut labore et dolore magna aliqua."
 msgstr ""
 
 #: inc/patterns/footer.php:56
@@ -277,6 +272,22 @@ msgstr ""
 msgid "Default Header"
 msgstr ""
 
-#: inc/patterns/header.php:33
+#: inc/patterns/header.php:26
 msgid "Click Here"
+msgstr ""
+
+#: inc/patterns/kemet-left-right-loop.php:6
+msgid "Left Right Blog"
+msgstr ""
+
+#: inc/patterns/sidebar.php:30
+msgid "Latest Posts"
+msgstr ""
+
+#: inc/patterns/sidebar.php:40
+msgid "Follow Us"
+msgstr ""
+
+#: inc/patterns/sidebar.php:44
+msgid "Vestibulum ante ipsum primis in faucibus orci luctus et."
 msgstr ""
