@@ -15,11 +15,11 @@ return array(
 	<!-- /wp:spacer -->
 	
 	<!-- wp:heading {"level":4} -->
-	<h4 id="latest-posts">About Us</h4>
+	<h4 id="latest-posts">' . esc_html__( 'About Us', 'kemet') . '</h4>
 	<!-- /wp:heading -->
 	
 	<!-- wp:paragraph -->
-	<p>Leap13 is a 5 Stars rated WordPress-focused web development firm specialized in building Premium WordPress Themes and Plugins.</p>
+	<p>' . esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'kemet') . '</p>
 	<!-- /wp:paragraph -->
 	
 	<!-- wp:spacer {"height":"20px"} -->
@@ -27,7 +27,7 @@ return array(
 	<!-- /wp:spacer -->
 	
 	<!-- wp:heading {"level":4} -->
-	<h4 id="latest-posts">Latest Posts</h4>
+	<h4 id="latest-posts">' . esc_html__( 'Latest Posts', 'kemet') . '</h4>
 	<!-- /wp:heading -->
 	
 	<!-- wp:latest-posts /-->
@@ -37,11 +37,11 @@ return array(
 	<!-- /wp:spacer -->
 	
 	<!-- wp:heading {"level":4} -->
-	<h4 id="categories">Follow Us</h4>
+	<h4 id="categories">' . esc_html__( 'Follow Us', 'kemet') . '</h4>
 	<!-- /wp:heading -->
 	
 	<!-- wp:paragraph -->
-	<p>Vestibulum ante ipsum primis in faucibus orci luctus et.</p>
+	<p>' . esc_html__( 'Vestibulum ante ipsum primis in faucibus orci luctus et.', 'kemet') . '</p>
 	<!-- /wp:paragraph -->
 	
 	<!-- wp:social-links {"iconColor":"background","iconColorValue":"#ffffff","iconBackgroundColor":"tertiary","iconBackgroundColorValue":"#022538","className":"is-style-default"} -->

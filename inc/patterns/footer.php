@@ -15,7 +15,7 @@ return array(
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>' . esc_html__( 'Leap13 is a 5 Stars rated WordPress-focused web development firm specialized in building Premium WordPress Themes and Plugins.', 'kemet') . '</p>
+<p>' . esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'kemet') . '</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
