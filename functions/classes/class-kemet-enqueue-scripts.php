@@ -45,6 +45,8 @@ if ( ! class_exists( 'Kemet_Enqueue_Scripts' ) ) {
 		public function __construct() {
 			add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ), 1 );
 			add_action( 'admin_init', array( $this, 'editor_styles' ), 1 );
+			// add_filter( 'block_editor_settings_all', array( $this, 'filter_global_styles_settings' ) );
+			// add_action( 'rest_api_init', array( $this, 'register_global_styles_rest_route' ), 20 );
 		}
 
 		/**
@@ -73,6 +75,222 @@ if ( ! class_exists( 'Kemet_Enqueue_Scripts' ) ) {
 			);
 		}
 
+		/**
+		 * Updates the Global Styles controller route.
+		 *
+		 * @see WP_REST_Global_Styles_Controller.
+		 */
+		function register_global_styles_rest_route() {
+
+			$controller = new WP_REST_Global_Styles_Controller();
+			register_rest_route(
+				'wp/v2',
+				sprintf(
+					'/%s/themes/(?P<stylesheet>%s)',
+					'global-styles',
+					'[^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?'
+				),
+				array(
+					array(
+						'methods'             => WP_REST_Server::READABLE,
+						'callback'            => array( $this, 'get_theme_item_global_styles' ),
+						'permission_callback' => array( $controller, 'get_theme_item_permissions_check' ),
+						'args'                => array(
+							'stylesheet' => array(
+								'description'       => __( 'The theme identifier' ),
+								'type'              => 'string',
+								'sanitize_callback' => array( $controller, '_sanitize_global_styles_callback' ),
+							),
+						),
+					),
+				),
+				true
+			);
+		}
+
+		/**
+		 * Returns the given theme global styles config.
+		 *
+		 * @param WP_REST_Request $request The request instance.
+		 * @return WP_REST_Response|WP_Error
+		 */
+		function get_theme_item_global_styles( $request ) {
+
+			$controller = new WP_REST_Global_Styles_Controller();
+			$response   = $controller->get_theme_item( $request );
+
+			if ( $response->data['settings'] ) {
+				$settings = $response->data['settings'];
+				$fonts    = $settings['typography']['fontFamilies']['theme'];
+				$settings['typography']['fontFamilies']['theme'] = $this->merge_fonts_to_theme_fonts( $fonts );
+				$response->data['settings']                      = $settings;
+			}
+			return $response;
+		}
+
+		/**
+		 * Updates post editor settings to add fonts and width settings.
+		 *
+		 * @param array $settings Default editor settings.
+		 *
+		 * @return array Filtered editor settings.
+		 */
+		function filter_global_styles_settings( $settings ) {
+
+			if ( isset( $settings['__experimentalFeatures'] ) ) {
+				$fonts = $settings['__experimentalFeatures']['typography']['fontFamilies']['theme'];
+				$settings['__experimentalFeatures']['typography']['fontFamilies']['theme'] = $this->merge_fonts_to_theme_fonts( $fonts );
+			}
+
+			return $settings;
+		}
+		/**
+		 * Returns additional fonts.
+		 */
+		function get_additional_fonts() {
+			$fonts = array(
+				array(
+					'fontFamily' => '"Alegreya", serif',
+					'slug'       => 'alegreya',
+					'name'       => 'Alegreya',
+					'src'        => 'Alegreya:ital,wght@0,400..900;1,400..900',
+					'provider'   => 'google',
+				),
+				array(
+					'fontFamily' => '"Cabin", sans-serif',
+					'slug'       => 'cabin',
+					'name'       => 'Cabin',
+					'src'        => 'Cabin:ital,wght@0,400..700;1,400..700',
+					'provider'   => 'google',
+				),
+				array(
+					'fontFamily' => '"Crimson Pro", serif',
+					'slug'       => 'crimson-pro',
+					'name'       => 'Crimson Pro',
+					'src'        => 'Crimson+Pro:ital,wght@0,200..900;1,200..900',
+					'provider'   => 'google',
+				),
+				array(
+					'fontFamily' => '"EB Garamond", serif',
+					'slug'       => 'eb-garamond',
+					'name'       => 'EB Garamond',
+					'src'        => 'EB+Garamond:ital,wght@0,400..800;1,400..800',
+					'provider'   => 'google',
+				),
+				array(
+					'fontFamily' => '"Inter", sans-serif',
+					'slug'       => 'inter',
+					'name'       => 'Inter',
+					'src'        => 'Inter:wght@100..900',
+					'provider'   => 'google',
+				),
+				array(
+					'fontFamily' => '"Libre Franklin", sans-serif',
+					'slug'       => 'libre-franklin',
+					'name'       => 'Libre Franklin',
+					'src'        => 'Libre+Franklin:ital,wght@0,100..900;1,100..900',
+					'provider'   => 'google',
+				),
+				array(
+					'fontFamily' => '"Lora", serif',
+					'slug'       => 'lora',
+					'name'       => 'Lora',
+					'src'        => 'Lora:ital,wght@0,400..700;1,400..700',
+					'provider'   => 'google',
+				),
+				array(
+					'fontFamily' => '"Open Sans", sans-serif',
+					'slug'       => 'open-sans',
+					'name'       => 'Open Sans',
+					'src'        => 'Open+Sans:ital,wght@0,300..800;1,300..800',
+					'provider'   => 'google',
+				),
+				array(
+					'fontFamily' => '"Playfair Display", serif',
+					'slug'       => 'playfair-display',
+					'name'       => 'Playfair Display',
+					'src'        => 'Playfair+Display:ital,wght@0,400..900;1,400..900',
+					'provider'   => 'google',
+				),
+				array(
+					'fontFamily' => '"Raleway", sans-serif',
+					'slug'       => 'raleway',
+					'name'       => 'Raleway',
+					'src'        => 'Raleway:ital,wght@0,100..900;1,100..900',
+					'provider'   => 'google',
+				),
+				array(
+					'fontFamily' => '"Roboto Serif", serif',
+					'slug'       => 'roboto-serif',
+					'name'       => 'Roboto Serif',
+					'src'        => 'Roboto+Serif:ital,wght@0,100..900;1,100..900',
+					'provider'   => 'google',
+				),
+				array(
+					'fontFamily' => '"Roboto Slab", serif',
+					'slug'       => 'roboto-slab',
+					'name'       => 'Roboto Slab',
+					'src'        => 'Roboto+Slab:wght@100..900',
+					'provider'   => 'google',
+				),
+				array(
+					'fontFamily' => '"Roboto Mono", monospace',
+					'slug'       => 'roboto-mono',
+					'name'       => 'Roboto Mono',
+					'src'        => 'Roboto+Mono:ital,wght@0,100..700;1,100..700',
+					'provider'   => 'google',
+				),
+				array(
+					'fontFamily' => '"Rubik", sans-serif',
+					'slug'       => 'rubik',
+					'name'       => 'Rubik',
+					'src'        => 'Rubik:ital,wght@0,300..900;1,300..900',
+					'provider'   => 'google',
+				),
+				array(
+					'fontFamily' => '"Source Sans 3", sans-serif',
+					'slug'       => 'source-sans-3',
+					'name'       => 'Source Sans 3',
+					'src'        => 'Source+Sans+3:ital,wght@0,200..900;1,200..900',
+					'provider'   => 'google',
+				),
+				array(
+					'fontFamily' => '"Source Serif 4", serif',
+					'slug'       => 'source-serif-4',
+					'name'       => 'Source Serif 4',
+					'src'        => 'Source+Serif+4:ital,wght@0,200..900;1,200..900',
+					'provider'   => 'google',
+				),
+				array(
+					'fontFamily' => '"Work Sans", sans-serif',
+					'slug'       => 'work-sans',
+					'name'       => 'Work Sans',
+					'src'        => 'Work+Sans:ital,wght@0,100..900;1,100..900',
+					'provider'   => 'google',
+				),
+			);
+			return $fonts;
+		}
+
+
+		/**
+		 * Merge our additional fonts with the theme fonts and make sure the values are unique.
+		 *
+		 * @param array $theme_fonts The theme fonts.
+		 * @return array             The merged fonts.
+		 */
+		function merge_fonts_to_theme_fonts( $theme_fonts ) {
+			$new_fonts = $this->get_additional_fonts();
+			$fonts     = $theme_fonts ? $theme_fonts : array();
+
+			foreach ( $new_fonts as $font ) {
+				if ( in_array( $font['fontFamily'], array_column( $fonts, 'fontFamily' ) ) ) {
+					continue;
+				}
+				$fonts[] = $font;
+			}
+			return $fonts;
+		}
 
 		/**
 		 * GET GOOGLE FONTS URL

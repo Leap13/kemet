@@ -27,6 +27,8 @@ if ( is_admin() ) {
 	 * Admin Menu Settings.
 	 */
 	require_once KEMET_THEME_DIR . 'functions/classes/class-kemet-admin-settings.php';
+	// Fonts Data.
+	require_once KEMET_THEME_DIR . 'inc/class-kemet-font-families.php';
 }
 
 // Required files.
