@@ -11,10 +11,18 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Kemet is a Fast, Reliable, and World-Class Full Site Editing WordPress Block Theme suitable for business websites, blogs, personal portfolios. Kemet is bundled with outstanding pre-built Templates, Template Parts, and designer-made Block Patterns to help you get your WordPress website almost with no effort. Besides, Kemet will allow you to set your full website’s color scheme globally in seconds by selecting from ready-to-use light and dark authentic color palettes. Here are some of the theme's unique features: Sticky Header, Sticky Footer, Extra Styles for Group Block, Advanced Styles for Image Block, Button Block Styles, Responsive Website Logo, RTL & Translation Ready.
 
+== Images ==
+
+License CC0: https://www.rawpixel.com/services/licenses
+
+https://www.rawpixel.com/image/3305585/free-photo-image-coffee-drinking-beverage
+https://www.rawpixel.com/image/3305632/free-photo-image-building-observatory-architecture
+
 == Changelog ==
 
 = 1.2.4 =
 * Added: Three New Patterns.
+* Added: Google fonts Library via Kemet Panel to load only the required fonts in the Global Typography control.
 
 = 1.2.3 =
 * Tweak: Change default content.

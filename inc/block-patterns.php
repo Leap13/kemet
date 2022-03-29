@@ -17,6 +17,7 @@ function kemet_register_block_patterns() {
 		'header' => array( 'label' => __( 'Header', 'kemet' ) ),
 		'footer' => array( 'label' => __( 'Footer', 'kemet' ) ),
 		'sidebar' => array( 'label' => __( 'Sidebar', 'kemet' ) ),
+		'kemet-general' => array( 'label' => __( 'Kemet General', 'kemet' ) ),
 	);
 
 	
@@ -38,7 +39,10 @@ function kemet_register_block_patterns() {
 		'footer',
 		'sidebar',
 		'404-content',
-		'kemet-left-right-loop'
+		'kemet-left-right-loop',
+		'two-columns-with-image-text-and-a-call-to-action',
+		'information-blocks-for-business-sectors',
+		'simple-call-to-action-section'
 	);
 
 
