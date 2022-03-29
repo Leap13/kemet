@@ -1,12 +1,14 @@
 import WelcomeTab from './tabs/welcome'
 import Plugins from './tabs/plugins'
 import System from './tabs/system'
+import GoogleFonts from './tabs/google-fonts'
 import { render, Fragment, useContext } from '@wordpress/element'
 import Header from './layout/Header';
 import Card from './common/Card';
 import Container from './common/Container';
 import PanelContext, { PanelProvider } from './store/panel-store'
 import pushHistory from './common/push-history'
+import './scss/kemet-panel.scss'
 
 const { __ } = wp.i18n;
 const { TabPanel, Panel, PanelBody } = wp.components;
@@ -50,6 +52,16 @@ const RendeTabs = () => {
             priority: 30,
             data: {
                 Component: System,
+                props: {}
+            }
+        },
+        {
+            name: 'google-fonts',
+            title: __('Google Fonts', 'kemet'),
+            className: 'google-fonts',
+            priority: 5,
+            data: {
+                Component: GoogleFonts,
                 props: {}
             }
         },

@@ -51,6 +51,10 @@
       margin-left: 5px;
     }
   }
+  &:disabled {
+    color: #c0c0c0;
+    cursor: not-allowed;
+  }
 }
 .toplevel_page_kemet_panel {
   background-color: #fff;
@@ -80,9 +84,67 @@
     justify-content: center;
     background-color: rgba(200, 200, 200, 0.8);
   }
+  .kmt-google-fonts-container {
+    padding: 60px;
+    border: 1px dashed #cdcdcd;
+    box-sizing: border-box;
+  }
+  .kmt-google-fonts-title {
+    text-align: center;
+    margin: 0 0 30px 0;
+  }
+  .kmt-google-fonts {
+    margin: auto;
+    width: 885px;
+    .kmt-font-variations {
+      label {
+        margin: 15px 15px 15px 0;
+        display: inline-block;
+      }
+    }
+    .kmt-font-card {
+      width: 100%;
+      border: 1px solid #d4d4d4;
+    }
+    .kmt-font-card-body {
+      padding: 20px 20px 20px 20px;
+    }
+    .kmt-font-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 20px 20px 20px;
+      border-bottom: 1px solid #e7e7e7;
+      .kmt-delete-font {
+        padding: 4px;
+        font-size: 20px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    }
+    .kmt-fonts-list {
+      margin-bottom: 20px;
+      > div:not(:first-child) {
+        margin-top: 20px;
+      }
+    }
+    .kmt-google-fonts-actions {
+      width: 100%;
+      table-layout: fixed;
+      border-collapse: collapse;
+      display: flex;
+      justify-content: center;
+      .kmt-button {
+        width: 15%;
+      }
+    }
+    .kmt-save-fonts {
+      margin-left: 20px;
+    }
+  }
   .kmt-support {
     .kmt-card {
-      text-align: left;
+      text-align: center;
       .kmt-card-title {
         .icon {
           display: inline-flex;
@@ -357,6 +419,16 @@
       margin-top: 15px;
       color: #2d3747;
       height: 75px;
+    }
+  }
+  .subscribe-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 39px;
+    input {
+      height: 100%;
+      border-radius: 0;
     }
   }
 }

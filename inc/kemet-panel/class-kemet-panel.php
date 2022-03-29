@@ -52,6 +52,19 @@ if ( ! class_exists( 'Kemet_Panel' ) ) {
 			add_action( 'admin_bar_menu', array( $this, 'admin_bar_item' ), 1000 );
 			add_action( 'enable_kemet_admin_menu_item', '__return_true' );
 			add_action( 'wp_ajax_kemet-mail-subscribe', array( $this, 'subscribe_mail' ) );
+			add_action( 'wp_ajax_kemet-save-fonts', array( $this, 'save_fonts' ) );
+		}
+
+		/**
+		 * Save Fonts
+		 *
+		 * @return void
+		 */
+		public function save_fonts() {
+			check_ajax_referer( 'kemet-panel', 'nonce' );
+			$fonts = json_decode( stripslashes( $_POST['fonts'] ), true );
+			update_option( 'kemet_google_fonts', $fonts );
+			wp_send_json_success( $fonts );
 		}
 
 		/**
@@ -203,19 +216,10 @@ if ( ! class_exists( 'Kemet_Panel' ) ) {
 		 * @return void
 		 */
 		public function enqueue_admin_script() {
-			$css_prefix = '.min.css';
-			$dir        = 'minified';
-			if ( SCRIPT_DEBUG ) {
-				$css_prefix = '.css';
-				$dir        = 'unminified';
-			}
-			if ( is_rtl() ) {
-				$css_prefix = '-rtl.min.css';
-				if ( SCRIPT_DEBUG ) {
-					$css_prefix = '-rtl.css';
-				}
-			}
-			wp_enqueue_style( 'kemet-panel-css', KEMET_ADDONS_PANEL_URL . 'assets/css/' . $dir . '/kemet-panel' . $css_prefix, false, KEMET_THEME_VERSION );
+			$google = Kemet_Font_Families::get_google_fonts();
+			$custom = Kemet_Font_Families::get_custom_fonts();
+
+			wp_enqueue_style( 'kemet-panel-css', KEMET_ADDONS_PANEL_URL . 'assets/js/build/index.css', false, KEMET_THEME_VERSION );
 			wp_enqueue_script(
 				'kemet-panel-js',
 				KEMET_ADDONS_PANEL_URL . 'assets/js/build/index.js',
@@ -243,6 +247,11 @@ if ( ! class_exists( 'Kemet_Panel' ) ) {
 					'images_url'           => KEMET_ADDONS_PANEL_URL . 'assets/images/',
 					'recommended_plugins'  => Kemet_Panel_Plugins_Data::get_instance()->get_recommended_plugins(),
 					'kemet_redirect'       => isset( $_GET['tab'] ) ? sanitize_text_field( wp_unslash( $_GET['tab'] ) ) : '',  // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+					'kemetFonts'           => array(
+						'google' => $google,
+						'custom' => $custom,
+					),
+					'savedFonts'           => get_option( 'kemet_google_fonts', array() ),
 				)
 			);
 		}
