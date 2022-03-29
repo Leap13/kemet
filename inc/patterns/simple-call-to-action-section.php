@@ -8,7 +8,7 @@ return array(
     'blockTypes' => array( 'core/cover' ),
     'categories' => array( 'kemet', 'kemet-general' ),
 	'content'    => '<!-- wp:cover {"url":"' . esc_url( get_template_directory_uri() ) . '/assets/images/architecture-building.jpeg","id":979,"hasParallax":true,"dimRatio":80,"overlayColor":"tertiary","align":"wide","style":{"spacing":{"padding":{"top":"140px","bottom":"140px"}}}} -->
-    <div class="wp-block-cover alignwide has-parallax" style="padding-top:140px;padding-bottom:140px;background-image:url(' . esc_url( get_template_directory_uri() ) . '/assets/images/architecture-building.jpeg)"><span aria-hidden="true" class="wp-block-cover__background has-tertiary-background-color has-background-dim-80 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group -->
+    <div class="wp-block-cover alignwide has-parallax" style="padding-top:140px;padding-bottom:140px;background-image:url(' . esc_url( get_template_directory_uri() ) . '/assets/images/architecture-building.jpeg)"><span aria-hidden="true" class="has-tertiary-background-color has-background-dim-80 wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group -->
     <div class="wp-block-group"><!-- wp:paragraph {"align":"center","textColor":"primary","fontSize":"x-large"} -->
     <p class="has-text-align-center has-primary-color has-text-color has-x-large-font-size">✉</p>
     <!-- /wp:paragraph -->
@@ -37,7 +37,7 @@ return array(
     
     <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
     <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-kmt-rounded","fontSize":"normal"} -->
-    <div class="wp-block-button has-custom-font-size is-style-kmt-rounded has-normal-font-size"><a class="wp-block-button__link" href="#"><strong>' . esc_html__( 'Contact With Us', 'kemet') . '</strong> <strong>»</strong></a></div>
+    <div class="wp-block-button has-custom-font-size is-style-kmt-rounded has-normal-font-size"><a class="wp-block-button__link" href="#"><strong>' . esc_html__( 'Contact With Us', 'kemet') . '</strong><strong>»</strong></a></div>
     <!-- /wp:button --></div>
     <!-- /wp:buttons --></div>
     <!-- /wp:group --></div></div>
