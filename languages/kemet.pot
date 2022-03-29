@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kemet 1.1.17\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/kemet\n"
-"POT-Creation-Date: 2022-03-28 10:58+0200\n"
+"POT-Creation-Date: 2022-03-29 18:10+0200\n"
 "PO-Revision-Date: 2021-10-10 16:57+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -23,14 +23,18 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #: functions/classes/class-kemet-admin-settings.php:84
-#: inc/kemet-panel/class-kemet-panel.php:119
+#: inc/kemet-panel/class-kemet-panel.php:132
 msgid "Settings"
 msgstr ""
 
 #: functions/classes/class-kemet-admin-settings.php:84
-#: inc/kemet-panel/class-kemet-panel.php:104
-#: inc/kemet-panel/class-kemet-panel.php:107
+#: inc/kemet-panel/class-kemet-panel.php:117
+#: inc/kemet-panel/class-kemet-panel.php:120
 msgid "Kemet"
+msgstr ""
+
+#: functions/classes/class-kemet-enqueue-scripts.php:101
+msgid "The theme identifier"
 msgstr ""
 
 #: inc/block-patterns.php:17
@@ -43,6 +47,10 @@ msgstr ""
 
 #: inc/block-patterns.php:19
 msgid "Sidebar"
+msgstr ""
+
+#: inc/block-patterns.php:20
+msgid "Kemet General"
 msgstr ""
 
 #: inc/blocks-styles.php:16
@@ -121,97 +129,101 @@ msgstr ""
 msgid "Enable Sticky Footer"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:4254
+#: inc/kemet-panel/assets/js/build/index.js:4416
 msgid "Welcome"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:4263
+#: inc/kemet-panel/assets/js/build/index.js:4425
 msgid "Recommended Plugins"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:4272
+#: inc/kemet-panel/assets/js/build/index.js:4434
 msgid "System Info"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:4352
+#: inc/kemet-panel/assets/js/build/index.js:4443
+msgid "Google Fonts"
+msgstr ""
+
+#: inc/kemet-panel/assets/js/build/index.js:4523
 msgid "Theme Documentation"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:4767
-#: inc/kemet-panel/assets/js/build/index.js:4812
+#: inc/kemet-panel/assets/js/build/index.js:5152
+#: inc/kemet-panel/assets/js/build/index.js:5197
 msgid "Invalid Email Address..."
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:4768
-#: inc/kemet-panel/assets/js/build/index.js:4813
+#: inc/kemet-panel/assets/js/build/index.js:5153
+#: inc/kemet-panel/assets/js/build/index.js:5198
 msgid "Please enter a valid email address!"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:4804
+#: inc/kemet-panel/assets/js/build/index.js:5189
 msgid "Success"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:4805
+#: inc/kemet-panel/assets/js/build/index.js:5190
 msgid "Thanks for your subscribe!"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:4854
+#: inc/kemet-panel/assets/js/build/index.js:5239
 msgid "Have a Question?"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:4871
+#: inc/kemet-panel/assets/js/build/index.js:5256
 msgid "Knowledge Base"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:4873
+#: inc/kemet-panel/assets/js/build/index.js:5258
 msgid ""
 "Kemet Theme documentation library will guide you to build your next Kemet "
 "website easily without any need to touch a single line of code."
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:4879
+#: inc/kemet-panel/assets/js/build/index.js:5264
 msgid "Documentation"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:4895
+#: inc/kemet-panel/assets/js/build/index.js:5280
 msgid "Need Help?"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:4897
+#: inc/kemet-panel/assets/js/build/index.js:5282
 msgid ""
 "Have a question? Kemet support team is here to help you by answering your "
 "questions and handling your issues within 24-48 hours."
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:4903
+#: inc/kemet-panel/assets/js/build/index.js:5288
 msgid "Submit a Ticket"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:4917
+#: inc/kemet-panel/assets/js/build/index.js:5302
 msgid "Follow us"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:4919
+#: inc/kemet-panel/assets/js/build/index.js:5304
 msgid ""
 "Come and join our Facebook group! Share your thoughts, opinions, "
 "suggestions, and help others. You will always be more than welcome!"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:4925
+#: inc/kemet-panel/assets/js/build/index.js:5310
 msgid "Facebook Group"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:4937
+#: inc/kemet-panel/assets/js/build/index.js:5322
 msgid "Subscribe to Our Newsletter"
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:4939
+#: inc/kemet-panel/assets/js/build/index.js:5324
 msgid ""
 "Enter your email address and be the first to know the latest features, "
 "offers, and updates."
 msgstr ""
 
-#: inc/kemet-panel/assets/js/build/index.js:4954
+#: inc/kemet-panel/assets/js/build/index.js:5339
 msgid "Submit"
 msgstr ""
 
@@ -276,6 +288,48 @@ msgstr ""
 msgid "Click Here"
 msgstr ""
 
+#: inc/patterns/information-blocks-for-gardening-services.php:7
+msgid "Information Blocks for Gardening Services."
+msgstr ""
+
+#: inc/patterns/information-blocks-for-gardening-services.php:13
+msgid "Keep Your Property Looking Beautiful"
+msgstr ""
+
+#: inc/patterns/information-blocks-for-gardening-services.php:17
+msgid "Customized Garden Serviceskemet"
+msgstr ""
+
+#: inc/patterns/information-blocks-for-gardening-services.php:21
+msgid ""
+"Give your property a professional touch and organic atmosphere with our "
+"authentic gardening services."
+msgstr ""
+
+#: inc/patterns/information-blocks-for-gardening-services.php:44
+msgid "Hedging Services"
+msgstr ""
+
+#: inc/patterns/information-blocks-for-gardening-services.php:48
+msgid "Sed ut perspiciatis unde omnis iste natus ipsum."
+msgstr ""
+
+#: inc/patterns/information-blocks-for-gardening-services.php:64
+msgid "Irrigation Services"
+msgstr ""
+
+#: inc/patterns/information-blocks-for-gardening-services.php:68
+msgid "Accusantium doloremque laudantium totam rem."
+msgstr ""
+
+#: inc/patterns/information-blocks-for-gardening-services.php:84
+msgid "Mulching Services"
+msgstr ""
+
+#: inc/patterns/information-blocks-for-gardening-services.php:88
+msgid "Quasi architecto beatae vitae dicta sunt explicabo."
+msgstr ""
+
 #: inc/patterns/kemet-left-right-loop.php:6
 msgid "Left Right Blog"
 msgstr ""
@@ -290,4 +344,62 @@ msgstr ""
 
 #: inc/patterns/sidebar.php:44
 msgid "Vestibulum ante ipsum primis in faucibus orci luctus et."
+msgstr ""
+
+#: inc/patterns/simple-call-to-action-section.php:7
+msgid "Simple Call to Action Section."
+msgstr ""
+
+#: inc/patterns/simple-call-to-action-section.php:17
+msgid "Get in Touch"
+msgstr ""
+
+#: inc/patterns/simple-call-to-action-section.php:21
+msgid "Contact us"
+msgstr ""
+
+#: inc/patterns/simple-call-to-action-section.php:21
+msgid " if you have an inquiry or feedback"
+msgstr ""
+
+#: inc/patterns/simple-call-to-action-section.php:27
+msgid "Email: mail@example.com"
+msgstr ""
+
+#: inc/patterns/simple-call-to-action-section.php:33
+msgid "Phone:+(223)17620314780"
+msgstr ""
+
+#: inc/patterns/simple-call-to-action-section.php:40
+msgid "Contact With Us"
+msgstr ""
+
+#: inc/patterns/two-columns-with-image-text-and-a-call-to-action.php:7
+msgid "Two Columns with Image, Text, and a Call to Action."
+msgstr ""
+
+#: inc/patterns/two-columns-with-image-text-and-a-call-to-action.php:13
+msgid "Coffee Cups"
+msgstr ""
+
+#: inc/patterns/two-columns-with-image-text-and-a-call-to-action.php:21
+msgid "Coffee is Awesome"
+msgstr ""
+
+#: inc/patterns/two-columns-with-image-text-and-a-call-to-action.php:29
+msgid "Start your day with a cup of coffee"
+msgstr ""
+
+#: inc/patterns/two-columns-with-image-text-and-a-call-to-action.php:33
+msgid ""
+"Taste and See Coffee Shop and Gallery offers a unique coffee house "
+"environment unlike any other in Macon. We are not only a place to drop in "
+"and get your morning cup of coffee, we are a place where you can sit down "
+"and enjoy that tailor-made cup of coffee. If you need to work, we have a "
+"seating area created specifically for you. If you need to rest, We look "
+"forward to serving you at Taste &amp; See Coffee Shop and Gallery."
+msgstr ""
+
+#: inc/patterns/two-columns-with-image-text-and-a-call-to-action.php:42
+msgid "MORE ABOUT US"
 msgstr ""
