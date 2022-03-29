@@ -67,7 +67,7 @@ if ( ! class_exists( 'Kemet_Enqueue_Scripts' ) ) {
 
 			// Generate CSS URL.
 			$css_file = './assets/css/' . $dir_name . '/editor' . $file_prefix;
-			error_log( $this->get_google_fonts_url() );
+
 			add_editor_style(
 				array(
 					$css_file,
@@ -295,6 +295,10 @@ if ( ! class_exists( 'Kemet_Enqueue_Scripts' ) ) {
 		public function custom_google_fonts_url() {
 
 			$fonts = $this->get_additional_fonts();
+
+			if ( ! $fonts ) {
+				return;
+			}
 			foreach ( $fonts as $font ) {
 				$enqueue_fonts[] = $font['google'];
 			}
