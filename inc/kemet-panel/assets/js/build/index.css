@@ -52,8 +52,6 @@
   margin-left: 5px;
 }
 .kmt-button:disabled {
-  border: 1px solid #cccccc;
-  background-color: #dddddd;
   color: #c0c0c0;
   cursor: not-allowed;
 }
@@ -88,8 +86,18 @@
   justify-content: center;
   background-color: rgba(200, 200, 200, 0.8);
 }
+#kmt-dashboard .kmt-google-fonts-container {
+  padding: 60px;
+  border: 1px dashed #cdcdcd;
+  box-sizing: border-box;
+}
+#kmt-dashboard .kmt-google-fonts-title {
+  text-align: center;
+  margin: 0 0 30px 0;
+}
 #kmt-dashboard .kmt-google-fonts {
   margin: auto;
+  width: 885px;
 }
 #kmt-dashboard .kmt-google-fonts .kmt-font-variations label {
   margin: 15px 15px 15px 0;
@@ -120,6 +128,16 @@
 }
 #kmt-dashboard .kmt-google-fonts .kmt-fonts-list > div:not(:first-child) {
   margin-top: 20px;
+}
+#kmt-dashboard .kmt-google-fonts .kmt-google-fonts-actions {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  display: flex;
+  justify-content: center;
+}
+#kmt-dashboard .kmt-google-fonts .kmt-google-fonts-actions .kmt-button {
+  width: 15%;
 }
 #kmt-dashboard .kmt-google-fonts .kmt-save-fonts {
   margin-left: 20px;

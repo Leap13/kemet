@@ -4921,6 +4921,10 @@ var GoogleFonts = function GoogleFonts() {
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["Dashicon"], {
     icon: "sos"
   })), Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_6__["__"])('Google Fonts', 'kemet')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("div", {
+    className: "kmt-google-fonts-container"
+  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("h2", {
+    className: "kmt-google-fonts-title"
+  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_6__["__"])('Start Adding Google Fonts', 'kemet')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("div", {
     className: "kmt-google-fonts"
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("div", {
     className: "kmt-fonts-list"
@@ -4935,10 +4939,10 @@ var GoogleFonts = function GoogleFonts() {
     className: "kmt-button primary kmt-add-font",
     onClick: addHandler
   }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_6__["__"])('Add Font', 'kemet')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("button", {
-    className: "kmt-button primary kmt-save-fonts".concat(loadingClass),
+    className: "kmt-button secondary kmt-save-fonts".concat(loadingClass),
     onClick: saveHandler,
     disabled: disabled
-  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_6__["__"])('Save', 'kemet')))));
+  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_6__["__"])('Save', 'kemet'))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (GoogleFonts);

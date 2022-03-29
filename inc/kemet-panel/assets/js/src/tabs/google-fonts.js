@@ -46,15 +46,18 @@ const GoogleFonts = () => {
     const disabled = JSON.stringify(googleFonts) === JSON.stringify(KemetPanelData.savedFonts);
     return <Container>
         <h2 className="kmt-section-title"><span className='icon'><Dashicon icon="sos" /></span>{__('Google Fonts', 'kemet')}</h2>
-        <div className="kmt-google-fonts">
-            <div className="kmt-fonts-list">
-                {googleFonts.length > 0 && googleFonts.map((font, index) => {
-                    return <Font fontData={font} index={index} />;
-                })}
-            </div>
-            <div className="kmt-google-fonts-actions">
-                <button className="kmt-button primary kmt-add-font" onClick={addHandler}>{__('Add Font', 'kemet')}</button>
-                <button className={`kmt-button primary kmt-save-fonts${loadingClass}`} onClick={saveHandler} disabled={disabled}>{__('Save', 'kemet')}</button>
+        <div className="kmt-google-fonts-container">
+            <h2 className="kmt-google-fonts-title">{__('Start Adding Google Fonts', 'kemet')}</h2>
+            <div className="kmt-google-fonts">
+                <div className="kmt-fonts-list">
+                    {googleFonts.length > 0 && googleFonts.map((font, index) => {
+                        return <Font fontData={font} index={index} />;
+                    })}
+                </div>
+                <div className="kmt-google-fonts-actions">
+                    <button className="kmt-button primary kmt-add-font" onClick={addHandler}>{__('Add Font', 'kemet')}</button>
+                    <button className={`kmt-button secondary kmt-save-fonts${loadingClass}`} onClick={saveHandler} disabled={disabled}>{__('Save', 'kemet')}</button>
+                </div>
             </div>
         </div>
     </Container>
