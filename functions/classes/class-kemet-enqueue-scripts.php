@@ -48,7 +48,6 @@ if ( ! class_exists( 'Kemet_Enqueue_Scripts' ) ) {
 			add_filter( 'block_editor_settings_all', array( $this, 'filter_global_styles_settings' ) );
 			add_action( 'rest_api_init', array( $this, 'register_global_styles_rest_route' ), 20 );
 			add_action( 'wp_enqueue_scripts', array( $this, 'add_fonts_enqueue_scripts' ) );
-			add_filter( 'kemet_google_fonts_url', array( $this, 'builder_google_fonts_url' ) );
 		}
 
 		/**
@@ -288,23 +287,19 @@ if ( ! class_exists( 'Kemet_Enqueue_Scripts' ) ) {
 		}
 
 		/**
-		 * Builder_google_fonts_url
+		 * Custom_google_fonts_url
 		 *
 		 * @param  string $default
 		 * @return string
 		 */
-		public function builder_google_fonts_url( $default ) {
-
-			if ( class_exists( 'WP_Theme_JSON_Resolver_Gutenberg' ) ) {
-				return $default;
-			}
+		public function custom_google_fonts_url() {
 
 			$fonts = $this->get_additional_fonts();
 			foreach ( $fonts as $font ) {
 				$enqueue_fonts[] = $font['google'];
 			}
 
-			return esc_url_raw( 'https://fonts.googleapis.com/css2?' . implode( '&', $font_family_urls ) . '&display=swap' );
+			return apply_filters( 'kemet_google_fonts_url', esc_url_raw( 'https://fonts.googleapis.com/css2?' . implode( '&', array_unique( array_values( $enqueue_fonts ) ) ) . '&display=swap' ) );
 		}
 
 		/**
@@ -337,7 +332,7 @@ if ( ! class_exists( 'Kemet_Enqueue_Scripts' ) ) {
 		public function get_google_fonts_url() {
 
 			if ( ! class_exists( 'WP_Theme_JSON_Resolver_Gutenberg' ) ) {
-				return '';
+				return $this->custom_google_fonts_url();
 			}
 
 			$theme_data = WP_Theme_JSON_Resolver_Gutenberg::get_merged_data()->get_settings();
