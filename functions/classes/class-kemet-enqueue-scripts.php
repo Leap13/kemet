@@ -68,7 +68,7 @@ if ( ! class_exists( 'Kemet_Enqueue_Scripts' ) ) {
 
 			// Generate CSS URL.
 			$css_file = './assets/css/' . $dir_name . '/editor' . $file_prefix;
-
+			error_log( $this->get_google_fonts_url() );
 			add_editor_style(
 				array(
 					$css_file,
@@ -252,11 +252,6 @@ if ( ! class_exists( 'Kemet_Enqueue_Scripts' ) ) {
 		 * @return void
 		 */
 		public function add_fonts_enqueue_scripts() {
-
-			if ( class_exists( 'WP_Theme_JSON_Resolver_Gutenberg' ) ) {
-				return '';
-			}
-
 			global $template_html;
 
 			$fonts = $this->get_additional_fonts();
