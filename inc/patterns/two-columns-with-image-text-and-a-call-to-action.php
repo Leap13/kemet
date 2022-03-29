@@ -9,8 +9,8 @@ return array(
 	'content'    => '<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"80px","bottom":"80px"}}},"layout":{"inherit":true}} -->
     <div class="wp-block-group alignfull" style="padding-top:80px;padding-bottom:80px"><!-- wp:columns -->
     <div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
-    <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:image {"align":"center","id":1186,"sizeSlug":"large","linkDestination":"none","className":"is-style-image-mask-sketch"} -->
-    <figure class="wp-block-image aligncenter size-large is-style-image-mask-sketch"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/coffee-1024x1024.jpg" alt="' . esc_attr__( 'Coffee Cups', 'kemet' ) . '" class="wp-image-1186"/></figure>
+    <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:image {"align":"center","id":1186,"width":500,"height":500,"sizeSlug":"large","linkDestination":"none","className":"is-style-image-mask-sketch"} -->
+    <figure class="wp-block-image aligncenter size-large is-style-image-mask-sketch"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/friends-holding-coffee-cups.jpeg" alt="' . esc_attr__( 'Coffee Cups', 'kemet' ) . '" class="wp-image-1186"/></figure>
     <!-- /wp:image --></div>
     <!-- /wp:column -->
     

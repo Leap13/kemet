@@ -41,7 +41,7 @@ function kemet_register_block_patterns() {
 		'404-content',
 		'kemet-left-right-loop',
 		'two-columns-with-image-text-and-a-call-to-action',
-		'information-blocks-for-business-sectors',
+		'information-blocks-for-gardening-services',
 		'simple-call-to-action-section'
 	);
 
