@@ -4258,7 +4258,6 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 
-
 var Font = function Font(_ref) {
   var fontData = _ref.fontData,
       index = _ref.index;
@@ -4297,8 +4296,10 @@ var Font = function Font(_ref) {
     changeFont(newFontData, index);
   };
 
-  return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("div", null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("div", {
-    className: "kmt-font-controls"
+  return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("div", {
+    className: "kmt-font-card"
+  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("div", {
+    className: "kmt-font-card-header"
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("select", {
     onChange: function onChange(e) {
       return handleChange(e.target.value);
@@ -4311,13 +4312,14 @@ var Font = function Font(_ref) {
       selected: font === currentFont
     }, font);
   })), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["Dashicon"], {
-    className: "kmt-delete-font",
+    className: "kmt-button primary kmt-delete-font",
     icon: "minus",
     onClick: function onClick() {
       return removeFont(fontData);
     }
-  })), fontVariations.length > 0 && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["__experimentalGrid"], {
-    columns: 2,
+  })), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("div", {
+    className: "kmt-font-card-body"
+  }, fontVariations.length > 0 && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("div", {
     className: "kmt-font-variations"
   }, fontVariations.map(function (variation) {
     var fontStyle = variation[0] === 'i' ? Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__["__"])('Italic', 'kemet') : '';
@@ -4343,7 +4345,7 @@ var Font = function Font(_ref) {
         changeFont(newFontData, index);
       }
     }), "".concat(fontWeight).concat(fontStyle));
-  })));
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Font);
@@ -4920,19 +4922,23 @@ var GoogleFonts = function GoogleFonts() {
     icon: "sos"
   })), Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_6__["__"])('Google Fonts', 'kemet')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("div", {
     className: "kmt-google-fonts"
+  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("div", {
+    className: "kmt-fonts-list"
   }, googleFonts.length > 0 && googleFonts.map(function (font, index) {
     return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])(_components_Font__WEBPACK_IMPORTED_MODULE_5__["default"], {
       fontData: font,
       index: index
     });
-  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("button", {
+  })), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("div", {
+    className: "kmt-google-fonts-actions"
+  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("button", {
     className: "kmt-button primary kmt-add-font",
     onClick: addHandler
   }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_6__["__"])('Add Font', 'kemet')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("button", {
     className: "kmt-button primary kmt-save-fonts".concat(loadingClass),
     onClick: saveHandler,
     disabled: disabled
-  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_6__["__"])('Save', 'kemet'))));
+  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_6__["__"])('Save', 'kemet')))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (GoogleFonts);

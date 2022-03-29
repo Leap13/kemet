@@ -1,9 +1,6 @@
 import { useState } from "react";
 import { Dashicon } from '@wordpress/components';
 import { __ } from "@wordpress/i18n";
-import {
-    __experimentalGrid as Grid
-} from '@wordpress/components';
 import { useContext } from "react";
 import PanelContext from "../store/panel-store";
 
@@ -28,38 +25,40 @@ const Font = ({ fontData, index }) => {
         changeFont(newFontData, index);
     }
 
-    return <div>
-        <div className="kmt-font-controls">
+    return <div className="kmt-font-card">
+        <div className="kmt-font-card-header">
             <select onChange={e => handleChange(e.target.value)}>
                 <option value=''>{__('Select Font', 'kemet')}</option>
                 {Object.keys(googleFonts).map(font => {
                     return <option value={font} selected={font === currentFont}>{font}</option>
                 })}
             </select>
-            <Dashicon className="kmt-delete-font" icon="minus" onClick={() => removeFont(fontData)} />
+            <Dashicon className="kmt-button primary kmt-delete-font" icon="minus" onClick={() => removeFont(fontData)} />
         </div>
-        {fontVariations.length > 0 && <Grid columns={2} className="kmt-font-variations">
-            {fontVariations.map(variation => {
-                const fontStyle = variation[0] === 'i' ? __('Italic', 'kemet') : '';
-                const fontWeight = `${variation[1]}00`;
-                const disabled = fontVariations.length === 1 ? true : false;
-                const isChecked = fontVariations.length === 1 ? true : fontData.variations.includes(variation);
+        <div className="kmt-font-card-body">
+            {fontVariations.length > 0 && <div className="kmt-font-variations">
+                {fontVariations.map(variation => {
+                    const fontStyle = variation[0] === 'i' ? __('Italic', 'kemet') : '';
+                    const fontWeight = `${variation[1]}00`;
+                    const disabled = fontVariations.length === 1 ? true : false;
+                    const isChecked = fontVariations.length === 1 ? true : fontData.variations.includes(variation);
 
-                return <label>
-                    <input type='checkbox' disabled={disabled} checked={isChecked} onChange={(e) => {
-                        const newFontData = { ...fontData };
-                        if (e.target.checked) {
-                            newFontData.variations.push(variation);
-                        } else {
-                            newFontData.variations = newFontData.variations.filter(vari => vari !== variation)
-                        }
-                        newFontData.flag = !newFontData.flag;
-                        changeFont(newFontData, index);
-                    }} />
-                    {`${fontWeight}${fontStyle}`}
-                </label>
-            })}
-        </Grid>}
+                    return <label>
+                        <input type='checkbox' disabled={disabled} checked={isChecked} onChange={(e) => {
+                            const newFontData = { ...fontData };
+                            if (e.target.checked) {
+                                newFontData.variations.push(variation);
+                            } else {
+                                newFontData.variations = newFontData.variations.filter(vari => vari !== variation)
+                            }
+                            newFontData.flag = !newFontData.flag;
+                            changeFont(newFontData, index);
+                        }} />
+                        {`${fontWeight}${fontStyle}`}
+                    </label>
+                })}
+            </div>}
+        </div>
     </div>
 }
 

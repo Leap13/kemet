@@ -87,39 +87,46 @@
     background-color: rgba(200, 200, 200, 0.8);
   }
   .kmt-google-fonts {
-    .kmt-font-controls {
-      display: flex;
-      align-items: center;
-      .kmt-delete-font {
-        padding: 4px;
-        margin-left: 10px;
-        color: #fff;
-        border-radius: 4px;
-        background-color: #dc3545;
-        cursor: pointer;
-        &:hover {
-          background-color: #c82333;
-        }
+    margin: auto;
+    .kmt-font-variations {
+      label {
+        margin: 15px 15px 15px 0;
+        display: inline-block;
       }
     }
-    > div:not(:first-child) {
-      margin-top: 20px;
+    .kmt-font-card {
+      width: 100%;
+      border: 1px solid #d4d4d4;
     }
-    .kmt-font-variations {
-      margin-top: 20px;
-      width: 200px;
+    .kmt-font-card-body {
+      padding: 20px 20px 20px 20px;
     }
-    .kmt-add-font {
-      margin: 20px 0;
+    .kmt-font-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 20px 20px 20px;
+      border-bottom: 1px solid #e7e7e7;
+      .kmt-delete-font {
+        padding: 4px;
+        font-size: 20px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    }
+    .kmt-fonts-list {
+      margin-bottom: 20px;
+      > div:not(:first-child) {
+        margin-top: 20px;
+      }
     }
     .kmt-save-fonts {
-      display: block;
-      margin: 20px 0;
+      margin-left: 20px;
     }
   }
   .kmt-support {
     .kmt-card {
-      text-align: left;
+      text-align: center;
       .kmt-card-title {
         .icon {
           display: inline-flex;
@@ -394,6 +401,16 @@
       margin-top: 15px;
       color: #2d3747;
       height: 75px;
+    }
+  }
+  .subscribe-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 39px;
+    input {
+      height: 100%;
+      border-radius: 0;
     }
   }
 }

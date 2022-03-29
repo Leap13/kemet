@@ -47,11 +47,15 @@ const GoogleFonts = () => {
     return <Container>
         <h2 className="kmt-section-title"><span className='icon'><Dashicon icon="sos" /></span>{__('Google Fonts', 'kemet')}</h2>
         <div className="kmt-google-fonts">
-            {googleFonts.length > 0 && googleFonts.map((font, index) => {
-                return <Font fontData={font} index={index} />;
-            })}
-            <button className="kmt-button primary kmt-add-font" onClick={addHandler}>{__('Add Font', 'kemet')}</button>
-            <button className={`kmt-button primary kmt-save-fonts${loadingClass}`} onClick={saveHandler} disabled={disabled}>{__('Save', 'kemet')}</button>
+            <div className="kmt-fonts-list">
+                {googleFonts.length > 0 && googleFonts.map((font, index) => {
+                    return <Font fontData={font} index={index} />;
+                })}
+            </div>
+            <div className="kmt-google-fonts-actions">
+                <button className="kmt-button primary kmt-add-font" onClick={addHandler}>{__('Add Font', 'kemet')}</button>
+                <button className={`kmt-button primary kmt-save-fonts${loadingClass}`} onClick={saveHandler} disabled={disabled}>{__('Save', 'kemet')}</button>
+            </div>
         </div>
     </Container>
 }
