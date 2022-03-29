@@ -17,6 +17,9 @@ License CC0: https://www.rawpixel.com/services/licenses
 
 https://www.rawpixel.com/image/3305585/free-photo-image-coffee-drinking-beverage
 https://www.rawpixel.com/image/3305632/free-photo-image-building-observatory-architecture
+https://www.rawpixel.com/image/574635/pink-damskus-rose
+https://www.rawpixel.com/image/574465/blooming-purple-roses
+https://www.rawpixel.com/image/574479/vintage-sulphur-rose-drawing
 
 == Changelog ==
 
