@@ -52,6 +52,19 @@ if ( ! class_exists( 'Kemet_Panel' ) ) {
 			add_action( 'admin_bar_menu', array( $this, 'admin_bar_item' ), 1000 );
 			add_action( 'enable_kemet_admin_menu_item', '__return_true' );
 			add_action( 'wp_ajax_kemet-mail-subscribe', array( $this, 'subscribe_mail' ) );
+			add_action( 'wp_ajax_kemet-save-fonts', array( $this, 'save_fonts' ) );
+		}
+
+		/**
+		 * Save Fonts
+		 *
+		 * @return void
+		 */
+		public function save_fonts() {
+			check_ajax_referer( 'kemet-panel', 'nonce' );
+			$fonts = json_decode( stripslashes( $_POST['fonts'] ), true );
+			update_option( 'kemet_google_fonts', $fonts );
+			wp_send_json_success( $fonts );
 		}
 
 		/**
@@ -238,6 +251,7 @@ if ( ! class_exists( 'Kemet_Panel' ) ) {
 						'google' => $google,
 						'custom' => $custom,
 					),
+					'savedFonts'           => get_option( 'kemet_google_fonts', array() ),
 				)
 			);
 		}

@@ -190,6 +190,33 @@ module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime/helpers/defineProperty.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/defineProperty.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+module.exports = _defineProperty;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/iterableToArray.js":
 /*!****************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/iterableToArray.js ***!
@@ -4204,18 +4231,26 @@ var pushHistory = function pushHistory(tab) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/slicedToArray.js");
-/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _store_panel_store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../store/panel-store */ "./src/store/panel-store.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/slicedToArray.js");
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _store_panel_store__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../store/panel-store */ "./src/store/panel-store.js");
 
+
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 
 
@@ -4231,42 +4266,83 @@ var Font = function Font(_ref) {
       googleFonts = _KemetPanelData$kemet.google,
       customFonts = _KemetPanelData$kemet.custom;
 
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_2__["useContext"])(_store_panel_store__WEBPACK_IMPORTED_MODULE_5__["default"]),
-      changeFont = _useContext.changeFont;
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_3__["useContext"])(_store_panel_store__WEBPACK_IMPORTED_MODULE_6__["default"]),
+      changeFont = _useContext.changeFont,
+      removeFont = _useContext.removeFont;
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(''),
-      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(fontData.name),
+      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState, 2),
       currentFont = _useState2[0],
       setCurrentFont = _useState2[1];
 
   var fontVariations = googleFonts[currentFont] ? googleFonts[currentFont][0] : [];
 
   var handleChange = function handleChange(value) {
+    if (!value) {
+      return;
+    }
+
+    var data = googleFonts[value];
+
+    var newFontData = _objectSpread({}, fontData);
+
+    newFontData.name = value;
+    newFontData.fallback = data[1];
     setCurrentFont(value);
+
+    if (data[0].length === 1) {
+      newFontData.variations = data[0];
+    }
+
+    changeFont(newFontData, index);
   };
 
-  return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("select", {
+  return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("div", null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("div", {
+    className: "kmt-font-controls"
+  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("select", {
     onChange: function onChange(e) {
       return handleChange(e.target.value);
     }
-  }, Object.keys(googleFonts).map(function (font) {
-    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("option", {
-      value: font
+  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("option", {
+    value: ""
+  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__["__"])('Select Font', 'kemet')), Object.keys(googleFonts).map(function (font) {
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("option", {
+      value: font,
+      selected: font === currentFont
     }, font);
-  })), fontVariations.length > 0 && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["__experimentalGrid"], {
+  })), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["Dashicon"], {
+    className: "kmt-delete-font",
+    icon: "minus",
+    onClick: function onClick() {
+      return removeFont(fontData);
+    }
+  })), fontVariations.length > 0 && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["__experimentalGrid"], {
     columns: 2,
     className: "kmt-font-variations"
   }, fontVariations.map(function (variation) {
-    var fontStyle = variation[0] === 'i' ? Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('Italic', 'kemet') : '';
+    var fontStyle = variation[0] === 'i' ? Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__["__"])('Italic', 'kemet') : '';
     var fontWeight = "".concat(variation[1], "00");
     var disabled = fontVariations.length === 1 ? true : false;
     var isChecked = fontVariations.length === 1 ? true : fontData.variations.includes(variation);
-    console.log(isChecked);
-    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["CheckboxControl"], {
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("label", null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("input", {
+      type: "checkbox",
       disabled: disabled,
-      label: "".concat(fontWeight, " ").concat(fontStyle),
-      checked: isChecked
-    });
+      checked: isChecked,
+      onChange: function onChange(e) {
+        var newFontData = _objectSpread({}, fontData);
+
+        if (e.target.checked) {
+          newFontData.variations.push(variation);
+        } else {
+          newFontData.variations = newFontData.variations.filter(function (vari) {
+            return vari !== variation;
+          });
+        }
+
+        newFontData.flag = !newFontData.flag;
+        changeFont(newFontData, index);
+      }
+    }), "".concat(fontWeight).concat(fontStyle));
   })));
 };
 
@@ -4497,7 +4573,8 @@ var PanelContext = React.createContext({
   doAction: function doAction(action, plugin) {},
   googleFonts: [],
   addFont: function addFont(font) {},
-  changeFont: function changeFont(font, index) {}
+  changeFont: function changeFont(font, index) {},
+  removeFont: function removeFont(index) {}
 });
 var PanelProvider = function PanelProvider(props) {
   var tabs = [];
@@ -4514,8 +4591,9 @@ var PanelProvider = function PanelProvider(props) {
       setPluginStatus = _useState2[1];
 
   var recommendedPlugins = KemetPanelData.recommended_plugins;
+  var fontsCache = KemetPanelData.savedFonts;
 
-  var _useState3 = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["useState"])([]),
+  var _useState3 = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["useState"])(fontsCache || []),
       _useState4 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2___default()(_useState3, 2),
       googleFonts = _useState4[0],
       setGooleFonts = _useState4[1];
@@ -4678,6 +4756,15 @@ var PanelProvider = function PanelProvider(props) {
     setGooleFonts(newFonts);
   };
 
+  var removeFont = function removeFont(font) {
+    var newFonts = _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(googleFonts);
+
+    newFonts = newFonts.filter(function (fontdata) {
+      return fontdata.name !== font.name;
+    });
+    setGooleFonts(newFonts);
+  };
+
   var pluginsContext = {
     tabs: tabs,
     plugins: plugins,
@@ -4687,7 +4774,8 @@ var PanelProvider = function PanelProvider(props) {
     doAction: doAction,
     googleFonts: googleFonts,
     addFont: addFont,
-    changeFont: changeFont
+    changeFont: changeFont,
+    removeFont: removeFont
   };
   return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["createElement"])(PanelContext.Provider, {
     value: pluginsContext
@@ -4706,17 +4794,26 @@ var PanelProvider = function PanelProvider(props) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Font__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Font */ "./src/components/Font.js");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _store_panel_store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../store/panel-store */ "./src/store/panel-store.js");
-/* harmony import */ var _common_Container__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../common/Container */ "./src/common/Container.js");
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/slicedToArray.js");
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/regenerator */ "@babel/runtime/regenerator");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_Font__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Font */ "./src/components/Font.js");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _store_panel_store__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../store/panel-store */ "./src/store/panel-store.js");
+/* harmony import */ var _common_Container__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../common/Container */ "./src/common/Container.js");
+
+
+
 
 
 
@@ -4726,7 +4823,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var GoogleFonts = function GoogleFonts() {
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_4__["useContext"])(_store_panel_store__WEBPACK_IMPORTED_MODULE_5__["default"]),
+  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_7__["useContext"])(_store_panel_store__WEBPACK_IMPORTED_MODULE_8__["default"]),
       googleFonts = _useContext.googleFonts,
       addFont = _useContext.addFont;
 
@@ -4740,25 +4837,102 @@ var GoogleFonts = function GoogleFonts() {
     addFont(fontData);
   };
 
-  return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_common_Container__WEBPACK_IMPORTED_MODULE_6__["default"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("h2", {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_7__["useState"])(false),
+      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState, 2),
+      isLoading = _useState2[0],
+      setIsLoading = _useState2[1];
+
+  var saveHandler = /*#__PURE__*/function () {
+    var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3___default.a.mark(function _callee() {
+      var body, filterFonts, response, _yield$response$json, success, data;
+
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3___default.a.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              setIsLoading(true);
+              body = new FormData();
+              filterFonts = googleFonts.filter(function (font) {
+                return !!font.name;
+              });
+              body.append('action', 'kemet-save-fonts');
+              body.append('nonce', KemetPanelData.nonce);
+              body.append('fonts', JSON.stringify(filterFonts));
+              _context.prev = 6;
+              _context.next = 9;
+              return fetch(KemetPanelData.ajaxurl, {
+                method: 'POST',
+                body: body
+              });
+
+            case 9:
+              response = _context.sent;
+
+              if (!(response.status === 200)) {
+                _context.next = 17;
+                break;
+              }
+
+              _context.next = 13;
+              return response.json();
+
+            case 13:
+              _yield$response$json = _context.sent;
+              success = _yield$response$json.success;
+              data = _yield$response$json.data;
+
+              if (success) {
+                KemetPanelData.savedFonts = data;
+              }
+
+            case 17:
+              _context.next = 22;
+              break;
+
+            case 19:
+              _context.prev = 19;
+              _context.t0 = _context["catch"](6);
+              alert(_context.t0);
+
+            case 22:
+              setIsLoading(false);
+
+            case 23:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee, null, [[6, 19]]);
+    }));
+
+    return function saveHandler() {
+      return _ref.apply(this, arguments);
+    };
+  }();
+
+  var loadingClass = isLoading ? ' loading' : '';
+  var disabled = JSON.stringify(googleFonts) === JSON.stringify(KemetPanelData.savedFonts);
+  return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])(_common_Container__WEBPACK_IMPORTED_MODULE_9__["default"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("h2", {
     className: "kmt-section-title"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("span", {
+  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("span", {
     className: "icon"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__["Dashicon"], {
+  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["Dashicon"], {
     icon: "sos"
-  })), Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__["__"])('Google Fonts', 'kemet')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+  })), Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_6__["__"])('Google Fonts', 'kemet')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("div", {
     className: "kmt-google-fonts"
   }, googleFonts.length > 0 && googleFonts.map(function (font, index) {
-    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_components_Font__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])(_components_Font__WEBPACK_IMPORTED_MODULE_5__["default"], {
       fontData: font,
       index: index
     });
-  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("button", {
+  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("button", {
     className: "kmt-button primary kmt-add-font",
     onClick: addHandler
-  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__["__"])('Add Font', 'kemet')), googleFonts.length > 0 && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("button", {
-    className: "kmt-button primary kmt-save-fonts"
-  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__["__"])('Save Fonts', 'kemet'))));
+  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_6__["__"])('Add Font', 'kemet')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__["createElement"])("button", {
+    className: "kmt-button primary kmt-save-fonts".concat(loadingClass),
+    onClick: saveHandler,
+    disabled: disabled
+  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_6__["__"])('Save', 'kemet'))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (GoogleFonts);

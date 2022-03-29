@@ -51,6 +51,12 @@
       margin-left: 5px;
     }
   }
+  &:disabled {
+    border: 1px solid #cccccc;
+    background-color: #dddddd;
+    color: #c0c0c0;
+    cursor: not-allowed;
+  }
 }
 .toplevel_page_kemet_panel {
   background-color: #fff;
@@ -81,6 +87,24 @@
     background-color: rgba(200, 200, 200, 0.8);
   }
   .kmt-google-fonts {
+    .kmt-font-controls {
+      display: flex;
+      align-items: center;
+      .kmt-delete-font {
+        padding: 4px;
+        margin-left: 10px;
+        color: #fff;
+        border-radius: 4px;
+        background-color: #dc3545;
+        cursor: pointer;
+        &:hover {
+          background-color: #c82333;
+        }
+      }
+    }
+    > div:not(:first-child) {
+      margin-top: 20px;
+    }
     .kmt-font-variations {
       margin-top: 20px;
       width: 200px;
