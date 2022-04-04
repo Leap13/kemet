@@ -57,7 +57,7 @@ return array(
     <!-- wp:column {"verticalAlignment":"center"} -->
     <div class="wp-block-column is-vertically-aligned-center"><!-- wp:group {"style":{"spacing":{"padding":{"top":"3em","right":"1em","bottom":"3em","left":"1em"}},"border":{"style":"solid","width":"1px","color":"#02304752"}}} -->
     <div class="wp-block-group has-border-color" style="border-color:#02304752;border-style:solid;border-width:1px;padding-top:3em;padding-right:1em;padding-bottom:3em;padding-left:1em"><!-- wp:image {"align":"center","id":1230,"width":120,"sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
-    <div class="wp-block-image is-style-default"><figure class="aligncenter size-full is-resized"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/flower-1.png" alt="" class="wp-image-1230" width="120"/></figure></div>
+    <div class="wp-block-image is-style-default"><figure class="aligncenter size-full is-resized"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/flower-2.png" alt="" class="wp-image-1230" width="120"/></figure></div>
     <!-- /wp:image -->
     
     <!-- wp:heading {"textAlign":"center","level":4,"style":{"spacing":{"margin":{"top":"10px","bottom":"0px"}},"typography":{"fontStyle":"normal","fontWeight":"700"}}} -->
@@ -77,7 +77,7 @@ return array(
     <!-- wp:column {"verticalAlignment":"center"} -->
     <div class="wp-block-column is-vertically-aligned-center"><!-- wp:group {"style":{"spacing":{"padding":{"top":"3em","right":"1em","bottom":"3em","left":"1em"}},"border":{"style":"solid","width":"1px","color":"#02304752"}}} -->
     <div class="wp-block-group has-border-color" style="border-color:#02304752;border-style:solid;border-width:1px;padding-top:3em;padding-right:1em;padding-bottom:3em;padding-left:1em"><!-- wp:image {"align":"center","id":1232,"width":120,"sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
-    <div class="wp-block-image is-style-default"><figure class="aligncenter size-full is-resized"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/flower-1.png" alt="" class="wp-image-1232" width="120"/></figure></div>
+    <div class="wp-block-image is-style-default"><figure class="aligncenter size-full is-resized"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/flower-3.png" alt="" class="wp-image-1232" width="120"/></figure></div>
     <!-- /wp:image -->
     
     <!-- wp:heading {"textAlign":"center","level":4,"style":{"spacing":{"margin":{"top":"10px","bottom":"0px"}},"typography":{"fontStyle":"normal","fontWeight":"700"}}} -->

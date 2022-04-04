@@ -128,5 +128,31 @@ function register_block_styles() {
 			}',
 		)
 	);
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/media-text',
+		array(
+			'name'         => 'image-mask-blob',
+			'label'        => __( 'Mask Blob', 'kemet' ),
+			'inline_style' => '
+			.is-style-image-mask-blob img{
+				-webkit-mask-image: url( ' . KEMET_THEME_URI . 'assets/svg/blob.svg );
+				-webkit-mask-size: contain;
+				-webkit-mask-position: center;
+				-webkit-mask-repeat: no-repeat;
+				filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
+			}',
+		)
+	);
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/media-text',
+		array(
+			'name'         => 'kmt-has-shadow',
+			'label'        => __( 'Shadow', 'kemet' ),
+			'inline_style' => '
+			.is-style-kmt-has-shadow img{
+				box-shadow: 0px 2px 4px rgb(45 35 66 / 10%), 0px 7px 13px -3px rgb(45 35 66 / 30%);
+			}',
+		)
+	);
 }
 add_action( 'init', 'register_block_styles' );
