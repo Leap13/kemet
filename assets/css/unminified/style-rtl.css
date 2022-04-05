@@ -68,11 +68,6 @@ input[type="submit"],
   .wp-block-search__inside-wrapper {
   border-color: #ddd !important;
 }
-@media (max-width: 600px) {
-  .hide-on-mobile {
-    display: none !important;
-  }
-}
 
 .kemet-right-left-loop > ul > li:nth-child(even) > div {
   flex-direction: row-reverse;
@@ -131,4 +126,14 @@ input[type="submit"],
 
 .wp-block-media-text.is-style-kmt-has-shadow {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 18px 0px;
+}
+
+@media (max-width: 600px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+  .wp-block-media-text.is-style-kmt-is-overlay .wp-block-media-text__content {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
 }

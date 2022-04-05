@@ -10,7 +10,7 @@ return array(
     <div class="wp-block-group alignfull is-style-default has-secondary-background-color has-background" style="padding-top:100px;padding-bottom:100px"><!-- wp:columns -->
     <div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"center","width":"33.33%"} -->
     <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%"><!-- wp:heading {"level":5,"style":{"typography":{"fontStyle":"normal","fontWeight":"500"},"spacing":{"margin":{"right":"0px","bottom":"15px","left":"0px","top":"0px"}}}} -->
-    <h5 style="font-style:normal;font-weight:500;margin-top:0px;margin-right:0px;margin-bottom:15px;margin-left:0px">' . esc_html__( 'Keep Your Property Looking Beautiful' ) . '</h5>
+    <h5 style="font-style:normal;font-weight:500;margin-top:0px;margin-right:0px;margin-bottom:15px;margin-left:0px">' . esc_html__( 'Keep Your Property Looking Beautiful', 'kemet' ) . '</h5>
     <!-- /wp:heading -->
     
     <!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"},"spacing":{"margin":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}}} -->

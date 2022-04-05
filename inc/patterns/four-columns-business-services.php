@@ -1,7 +1,7 @@
 <?php
 /**
  * Kemet General Patter
- * Four Columns Business Services..
+ * Four Columns Business Services.
  */
 return array(
 	'title'      => __( 'Four Columns for Business Services.', 'kemet' ),
