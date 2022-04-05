@@ -123,8 +123,8 @@ function register_block_styles() {
 			'name'         => 'kmt-has-shadow',
 			'label'        => __( 'Shadow', 'kemet' ),
 			'inline_style' => '
-			.is-style-kmt-has-shadow img{
-				box-shadow: 0px 2px 4px rgb(45 35 66 / 10%), 0px 7px 13px -3px rgb(45 35 66 / 30%);
+			.wp-block-image.is-style-kmt-has-shadow img{
+				box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 18px 0px;
 			}',
 		)
 	);
@@ -136,7 +136,7 @@ function register_block_styles() {
 			'label'        => __( 'Shadow', 'kemet' ),
 			'inline_style' => '
 			.is-style-kmt-has-shadow {
-				box-shadow: 0px 2px 4px rgb(45 35 66 / 10%), 0px 7px 13px -3px rgb(45 35 66 / 30%);
+				box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 18px 0px;
 			}',
 		)
 	);
@@ -147,11 +147,10 @@ function register_block_styles() {
 			'name'         => 'kmt-is-overlap',
 			'label'        => __( 'Overlap', 'kemet' ),
 			'inline_style' => '
-			.is-style-kmt-is-overlap,.is-style-kmt-is-overlap .wp-block-media-text__content {
-				visibility: visible;
-				background: inherit;
-				margin-left: -80px;
-		}',
+			 .is-style-kmt-is-overlap.has-media-on-the-right .wp-block-media-text__content {
+				margin-left: 0;
+				margin-right: -80px;
+			}',
 		)
 	);
 }

@@ -95,3 +95,40 @@ input[type="submit"],
   padding-right: 15px !important;
   padding-left: 15px !important;
 }
+
+
+.wp-block-media-text.is-style-kmt-is-overlap .wp-block-media-text__content {
+	margin-right: -80px;
+}
+
+.wp-block-media-text.is-style-kmt-is-overlap:not(.has-background) {
+	column-gap: 0 !important;
+}
+
+.wp-block-media-text.is-style-kmt-is-overlap.has-media-on-the-right .wp-block-media-text__content {
+	margin-right: 0;
+	margin-left: -80px;
+}
+
+.wp-block-media-text .wp-block-media-text__content,
+.wp-block-media-text .wp-block-media-text__media {
+	align-self: center
+}
+
+.wp-block-media-text .wp-block-media-text__media {
+	grid-column: 1;
+	grid-row: 1;
+	margin: 0;
+}
+
+.wp-block-media-text .wp-block-media-text__content {
+	direction: rtl;
+	grid-column: 2;
+	grid-row: 1;
+	padding: 0 8% 0 8%;
+	word-break: break-word;
+}
+
+.wp-block-media-text.is-style-kmt-has-shadow {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 18px 0px;
+}
