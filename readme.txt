@@ -24,9 +24,9 @@ https://www.rawpixel.com/image/574479/vintage-sulphur-rose-drawing
 == Changelog ==
 
 = 1.2.5 =
-* New: Three New Patterns.
-* New: Three styles for Media & Text block
-* Fixed: Gsrdening services Pattern images URL issue.
+* New: Two New Patterns.
+* Added: Overlay and Shadow styles for Media & Text block
+* Fixed: Pattern images URL issue.
 
 = 1.2.4 =
 * Added: Three New Patterns.
