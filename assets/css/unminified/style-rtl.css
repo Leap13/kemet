@@ -97,17 +97,17 @@ input[type="submit"],
 }
 
 
-.wp-block-media-text.is-style-kmt-is-overlap .wp-block-media-text__content {
-	margin-right: -80px;
+.wp-block-media-text.is-style-kmt-is-overlay .wp-block-media-text__content {
+	margin-right: -120px;
 }
 
-.wp-block-media-text.is-style-kmt-is-overlap:not(.has-background) {
+.wp-block-media-text.is-style-kmt-is-overlay:not(.has-background) {
 	column-gap: 0 !important;
 }
 
-.wp-block-media-text.is-style-kmt-is-overlap.has-media-on-the-right .wp-block-media-text__content {
+.wp-block-media-text.is-style-kmt-is-overlay.has-media-on-the-right .wp-block-media-text__content {
 	margin-right: 0;
-	margin-left: -80px;
+	margin-left: -120px;
 }
 
 .wp-block-media-text .wp-block-media-text__content,

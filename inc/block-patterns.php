@@ -43,7 +43,7 @@ function kemet_register_block_patterns() {
 		'two-columns-with-image-text-and-a-call-to-action',
 		'information-blocks-for-gardening-services',
 		'simple-call-to-action-section',
-		'new'
+		'four-columns-business-services'
 	);
 
 

@@ -144,12 +144,12 @@ function register_block_styles() {
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/media-text',
 		array(
-			'name'         => 'kmt-is-overlap',
-			'label'        => __( 'Overlap', 'kemet' ),
+			'name'         => 'kmt-is-overlay',
+			'label'        => __( 'Overlay', 'kemet' ),
 			'inline_style' => '
-			 .is-style-kmt-is-overlap.has-media-on-the-right .wp-block-media-text__content {
+			 .is-style-kmt-is-overlay.has-media-on-the-right .wp-block-media-text__content {
 				margin-left: 0;
-				margin-right: -80px;
+				margin-right: -120px;
 			}',
 		)
 	);
