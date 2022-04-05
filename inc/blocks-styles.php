@@ -67,7 +67,7 @@ function register_block_styles() {
 			'name'         => 'kmt-has-shadow',
 			'label'        => __( 'With Shadow', 'kemet' ),
 			'inline_style' => '
-			.is-style-kmt-has-shadow .wp-block-button__link{
+			.wp-block-buttons.is-style-kmt-has-shadow .wp-block-button__link{
 				box-shadow: 0px 15px 25px 0px rgb(0 0 0 / 25%);
 			}',
 		)
@@ -135,7 +135,7 @@ function register_block_styles() {
 			'name'         => 'kmt-has-shadow',
 			'label'        => __( 'Shadow', 'kemet' ),
 			'inline_style' => '
-			.is-style-kmt-has-shadow {
+			.wp-block-media-text.is-style-kmt-has-shadow {
 				box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 18px 0px;
 			}',
 		)
