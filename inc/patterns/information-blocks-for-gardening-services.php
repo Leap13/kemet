@@ -14,7 +14,7 @@ return array(
     <!-- /wp:heading -->
     
     <!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"},"spacing":{"margin":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}}} -->
-    <h2 style="font-style:normal;font-weight:700;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">' . esc_html__( 'Customized Garden Services'. 'kemet' ) . '</h2>
+    <h2 style="font-style:normal;font-weight:700;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">' . esc_html__( 'Customized Garden Services', 'kemet' ) . '</h2>
     <!-- /wp:heading -->
     
     <!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"400"}}} -->
