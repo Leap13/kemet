@@ -41,10 +41,10 @@ function kemet_register_block_patterns() {
 		'404-content',
 		'kemet-left-right-loop',
 		'two-columns-with-image-text-and-a-call-to-action',
+		'two-columns-with-overlay-content-and-a-call-to-action',
 		'information-blocks-for-gardening-services',
-		'simple-call-to-action-section',
-		'four-columns-business-services',
-		'about-us-section-with-overlay'
+		'combined-columns-displays-business-services',
+		'simple-call-to-action-section'
 	);
 
 

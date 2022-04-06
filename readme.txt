@@ -20,6 +20,12 @@ https://www.rawpixel.com/image/3305632/free-photo-image-building-observatory-arc
 https://www.rawpixel.com/image/574635/pink-damskus-rose
 https://www.rawpixel.com/image/574465/blooming-purple-roses
 https://www.rawpixel.com/image/574479/vintage-sulphur-rose-drawing
+https://www.rawpixel.com/image/6074009/cleaning-kitchen-counter
+https://www.rawpixel.com/image/5920162/photo-image-public-domain-free-carpet
+https://www.rawpixel.com/image/5915882/image-light-public-domain-person
+https://www.rawpixel.com/image/3284690/free-photo-image-office-living-room-interior-design
+https://www.rawpixel.com/image/5927609/photo-image-background-public-domain-hands
+
 
 == Changelog ==
 

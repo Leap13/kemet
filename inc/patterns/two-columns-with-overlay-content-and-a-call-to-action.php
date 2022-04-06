@@ -1,10 +1,10 @@
 <?php
 /**
  * Kemet General Patter
- * About Us Section with Overlay
+ * Two Columns with Overlay Content and a Call to Action
  */
 return array(
-	'title'      => __( 'About Us Section with Overlay', 'kemet' ),
+	'title'      => __( 'Two Columns with Overlay Content and a Call to Action', 'kemet' ),
     'categories' => array( 'kemet', 'kemet-general' ),
 	'content'    => '<!-- wp:group -->
     <div class="wp-block-group"><!-- wp:media-text {"mediaPosition":"right","mediaType":"image","imageFill":false,"className":"is-style-kmt-is-overlay"} -->

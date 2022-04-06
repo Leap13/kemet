@@ -1,10 +1,10 @@
 <?php
 /**
  * Kemet General Patter
- * Four Columns Business Services.
+ * Combined Columns Displays Business Services
  */
 return array(
-	'title'      => __( 'Four Columns for Business Services.', 'kemet' ),
+	'title'      => __( 'Combined Columns Displays Business Services', 'kemet' ),
     'categories' => array( 'kemet', 'kemet-general' ),
 	'content'    => '<!-- wp:group {"style":{"spacing":{"padding":{"top":"80px","bottom":"80px"}}}} -->
 <div class="wp-block-group" style="padding-top:80px;padding-bottom:80px"><!-- wp:group {"layout":{"inherit":true}} -->
