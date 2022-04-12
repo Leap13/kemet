@@ -45,7 +45,7 @@ return array(
 <!-- /wp:columns -->
 
 <!-- wp:separator {"color":"cyan-bluish-gray","className":"is-style-wide"} -->
-<hr class="wp-block-separator has-text-color has-background has-cyan-bluish-gray-background-color has-cyan-bluish-gray-color is-style-wide"/>
+<hr class="wp-block-separator has-alpha-channel-opacity has-text-color has-background has-cyan-bluish-gray-background-color has-cyan-bluish-gray-color is-style-wide"/>
 <!-- /wp:separator -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"15px","bottom":"15px"},"blockGap":"0px"}},"layout":{"type":"flex","allowOrientation":false,"justifyContent":"space-between"}} -->

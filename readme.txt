@@ -31,7 +31,7 @@ https://www.rawpixel.com/image/5927609/photo-image-background-public-domain-hand
 
 = 1.2.7 =
 * Tweak: Adding Editor styles file.
-* New: Four Heading Styles
+* New: Four styles for heading block.
 
 = 1.2.6 =
 * Fixed: Pattern Title issue.

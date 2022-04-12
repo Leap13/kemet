@@ -22,7 +22,7 @@ return array(
     <!-- /wp:heading -->
     
     <!-- wp:separator {"color":"primary","className":"is-style-wide"} -->
-    <hr class="wp-block-separator has-text-color has-background has-primary-background-color has-primary-color is-style-wide"/>
+    <hr class="wp-block-separator has-alpha-channel-opacity has-text-color has-background has-primary-background-color has-primary-color is-style-wide"/>
     <!-- /wp:separator -->
     
     <!-- wp:heading {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700"}}} -->

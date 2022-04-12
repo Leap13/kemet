@@ -88,5 +88,38 @@ function register_block_styles() {
 			'label'        => __( 'Overlay', 'kemet' )
 		)
 	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/heading',
+		array(
+			'name'         => 'kmt-top-border',
+			'label'        => __( 'Top Border', 'kemet' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/heading',
+		array(
+			'name'         => 'kmt-bottom-border',
+			'label'        => __( 'Bottom Border', 'kemet' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/heading',
+		array(
+			'name'         => 'kmt-horizontal-border',
+			'label'        => __( 'Horizontal Border', 'kemet' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/heading',
+		array(
+			'name'         => 'kmt-vertical-border',
+			'label'        => __( 'Vertical Border', 'kemet' ),
+		)
+	);
+	
 }
 add_action( 'init', 'register_block_styles' );

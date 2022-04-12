@@ -52,18 +52,19 @@ if ( ! class_exists( 'Kemet_Enqueue_Scripts' ) ) {
 		 */
 		public function editor_styles() {
 			/* Directory and Extension */
-			$file_prefix = ( SCRIPT_DEBUG ) ? '' : '.min';
+			
 			$dir_name    = ( SCRIPT_DEBUG ) ? 'unminified' : 'minified';
-
-			if ( is_rtl() ) {
-				$css_prefix = '-rtl.min.css';
+			$file_prefix = ( SCRIPT_DEBUG ) ? '' : '.min';
+if ( is_rtl() ) {
+				$file_prefix = '-rtl.min';
 				if ( SCRIPT_DEBUG ) {
-					$css_prefix = '-rtl.css';
+					$file_prefix = '-rtl';
 				}
 			}
-
 			// Generate CSS URL.
-			$css_file = './assets/css/' . $dir_name . '/editor' . $file_prefix;
+			$css_file = './assets/css/' . $dir_name . '/editor' . $file_prefix . '.css';
+
+			//add_editor_style( './assets/css/' . $dir_name . '/editor' . $file_prefix . '.css' );
 
 			add_editor_style(
 				array(
