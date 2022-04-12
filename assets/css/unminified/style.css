@@ -220,7 +220,7 @@ input[type="submit"],
   justify-content: right;
 }
 .is-style-kmt-horizontal-border:after {
-  width: 18%;
+  width: 70px;
   height: 3px;
   background-color: var(--wp--preset--color--primary);
   content: "";
@@ -231,7 +231,7 @@ input[type="submit"],
 }
 .has-text-align-center.is-style-kmt-horizontal-border:before,
 .has-text-align-right.is-style-kmt-horizontal-border:before {
-  width: 18%;
+  width: 70px;
   height: 3px;
   background-color: var(--wp--preset--color--primary);
   content: "";
@@ -257,7 +257,7 @@ input[type="submit"],
   justify-content: right;
 }
 .is-style-kmt-top-border:before {
-  width: 18%;
+  width:70px;
   height: 3px;
   background-color: var(--wp--preset--color--primary);
   content: "";
@@ -286,7 +286,7 @@ input[type="submit"],
   justify-content: right;
 }
 .is-style-kmt-bottom-border:after {
-  width: 18%;
+  width: 70px;
   height: 3px;
   background-color: var(--wp--preset--color--primary);
   content: "";
