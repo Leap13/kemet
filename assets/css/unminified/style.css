@@ -351,12 +351,9 @@ ul[class*=is-style-kmt] {
 }
 
 .is-style-kmt-checkmark li::before {
-  content: "\f147";
+  content: "✓";
 	position: absolute;
 	left: 0;
-  font-family: dashicons;
-	font-size: 1em;
-	top: 0.2em;
 }
 
 .is-style-kmt-arrow li {
@@ -366,12 +363,9 @@ ul[class*=is-style-kmt] {
 }
 
 .is-style-kmt-arrow li::before {
-  content: "\f345";
+  content: "›";
 	position: absolute;
 	left: 0;
-  font-family: dashicons;
-	font-size: 1em;
-	top: 0.2em;
 }
 
 .is-style-kmt-border-bottom > li {
