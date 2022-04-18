@@ -81,9 +81,10 @@
     column-gap: 0 !important;
   }
 /* Headings styles */
-.is-style-kmt-vertical-border {
+.is-style-kmt-vertical-border li {
   padding-right: 15px;
   position: relative;
+  list-style: none;
 }
 .has-text-align-center.is-style-kmt-vertical-border,
 .has-text-align-right.is-style-kmt-vertical-border {
@@ -117,6 +118,7 @@
 .has-text-align-center.is-style-kmt-vertical-border:before {
   min-width: 3px;
 }
+
 /* Horizontal Style */
 .is-style-kmt-horizontal-border {
   position: relative;
@@ -130,28 +132,14 @@
   justify-content: right;
 }
 .is-style-kmt-horizontal-border:after {
+  content: "";
   width:70px;
   height: 3px;
-  background-color: var(--wp--preset--color--primary);
-  content: "";
   display: initial;
   line-height: 100%;
   position: relative;
   margin-right: 10px;
-}
-.has-text-align-center.is-style-kmt-horizontal-border:before,
-.has-text-align-right.is-style-kmt-horizontal-border:before {
-  width: 70px;
-  height: 3px;
   background-color: var(--wp--preset--color--primary);
-  content: "";
-  display: initial;
-  line-height: 100%;
-  position: relative;
-  margin-left: 10px;
-}
-.has-text-align-right.is-style-kmt-horizontal-border:after {
-  display: none;
 }
 /* Top border style */
 .is-style-kmt-top-border {
@@ -210,4 +198,75 @@
 }
 .has-text-align-center.is-style-kmt-bottom-border:after {
   align-self: center;
+}
+
+/***** Block List Styles ******/
+ul[class*=is-style-kmt] {
+	list-style: none !important;
+	padding: 0 !important;
+}
+
+.is-style-kmt-aligned-vertical-border li {
+  padding-right: 20px;
+  position: relative;
+  list-style: none;
+}
+
+.is-style-kmt-aligned-vertical-border li::before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background-color: var(--wp--preset--color--primary);
+}
+.is-style-kmt-list-dash li {
+  padding-right: 20px;
+  position: relative;
+  list-style: none;
+}
+
+.is-style-kmt-list-dash li::before {
+  content: "\2013";
+	position: absolute;
+	right: 0;
+}
+
+.is-style-kmt-checkmark li {
+  padding-right: 25px;
+  position: relative;
+  list-style: none;
+}
+
+.is-style-kmt-checkmark li::before {
+  content: "\f147";
+	position: absolute;
+	right: 0;
+  font-family: dashicons;
+	font-size: 1em;
+	top: 0.2em;
+}
+
+.is-style-kmt-arrow li {
+  padding-right: 25px;
+  position: relative;
+  list-style: none;
+}
+
+.is-style-kmt-arrow li::before {
+  content: "\f345";
+	position: absolute;
+	right: 0;
+  font-family: dashicons;
+	font-size: 1em;
+	top: 0.2em;
+}
+
+.is-style-kmt-border-bottom > li {
+	border-bottom: 1px solid;
+	border-color: inherit;
+	margin: 0;
+	padding-top: 8px; 
+	padding-bottom: 8px;
 }

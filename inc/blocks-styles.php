@@ -120,6 +120,48 @@ function register_block_styles() {
 			'label'        => __( 'Vertical Border', 'kemet' ),
 		)
 	);
+
+	// List Styles
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/list',
+		array(
+			'name'         => 'kmt-aligned-vertical-border',
+			'label'        => __( 'Vertical Border', 'kemet' ),
+		)
+	);
+
+	register_block_style(
+		'core/list',
+		array(
+			'name'  => 'kmt-list-dash',
+			'label' => esc_html__( 'Dash icon', 'kemet' ),
+		)
+	);
+
+	register_block_style(
+		'core/list',
+		array(
+			'name'  => 'kmt-checkmark',
+			'label' => esc_html__( 'Checkmark icon', 'kemet' ),
+		)
+	);
+
+	register_block_style(
+		'core/list',
+		array(
+			'name'  => 'kmt-arrow',
+			'label' => esc_html__( 'Arrow icon', 'kemet' ),
+		)
+	);
+
+	register_block_style(
+		'core/list',
+		array(
+			'name'  => 'kmt-border-bottom',
+			'label' => esc_html__( 'Border Bottom', 'kemet' ),
+		)
+	);
 	
 }
 add_action( 'init', 'register_block_styles' );
