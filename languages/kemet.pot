@@ -1,37 +1,21 @@
-# <!=Copyright (C) 2021 Leap13
-# This file is distributed under the GNU General Public License v2 or later.=!>
-#, fuzzy
+# Copyright (C) 2022 Kemet Wordpress Block Theme
+# This file is distributed under the same license as the Kemet Wordpress Block Theme package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Kemet 1.1.17\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/kemet\n"
-"POT-Creation-Date: 2022-03-16 10:51+0200\n"
-"PO-Revision-Date: 2021-10-10 16:57+0200\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"Project-Id-Version: Kemet Wordpress Block Theme\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
-"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
-"esc_html_x:1,2c\n"
+"Content-Transfer-Econdig: 8bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"MIME-Version: 1.0\n"
+"Project-Id-Version: Kemet Wordpress Block Theme\n"
 "X-Poedit-Basepath: ..\n"
-"X-Textdomain-Support: yes\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
-
-#: functions/classes/class-kemet-admin-settings.php:84
-#: inc/kemet-panel/class-kemet-panel.php:119
-msgid "Settings"
-msgstr ""
-
-#: functions/classes/class-kemet-admin-settings.php:84
-#: inc/kemet-panel/class-kemet-panel.php:104
-#: inc/kemet-panel/class-kemet-panel.php:107
-msgid "Kemet"
-msgstr ""
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: inc/block-patterns.php:17
 msgid "Header"
@@ -43,6 +27,10 @@ msgstr ""
 
 #: inc/block-patterns.php:19
 msgid "Sidebar"
+msgstr ""
+
+#: inc/block-patterns.php:20
+msgid "Kemet General"
 msgstr ""
 
 #: inc/blocks-styles.php:16
@@ -77,142 +65,20 @@ msgstr ""
 msgid "Mask Blob"
 msgstr ""
 
-#: inc/blocks-styles.php:124
+#: inc/blocks-styles.php:124, inc/blocks-styles.php:136
 msgid "Shadow"
 msgstr ""
 
-#: inc/blocks/react/build/index.js:316
-msgid "Mobile logo"
+#: inc/blocks-styles.php:148
+msgid "Overlay"
 msgstr ""
 
-#: inc/blocks/react/build/index.js:329
-msgid "Choose an logo"
+#: functions/classes/class-kemet-admin-settings.php:84, inc/kemet-panel/class-kemet-panel.php:119, inc/kemet-panel/class-kemet-panel.php:119
+msgid "Settings"
 msgstr ""
 
-#: inc/blocks/react/build/index.js:340
-msgid "Remove logo"
-msgstr ""
-
-#: inc/blocks/react/build/index.js:437
-msgid "Dimensions"
-msgstr ""
-
-#: inc/blocks/react/build/index.js:443 inc/blocks/react/build/index.js:448
-msgid "Padding"
-msgstr ""
-
-#: inc/blocks/react/build/index.js:457 inc/blocks/react/build/index.js:462
-msgid "Margin"
-msgstr ""
-
-#: inc/blocks/react/build/index.js:581 inc/blocks/react/build/index.js:596
-msgid "Kemet Settings"
-msgstr ""
-
-#: inc/blocks/react/build/index.js:584
-msgid "Enable Sticky Header"
-msgstr ""
-
-#: inc/blocks/react/build/index.js:590
-msgid "Enable Overlay Header"
-msgstr ""
-
-#: inc/blocks/react/build/index.js:599
-msgid "Enable Sticky Footer"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/build/index.js:4254
-msgid "Welcome"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/build/index.js:4263
-msgid "Recommended Plugins"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/build/index.js:4272
-msgid "System Info"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/build/index.js:4352
-msgid "Theme Documentation"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/build/index.js:4767
-#: inc/kemet-panel/assets/js/build/index.js:4812
-msgid "Invalid Email Address..."
-msgstr ""
-
-#: inc/kemet-panel/assets/js/build/index.js:4768
-#: inc/kemet-panel/assets/js/build/index.js:4813
-msgid "Please enter a valid email address!"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/build/index.js:4804
-msgid "Success"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/build/index.js:4805
-msgid "Thanks for your subscribe!"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/build/index.js:4854
-msgid "Have a Question?"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/build/index.js:4871
-msgid "Knowledge Base"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/build/index.js:4873
-msgid ""
-"Kemet Theme documentation library will guide you to build your next Kemet "
-"website easily without any need to touch a single line of code."
-msgstr ""
-
-#: inc/kemet-panel/assets/js/build/index.js:4879
-msgid "Documentation"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/build/index.js:4895
-msgid "Need Help?"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/build/index.js:4897
-msgid ""
-"Have a question? Kemet support team is here to help you by answering your "
-"questions and handling your issues within 24-48 hours."
-msgstr ""
-
-#: inc/kemet-panel/assets/js/build/index.js:4903
-msgid "Submit a Ticket"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/build/index.js:4917
-msgid "Follow us"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/build/index.js:4919
-msgid ""
-"Come and join our Facebook group! Share your thoughts, opinions, "
-"suggestions, and help others. You will always be more than welcome!"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/build/index.js:4925
-msgid "Facebook Group"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/build/index.js:4937
-msgid "Subscribe to Our Newsletter"
-msgstr ""
-
-#: inc/kemet-panel/assets/js/build/index.js:4939
-msgid ""
-"Enter your email address and be the first to know the latest features, "
-"offers, and updates."
-msgstr ""
-
-#: inc/kemet-panel/assets/js/build/index.js:4954
-msgid "Submit"
+#: functions/classes/class-kemet-admin-settings.php:84, inc/kemet-panel/class-kemet-panel.php:104, inc/kemet-panel/class-kemet-panel.php:107
+msgid "Kemet"
 msgstr ""
 
 #: inc/patterns/404-content.php:6
@@ -224,33 +90,63 @@ msgid "Oops! This page can't be found."
 msgstr ""
 
 #: inc/patterns/404-content.php:15
-msgid ""
-"The page you are looking for does not exist or may have been moved/renamed. "
-"Please try a search."
+msgid "The page you are looking for does not exist or may have been moved/renamed. Please try a search."
+msgstr ""
+
+#: inc/patterns/combined-columns-displays-business-services.php:7
+msgid "Combined Columns Displays Business Services"
+msgstr ""
+
+#: inc/patterns/combined-columns-displays-business-services.php:14
+msgid "Our Services"
+msgstr ""
+
+#: inc/patterns/combined-columns-displays-business-services.php:18
+msgid "We Have got all your cleaning needs covered."
+msgstr ""
+
+#: inc/patterns/combined-columns-displays-business-services.php:24
+msgid "With over 25 years of experience cleaning everything from houses to offices, you can trust us with your health and safety."
+msgstr ""
+
+#: inc/patterns/combined-columns-displays-business-services.php:33
+msgid "Contact Us"
+msgstr ""
+
+#: inc/patterns/combined-columns-displays-business-services.php:53
+msgid "Carpet Cleaning"
+msgstr ""
+
+#: inc/patterns/combined-columns-displays-business-services.php:57, inc/patterns/combined-columns-displays-business-services.php:77, inc/patterns/combined-columns-displays-business-services.php:97, inc/patterns/combined-columns-displays-business-services.php:117
+msgid "Donec rutrum congue leo eget malesuada praesent sed."
+msgstr ""
+
+#: inc/patterns/combined-columns-displays-business-services.php:73
+msgid "Residential Cleaning"
+msgstr ""
+
+#: inc/patterns/combined-columns-displays-business-services.php:93
+msgid "Window Cleaning"
+msgstr ""
+
+#: inc/patterns/combined-columns-displays-business-services.php:113
+msgid "Company Cleaning"
 msgstr ""
 
 #: inc/patterns/footer.php:6
 msgid "Default Footer"
 msgstr ""
 
-#: inc/patterns/footer.php:14
+#: inc/patterns/footer.php:14, inc/patterns/sidebar.php:18
 msgid "About Us"
 msgstr ""
 
-#: inc/patterns/footer.php:18
-msgid ""
-"Leap13 is a 5 Stars rated WordPress-focused web development firm "
-"specialized in building Premium WordPress Themes and Plugins."
+#: inc/patterns/footer.php:18, inc/patterns/footer.php:32, inc/patterns/sidebar.php:22
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 msgstr ""
 
 #: inc/patterns/footer.php:28
 msgid "Join The Community"
-msgstr ""
-
-#: inc/patterns/footer.php:32
-msgid ""
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "
-"tempor incididunt ut labore et dolore magna aliqua."
 msgstr ""
 
 #: inc/patterns/footer.php:56
@@ -273,10 +169,138 @@ msgstr ""
 msgid "Header with top bar"
 msgstr ""
 
-#: inc/patterns/header.php:6 inc/patterns/sidebar.php:6
+#: inc/patterns/header.php:6, inc/patterns/sidebar.php:6
 msgid "Default Header"
 msgstr ""
 
-#: inc/patterns/header.php:33
+#: inc/patterns/header.php:26
 msgid "Click Here"
+msgstr ""
+
+#: inc/patterns/information-blocks-for-gardening-services.php:7
+msgid "Information Blocks for Gardening Services."
+msgstr ""
+
+#: inc/patterns/information-blocks-for-gardening-services.php:13
+msgid "Keep Your Property Looking Beautiful"
+msgstr ""
+
+#: inc/patterns/information-blocks-for-gardening-services.php:17
+msgid "Customized Garden Services"
+msgstr ""
+
+#: inc/patterns/information-blocks-for-gardening-services.php:21
+msgid "Give your property a professional touch and organic atmosphere with our authentic gardening services."
+msgstr ""
+
+#: inc/patterns/information-blocks-for-gardening-services.php:44
+msgid "Hedging Services"
+msgstr ""
+
+#: inc/patterns/information-blocks-for-gardening-services.php:48
+msgid "Sed ut perspiciatis unde omnis iste natus ipsum."
+msgstr ""
+
+#: inc/patterns/information-blocks-for-gardening-services.php:64
+msgid "Irrigation Services"
+msgstr ""
+
+#: inc/patterns/information-blocks-for-gardening-services.php:68
+msgid "Accusantium doloremque laudantium totam rem."
+msgstr ""
+
+#: inc/patterns/information-blocks-for-gardening-services.php:84
+msgid "Mulching Services"
+msgstr ""
+
+#: inc/patterns/information-blocks-for-gardening-services.php:88
+msgid "Quasi architecto beatae vitae dicta sunt explicabo."
+msgstr ""
+
+#: inc/patterns/kemet-left-right-loop.php:6
+msgid "Left Right Blog"
+msgstr ""
+
+#: inc/patterns/sidebar.php:30
+msgid "Latest Posts"
+msgstr ""
+
+#: inc/patterns/sidebar.php:40
+msgid "Follow Us"
+msgstr ""
+
+#: inc/patterns/sidebar.php:44
+msgid "Vestibulum ante ipsum primis in faucibus orci luctus et."
+msgstr ""
+
+#: inc/patterns/simple-call-to-action-section.php:7
+msgid "Simple Call to Action Section."
+msgstr ""
+
+#: inc/patterns/simple-call-to-action-section.php:17
+msgid "Get in Touch"
+msgstr ""
+
+#: inc/patterns/simple-call-to-action-section.php:21
+msgid "Contact us"
+msgstr ""
+
+#: inc/patterns/simple-call-to-action-section.php:21
+msgid " if you have an inquiry or feedback"
+msgstr ""
+
+#: inc/patterns/simple-call-to-action-section.php:27
+msgid "Email: mail@example.com"
+msgstr ""
+
+#: inc/patterns/simple-call-to-action-section.php:33
+msgid "Phone:+(223)17620314780"
+msgstr ""
+
+#: inc/patterns/simple-call-to-action-section.php:40
+msgid "Contact With Us"
+msgstr ""
+
+#: inc/patterns/two-columns-with-image-text-and-a-call-to-action.php:7
+msgid "Two Columns with Image, Text, and a Call to Action."
+msgstr ""
+
+#: inc/patterns/two-columns-with-image-text-and-a-call-to-action.php:13
+msgid "Coffee Cups"
+msgstr ""
+
+#: inc/patterns/two-columns-with-image-text-and-a-call-to-action.php:21
+msgid "Coffee is Awesome"
+msgstr ""
+
+#: inc/patterns/two-columns-with-image-text-and-a-call-to-action.php:29
+msgid "Start your day with a cup of coffee"
+msgstr ""
+
+#: inc/patterns/two-columns-with-image-text-and-a-call-to-action.php:33
+msgid "Taste and See Coffee Shop and Gallery offers a unique coffee house environment unlike any other in Macon. We are not only a place to drop in and get your morning cup of coffee, we are a place where you can sit down and enjoy that tailor-made cup of coffee. If you need to work, we have a seating area created specifically for you. If you need to rest, We look forward to serving you at Taste &amp; See Coffee Shop and Gallery."
+msgstr ""
+
+#: inc/patterns/two-columns-with-image-text-and-a-call-to-action.php:42
+msgid "MORE ABOUT US"
+msgstr ""
+
+#: inc/patterns/two-columns-with-overlay-content-and-a-call-to-action.php:7
+msgid "Two Columns with Overlay Content and a Call to Action"
+msgstr ""
+
+#: inc/patterns/two-columns-with-overlay-content-and-a-call-to-action.php:17
+msgid "ABOUT US"
+msgstr ""
+
+#: inc/patterns/two-columns-with-overlay-content-and-a-call-to-action.php:21
+msgid "IT Solutions for You Business"
+msgstr ""
+
+#: inc/patterns/two-columns-with-overlay-content-and-a-call-to-action.php:25
+msgid "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+msgstr ""
+
+#: inc/patterns/two-columns-with-overlay-content-and-a-call-to-action.php:34
+msgid "More About Us"
 msgstr ""

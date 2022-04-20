@@ -3,7 +3,7 @@ Contributors: kemet
 Tested up to: 5.9
 Requires at least: 5.9
 Requires PHP: 7.2
-Stable tag: 1.2.2
+Stable tag: 1.2.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,7 +11,46 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Kemet is a Fast, Reliable, and World-Class Full Site Editing WordPress Block Theme suitable for business websites, blogs, personal portfolios. Kemet is bundled with outstanding pre-built Templates, Template Parts, and designer-made Block Patterns to help you get your WordPress website almost with no effort. Besides, Kemet will allow you to set your full website’s color scheme globally in seconds by selecting from ready-to-use light and dark authentic color palettes. Here are some of the theme's unique features: Sticky Header, Sticky Footer, Extra Styles for Group Block, Advanced Styles for Image Block, Button Block Styles, Responsive Website Logo, RTL & Translation Ready.
 
+== Images ==
+
+License CC0: https://www.rawpixel.com/services/licenses
+
+https://www.rawpixel.com/image/3305585/free-photo-image-coffee-drinking-beverage
+https://www.rawpixel.com/image/3305632/free-photo-image-building-observatory-architecture
+https://www.rawpixel.com/image/574635/pink-damskus-rose
+https://www.rawpixel.com/image/574465/blooming-purple-roses
+https://www.rawpixel.com/image/574479/vintage-sulphur-rose-drawing
+https://www.rawpixel.com/image/6074009/cleaning-kitchen-counter
+https://www.rawpixel.com/image/5920162/photo-image-public-domain-free-carpet
+https://www.rawpixel.com/image/5915882/image-light-public-domain-person
+https://www.rawpixel.com/image/3284690/free-photo-image-office-living-room-interior-design
+https://www.rawpixel.com/image/5927609/photo-image-background-public-domain-hands
+
+
 == Changelog ==
+
+= 1.2.8 =
+* New: Five styles for List block.
+
+= 1.2.7 =
+* Tweak: Adding Editor styles file.
+* New: Four styles for heading block.
+
+= 1.2.6 =
+* Fixed: Pattern Title issue.
+* Updated: POT file.
+
+= 1.2.5 =
+* New: Two New Patterns.
+* Added: Overlay and Shadow styles for Media & Text block
+* Fixed: Pattern images URL issue.
+
+= 1.2.4 =
+* Added: Three New Patterns.
+* Added: Google fonts Library via Kemet Panel to load only the required fonts in the Global Typography control.
+
+= 1.2.3 =
+* Tweak: Change default content.
 
 = 1.2.2 =
 * Fixed: Overlay Sticky Header issue.

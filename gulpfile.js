@@ -5,6 +5,7 @@ const gulp = require('gulp'),
 	sass = require('gulp-sass')(require('sass')),
 	rtlcss = require('gulp-rtlcss'),
 	rename = require('gulp-rename');
+	var wpPot = require('gulp-wp-pot');
 
 
 gulp.task('sass', function () {
@@ -102,6 +103,16 @@ gulp.task('release', function () {
 		.pipe(gulp.dest('./'));
 });
 
+
+ 
+gulp.task('makepot', function () {
+    return gulp.src('./**/*.php')
+        .pipe(wpPot( {
+            domain: 'kemet',
+            package: 'Kemet Wordpress Block Theme'
+        } ))
+        .pipe(gulp.dest('languages/kemet.pot'));
+});
 gulp.task(
 	'minify',
 	gulp.series(

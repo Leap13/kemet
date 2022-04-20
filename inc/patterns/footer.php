@@ -7,15 +7,15 @@ return array(
 	'categories' => array( 'kemet', 'footer' ),
 	'blockTypes' => array( 'core/template-part/footer' ),
 	'content'    => '
-    <!-- wp:group {"style":{"spacing":{"blockGap":"0px","padding":{"bottom":"0px"}}},"backgroundColor":"tertiary","textColor":"secondary","layout":{"inherit":true}} -->
-<div class="wp-block-group has-secondary-color has-tertiary-background-color has-text-color has-background" style="padding-bottom:0px"><!-- wp:columns {"style":{"spacing":{"padding":{"bottom":"10px"}}}} -->
-<div class="wp-block-columns" style="padding-bottom:10px"><!-- wp:column -->
+    <!-- wp:group {"style":{"spacing":{"blockGap":"0px","padding":{"top":"0px","bottom":"0px"}}},"backgroundColor":"tertiary","className":"has-secondary-color has-text-color","layout":{"inherit":true}} -->
+<div class="wp-block-group has-secondary-color has-text-color has-tertiary-background-color has-background" style="padding-top:0px;padding-bottom:0px"><!-- wp:columns {"style":{"spacing":{"padding":{"bottom":"0px","top":"20px"}}}} -->
+<div class="wp-block-columns" style="padding-top:20px;padding-bottom:0px"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":4,"textColor":"secondary"} -->
 <h4 class="has-secondary-color has-text-color" id="about-us">' . esc_html__( 'About Us', 'kemet' ) . '</h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>' . esc_html__( 'Leap13 is a 5 Stars rated WordPress-focused web development firm specialized in building Premium WordPress Themes and Plugins.', 'kemet') . '</p>
+<p>' . esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'kemet') . '</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -45,7 +45,7 @@ return array(
 <!-- /wp:columns -->
 
 <!-- wp:separator {"color":"cyan-bluish-gray","className":"is-style-wide"} -->
-<hr class="wp-block-separator has-text-color has-background has-cyan-bluish-gray-background-color has-cyan-bluish-gray-color is-style-wide"/>
+<hr class="wp-block-separator has-alpha-channel-opacity has-text-color has-background has-cyan-bluish-gray-background-color has-cyan-bluish-gray-color is-style-wide"/>
 <!-- /wp:separator -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"15px","bottom":"15px"},"blockGap":"0px"}},"layout":{"type":"flex","allowOrientation":false,"justifyContent":"space-between"}} -->
