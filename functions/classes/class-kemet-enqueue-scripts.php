@@ -99,7 +99,7 @@ if ( is_rtl() ) {
 						'permission_callback' => array( $controller, 'get_theme_item_permissions_check' ),
 						'args'                => array(
 							'stylesheet' => array(
-								'description'       => __( 'The theme identifier' ),
+								'description'       => __( 'The theme identifier', 'kemet' ),
 								'type'              => 'string',
 								'sanitize_callback' => array( $controller, '_sanitize_global_styles_callback' ),
 							),
