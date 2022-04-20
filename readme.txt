@@ -3,7 +3,7 @@ Contributors: kemet
 Tested up to: 5.9
 Requires at least: 5.9
 Requires PHP: 7.2
-Stable tag: 1.2.8
+Stable tag: 1.2.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,9 @@ https://www.rawpixel.com/image/5927609/photo-image-background-public-domain-hand
 
 
 == Changelog ==
+
+= 1.2.9 =
+* Fixed: Google fonts load in kemet panel issue.
 
 = 1.2.8 =
 * New: Five styles for List block.
