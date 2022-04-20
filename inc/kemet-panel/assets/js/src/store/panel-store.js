@@ -5,7 +5,11 @@ const PanelContext = React.createContext({
     plugins: {},
     pluginsStatus: {},
     recommendedPlugins: [],
-    doAction: (action, plugin) => { }
+    doAction: (action, plugin) => { },
+    googleFonts: [],
+    addFont: (font) => { },
+    changeFont: (font, index) => { },
+    removeFont: (index) => { }
 })
 
 export const PanelProvider = (props) => {
@@ -16,6 +20,8 @@ export const PanelProvider = (props) => {
     const pluginsCache = KemetPanelData.plugins_cache;
     const [pluginsStatus, setPluginStatus] = useState(pluginsCache || []);
     const recommendedPlugins = KemetPanelData.recommended_plugins;
+    const fontsCache = KemetPanelData.savedFonts;
+    const [googleFonts, setGooleFonts] = useState(fontsCache || []);
 
     const updatePluginsStatus = async () => {
         const body = new FormData()
@@ -82,6 +88,24 @@ export const PanelProvider = (props) => {
         }
     }
 
+    const addFont = (font) => {
+        const newFonts = [...googleFonts];
+        newFonts.push(font);
+        setGooleFonts(newFonts);
+    }
+
+    const changeFont = (font, index) => {
+        const newFonts = [...googleFonts];
+        newFonts[index] = font;
+        setGooleFonts(newFonts);
+    }
+
+    const removeFont = (font) => {
+        let newFonts = [...googleFonts];
+        newFonts = newFonts.filter(fontdata => fontdata.name !== font.name);
+        setGooleFonts(newFonts);
+    }
+
     const pluginsContext = {
         tabs,
         plugins,
@@ -89,7 +113,12 @@ export const PanelProvider = (props) => {
         pluginActions,
         recommendedPlugins,
         doAction: doAction,
+        googleFonts,
+        addFont,
+        changeFont,
+        removeFont
     };
+
     return <PanelContext.Provider value={pluginsContext}>
         {props.children}
     </PanelContext.Provider>

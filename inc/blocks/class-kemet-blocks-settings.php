@@ -128,9 +128,9 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 
 			/* Directory and Extension */
 			$file_prefix = ( SCRIPT_DEBUG ) ? '' : '.min';
+			$dir_name    = ( SCRIPT_DEBUG ) ? 'unminified' : 'minified';
 
-			$js_uri  = KEMET_THEME_URI . 'assets/js/';
-			$css_uri = KEMET_THEME_URI . 'assets/css/';
+			$js_uri  = KEMET_THEME_URI . 'assets/js/' . $dir_name . '/';
 
 			if ( is_array( $scripts ) && ! empty( $scripts ) ) {
 				// Register & Enqueue Scripts.

@@ -27,6 +27,8 @@ if ( is_admin() ) {
 	 * Admin Menu Settings.
 	 */
 	require_once KEMET_THEME_DIR . 'functions/classes/class-kemet-admin-settings.php';
+	// Fonts Data.
+	require_once KEMET_THEME_DIR . 'inc/class-kemet-font-families.php';
 }
 
 // Required files.
@@ -37,3 +39,7 @@ require_once KEMET_THEME_DIR . 'inc/blocks-styles.php';
 // Add Kemet block patterns
 require get_template_directory() . '/inc/block-patterns.php';
 
+/**
+ * Compatibility.
+ */
+require_once KEMET_THEME_DIR . 'inc/compatibility/woocommerce/class-kemet-woocommerce.php';

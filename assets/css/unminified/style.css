@@ -8,6 +8,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 99;
 }
 .wp-block-buttons .wp-block-button .wp-block-button__link:hover {
   opacity: 0.9;
@@ -63,7 +64,8 @@ input[type="submit"],
   background-color: var(--wp--preset--color--background);
 }
 
-.wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {
+.wp-block-search.wp-block-search__button-inside
+  .wp-block-search__inside-wrapper {
   border-color: #ddd !important;
 }
 @media (max-width: 600px) {
@@ -90,6 +92,6 @@ input[type="submit"],
 .wp-site-blocks > .wp-block-group,
 .wp-block-group.has-background,
 .wp-block-group:where(.has-background) {
-	padding-left: 15px !important;
-	padding-right: 15px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
 }
