@@ -29,7 +29,7 @@ https://www.rawpixel.com/image/5927609/photo-image-background-public-domain-hand
 
 == Changelog ==
 = 1.2.11 =
-* Fixed: Query loop doesn't work properly in the archive/tags pages.
+* Fixed: Query loop doesn't work properly in the archive/tag pages.
 
 = 1.2.10 =
 * Fixed: Query loop doesn't work properly in the search template.
