@@ -36,6 +36,7 @@ function kemet_register_block_patterns() {
 	$block_patterns = array(
 		'header-with-top-bar',
 		'header',
+		'header-with-button-socialicons',
 		'footer',
 		'sidebar',
 		'404-content',
