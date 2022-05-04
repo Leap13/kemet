@@ -17,7 +17,7 @@ return array(
 <!-- wp:group {"layout":{"type":"flex","allowOrientation":false,"justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:navigation -->
 <!-- wp:page-list /-->
-<!-- /wp:navigation --></div>
+<!-- /wp:navigation -->
 
 <!-- wp:social-links {"iconColor":"background","iconColorValue":"#ffffff","iconBackgroundColor":"tertiary","iconBackgroundColorValue":"#02273a","size":"has-small-icon-size","className":"is-style-default","layout":{"type":"flex","justifyContent":"space-between"},"style":{"spacing":{"blockGap":"8px"}}} -->
 <ul class="wp-block-social-links has-small-icon-size has-icon-color has-icon-background-color is-style-default"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
@@ -31,7 +31,7 @@ return array(
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"primary","textColor":"foreground","className":"is-style-fill"} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-foreground-color has-primary-background-color has-text-color has-background">Get Started</a></div>
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-foreground-color has-primary-background-color has-text-color has-background">' . esc_html__('Get Started', 'kemet') . '</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
