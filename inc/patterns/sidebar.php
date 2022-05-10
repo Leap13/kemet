@@ -4,7 +4,7 @@
  */
 return array(
 	'title'      => __( 'Default Header', 'kemet' ),
-	'categories' => array( 'kemet', 'sidebar' ),
+	'categories' => array( 'kemet-sidebars' ),
 	'blockTypes' => array( 'core/template-part/sidebar' ),
 	'content'    => '
 	<!-- wp:group -->

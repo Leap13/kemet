@@ -3,7 +3,7 @@ Contributors: kemet
 Tested up to: 5.9
 Requires at least: 5.9
 Requires PHP: 7.2
-Stable tag: 1.2.12
+Stable tag: 1.2.13
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,10 @@ https://www.rawpixel.com/image/5927609/photo-image-background-public-domain-hand
 
 
 == Changelog ==
+= 1.2.13 =
+* Fixed: Footer Spacing Issue
+* Added: New Header with contact information Pattern.
+
 = 1.2.12 =
 * Added: New Header template part.
 

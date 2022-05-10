@@ -4,7 +4,7 @@
  */
 return array(
 	'title'      => __( 'Left Right Blog', 'kemet' ),
-	'categories' => array( 'kemet', 'query' ),
+	'categories' => array( 'kemet-patterns', 'query' ),
 	'content'    => '
 	<!-- wp:query {"queryId":7,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"className":"kemet-right-left-loop","layout":{"inherit":true}} -->
 <div class="wp-block-query kemet-right-left-loop"><!-- wp:post-template -->

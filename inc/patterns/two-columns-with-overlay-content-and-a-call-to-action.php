@@ -5,7 +5,7 @@
  */
 return array(
 	'title'      => __( 'Two Columns with Overlay Content and a Call to Action', 'kemet' ),
-    'categories' => array( 'kemet', 'kemet-general' ),
+    'categories' => array( 'kemet-patterns' ),
 	'content'    => '<!-- wp:group -->
     <div class="wp-block-group"><!-- wp:media-text {"mediaPosition":"right","mediaType":"image","imageFill":false,"className":"is-style-kmt-is-overlay"} -->
         <div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-style-kmt-is-overlay"><figure class="wp-block-media-text__media"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/man-with-pen.jpg" alt=""/></figure><div class="wp-block-media-text__content"><!-- wp:spacer {"height":"30px"} -->

@@ -14,10 +14,10 @@ if ( ! function_exists( 'kemet_register_block_patterns' ) ) :
  */
 function kemet_register_block_patterns() {
 	$block_pattern_categories = array(
-		'header' => array( 'label' => __( 'Header', 'kemet' ) ),
-		'footer' => array( 'label' => __( 'Footer', 'kemet' ) ),
-		'sidebar' => array( 'label' => __( 'Sidebar', 'kemet' ) ),
-		'kemet-general' => array( 'label' => __( 'Kemet General', 'kemet' ) ),
+		'kemet-headers' => array( 'label' => __( 'Kemet Headers', 'kemet' ) ),
+		'kemet-footers' => array( 'label' => __( 'Kemet Footers', 'kemet' ) ),
+		'kemet-patterns' => array( 'label' => __( 'Kemet Patterns', 'kemet' ) ),
+		'kemet-sidebars' => array( 'label' => __( 'Kemet Sidebar', 'kemet' ) ),
 	);
 
 	
@@ -37,6 +37,7 @@ function kemet_register_block_patterns() {
 		'header-with-top-bar',
 		'header',
 		'header-with-button-socialicons',
+		'header-with-contact-information',
 		'footer',
 		'sidebar',
 		'404-content',

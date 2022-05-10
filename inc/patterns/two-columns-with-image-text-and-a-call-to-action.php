@@ -5,7 +5,7 @@
  */
 return array(
 	'title'      => __( 'Two Columns with Image, Text, and a Call to Action.', 'kemet' ),
-	'categories' => array( 'kemet', 'kemet-general' ),
+	'categories' => array( 'kemet-patterns' ),
 	'content'    => '<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"80px","bottom":"80px"}}},"layout":{"inherit":true}} -->
     <div class="wp-block-group alignfull" style="padding-top:80px;padding-bottom:80px"><!-- wp:columns -->
     <div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->

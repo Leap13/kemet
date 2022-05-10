@@ -4,12 +4,12 @@
  */
 return array(
 	'title'      => __( 'Default Footer', 'kemet' ),
-	'categories' => array( 'kemet', 'footer' ),
+	'categories' => array( 'kemet-footers' ),
 	'blockTypes' => array( 'core/template-part/footer' ),
 	'content'    => '
     <!-- wp:group {"style":{"spacing":{"blockGap":"0px","padding":{"top":"0px","bottom":"0px"}}},"backgroundColor":"tertiary","className":"has-secondary-color has-text-color","layout":{"inherit":true}} -->
 <div class="wp-block-group has-secondary-color has-text-color has-tertiary-background-color has-background" style="padding-top:0px;padding-bottom:0px"><!-- wp:columns {"style":{"spacing":{"padding":{"bottom":"0px","top":"20px"}}}} -->
-<div class="wp-block-columns" style="padding-top:20px;padding-bottom:0px"><!-- wp:column -->
+<div class="wp-block-columns" style="padding-top:20px;padding-bottom:20px"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":4,"textColor":"secondary"} -->
 <h4 class="has-secondary-color has-text-color" id="about-us">' . esc_html__( 'About Us', 'kemet' ) . '</h4>
 <!-- /wp:heading -->

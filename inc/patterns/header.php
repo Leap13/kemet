@@ -4,7 +4,7 @@
  */
 return array(
 	'title'      => __( 'Default Header', 'kemet' ),
-	'categories' => array( 'kemet', 'header' ),
+	'categories' => array( 'kemet-headers', 'header' ),
 	'blockTypes' => array( 'core/template-part/header' ),
 	'content'    => '
 	<!-- wp:group {"tagName":"header","style":{"spacing":{"blockGap":"0px","padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}},"backgroundColor":"background","layout":{"inherit":true}} -->

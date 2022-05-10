@@ -6,7 +6,7 @@
 return array(
 	'title'      => __( 'Simple Call to Action Section.', 'kemet' ),
     'blockTypes' => array( 'core/cover' ),
-    'categories' => array( 'kemet', 'kemet-general' ),
+    'categories' => array( 'kemet-patterns' ),
 	'content'    => '<!-- wp:cover {"url":"' . esc_url( get_template_directory_uri() ) . '/assets/images/architecture-building.jpeg","id":979,"hasParallax":true,"dimRatio":80,"overlayColor":"tertiary","align":"wide","style":{"spacing":{"padding":{"top":"140px","bottom":"140px"}}}} -->
     <div class="wp-block-cover alignwide has-parallax" style="padding-top:140px;padding-bottom:140px;background-image:url(' . esc_url( get_template_directory_uri() ) . '/assets/images/architecture-building.jpeg)"><span aria-hidden="true" class="has-tertiary-background-color has-background-dim-80 wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group -->
     <div class="wp-block-group"><!-- wp:paragraph {"align":"center","textColor":"primary","fontSize":"x-large"} -->
