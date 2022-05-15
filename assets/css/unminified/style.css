@@ -84,12 +84,12 @@ input[type="submit"],
   color: currentColor;
 }
 
-.wp-site-blocks > .wp-block-group,
+/* .wp-site-blocks > .wp-block-group,
 .wp-block-group.has-background,
 .wp-block-group:where(.has-background) {
   padding-left: 15px !important;
   padding-right: 15px !important;
-}
+} */
 
 
 /* .wp-block-media-text .wp-block-media-text__media {
