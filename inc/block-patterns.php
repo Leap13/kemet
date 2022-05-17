@@ -39,6 +39,8 @@ function kemet_register_block_patterns() {
 		'header-with-button-socialicons',
 		'header-with-contact-information',
 		'footer',
+		'3-columns-footer-with-contact-information',
+		'minimal-one-column-footer',
 		'sidebar',
 		'404-content',
 		'kemet-left-right-loop',
