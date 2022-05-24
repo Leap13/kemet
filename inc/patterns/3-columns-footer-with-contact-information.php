@@ -6,9 +6,8 @@ return array(
 	'title'      => __( '3 Columns Footer with Contact Information', 'kemet' ),
 	'categories' => array( 'kemet-footers' ),
 	'blockTypes' => array( 'core/template-part/footer' ),
-	'content'    => '
-    <!-- wp:cover {"url":"' . esc_url( get_template_directory_uri() ) . '/assets/images/lined-bg.jpg","id":2119,"dimRatio":90,"overlayColor":"tertiary","contentPosition":"center center","align":"full"} -->
-<div class="wp-block-cover alignfull"><span aria-hidden="true" class="wp-block-cover__background has-tertiary-background-color has-background-dim-90 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2119" alt="" src="https://nilepromotion.com/ghada/wp-content/uploads/2022/05/lined-bg.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"60px","bottom":"60px","left":"10px","right":"10px"}}},"layout":{"inherit":true}} -->
+	'content'    => '<!-- wp:cover {"url":"' . esc_url( get_template_directory_uri() ) . '/assets/images/lined-bg.jpg","id":2119,"dimRatio":90,"overlayColor":"tertiary","contentPosition":"center center","align":"full"} -->
+<div class="wp-block-cover alignfull"><span aria-hidden="true" class="has-tertiary-background-color has-background-dim-90 wp-block-cover__gradient-background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2119" alt="" src="' . esc_url( get_template_directory_uri() ) . '/assets/images/lined-bg.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"60px","bottom":"60px","left":"10px","right":"10px"}}},"layout":{"inherit":true}} -->
 <div class="wp-block-group alignfull" style="padding-top:60px;padding-right:10px;padding-bottom:60px;padding-left:10px"><!-- wp:group {"layout":{"inherit":true}} -->
 <div class="wp-block-group"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
@@ -63,8 +62,8 @@ return array(
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"left":"10px","right":"10px"}}},"layout":{"inherit":true}} -->
-<div class="wp-block-group" style="padding-right:10px;padding-left:10px"><!-- wp:separator {"style":{"color":{"background":"#ffffff21"}},"className":"is-style-wide"} -->
-<hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="background-color:#ffffff21;color:#ffffff21"/>
+<div class="wp-block-group" style="padding-right:10px;padding-left:10px"><!-- wp:separator {"className":"has-text-color has-alpha-channel-opacity has-background is-style-wide"} -->
+<hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide"/>
 <!-- /wp:separator --></div>
 <!-- /wp:group -->
 
