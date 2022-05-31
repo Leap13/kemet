@@ -3,7 +3,7 @@ Contributors: kemet
 Tested up to: 5.9
 Requires at least: 5.9
 Requires PHP: 7.2
-Stable tag: 1.2.15
+Stable tag: 1.2.16
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,9 +26,15 @@ https://www.rawpixel.com/image/5915882/image-light-public-domain-person
 https://www.rawpixel.com/image/3284690/free-photo-image-office-living-room-interior-design
 https://www.rawpixel.com/image/5927609/photo-image-background-public-domain-hands
 https://www.rawpixel.com/image/5915477/image-background-iphone-wallpaper-public-domain
+https://www.rawpixel.com/image/3864892/illustration-image-tree-art-vincent-van-gogh
 
 
 == Changelog ==
+= 1.2.16 =
+* Added: Testimonials Pattern
+* Added: Content Pattern
+* Fixed: Doublicate header tag
+
 = 1.2.15 =
 * Added: Two footer patterns.
 * Fixed: Default Header width issue.

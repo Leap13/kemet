@@ -7,7 +7,7 @@ return array(
 	'categories' => array( 'kemet-headers', 'header' ),
 	'blockTypes' => array( 'core/template-part/header' ),
 	'content'    => '
-    <!-- wp:group {"tagName":"header","style":{"spacing":{"blockGap":"0px"}},"layout":{"inherit":false}} -->
+    <!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"layout":{"inherit":false}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"0px","padding":{"right":"0px","left":"0px"}}},"backgroundColor":"tertiary","textColor":"secondary","layout":{"inherit":true}} -->
 <div class="wp-block-group has-secondary-color has-tertiary-background-color has-text-color has-background" style="padding-right:0px;padding-left:0px"><!-- wp:group {"layout":{"inherit":true}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"layout":{"type":"flex","allowOrientation":false,"justifyContent":"space-between"}} -->

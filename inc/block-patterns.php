@@ -48,7 +48,8 @@ function kemet_register_block_patterns() {
 		'two-columns-with-overlay-content-and-a-call-to-action',
 		'information-blocks-for-gardening-services',
 		'combined-columns-displays-business-services',
-		'simple-call-to-action-section'
+		'simple-call-to-action-section',
+		'testimonials-section'
 	);
 
 
