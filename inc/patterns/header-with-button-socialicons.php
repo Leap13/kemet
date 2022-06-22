@@ -7,8 +7,8 @@ return array(
 	'categories' => array( 'kemet-headers', 'header' ),
 	'blockTypes' => array( 'core/template-part/header' ),
 	'content'    => '
-    <!-- wp:group {"align":"full","backgroundColor":"secondary"} -->
-<div class="wp-block-group alignfull has-secondary-background-color has-background"><!-- wp:group {"layout":{"inherit":true}} -->
+    <!-- wp:group {"align":"full","backgroundColor":"background"} -->
+<div class="wp-block-group alignfull has-background-background-color has-background"><!-- wp:group {"layout":{"inherit":true}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","allowOrientation":false,"justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","allowOrientation":false}} -->
 <div class="wp-block-group"><!-- wp:site-logo /--></div>
