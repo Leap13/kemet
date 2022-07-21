@@ -3,7 +3,7 @@ Contributors: kemet
 Tested up to: 5.9
 Requires at least: 5.9
 Requires PHP: 7.2
-Stable tag: 1.2.20
+Stable tag: 1.2.21
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,9 @@ https://www.rawpixel.com/image/3864892/illustration-image-tree-art-vincent-van-g
 
 
 == Changelog ==
+= 1.2.21 =
+* Added: Footer Patters with 4 columns
+
 = 1.2.20 =
 * Added: Stellar style variation
 

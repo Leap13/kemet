@@ -40,6 +40,7 @@ function kemet_register_block_patterns() {
 		'header-with-contact-information',
 		'footer',
 		'3-columns-footer-with-contact-information',
+		'4-columns-footer-with-map',
 		'minimal-one-column-footer',
 		'sidebar',
 		'404-content',
