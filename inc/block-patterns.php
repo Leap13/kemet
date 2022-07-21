@@ -34,6 +34,13 @@ function kemet_register_block_patterns() {
 	}
 
 	$block_patterns = array(
+		'two-columns-with-image-text-and-a-call-to-action',
+		'two-columns-with-overlay-content-and-a-call-to-action',
+		'information-blocks-for-gardening-services',
+		'combined-columns-displays-business-services',
+		'hero-scene',
+		'testimonials-section',
+		'simple-call-to-action-section',
 		'header-with-top-bar',
 		'header',
 		'header-with-button-socialicons',
@@ -44,14 +51,7 @@ function kemet_register_block_patterns() {
 		'minimal-one-column-footer',
 		'sidebar',
 		'404-content',
-		'kemet-left-right-loop',
-		'two-columns-with-image-text-and-a-call-to-action',
-		'two-columns-with-overlay-content-and-a-call-to-action',
-		'information-blocks-for-gardening-services',
-		'combined-columns-displays-business-services',
-		'simple-call-to-action-section',
-		'testimonials-section',
-		'hero-scene'
+		'kemet-left-right-loop'
 	);
 
 
