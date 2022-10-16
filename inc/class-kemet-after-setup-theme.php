@@ -52,6 +52,9 @@ if ( ! class_exists( 'Kemet_After_Setup_Theme' ) ) {
 			// Adding support for responsive embedded content.
 			add_theme_support( 'responsive-embeds' );
 
+			// Adding support for nav menus
+			add_theme_support( 'block-nav-menus' );
+
 			// Add support for editor styles.
 			add_theme_support( 'editor-styles' );
 
