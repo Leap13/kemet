@@ -33,7 +33,6 @@ https://www.rawpixel.com/image/3864892/illustration-image-tree-art-vincent-van-g
 = 1.2.25 =
 * Tweak: Page title has been removed from the template page named "Blank Canvas"
 
-
 = 1.2.24 =
 * Fixed: Overlay Header z-index issue.
 
