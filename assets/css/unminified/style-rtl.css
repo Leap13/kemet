@@ -23,7 +23,6 @@
   border-color: var(--wp--preset--color--primary);
 }
 .wp-block-post a:hover,
-a:hover:not(.wp-block-button__link),
 .wp-block-navigation .wp-block-navigation-item__content:hover {
   color: var(--wp--preset--color--primary);
 }

@@ -3,7 +3,7 @@ Contributors: kemet
 Tested up to: 6.1
 Requires at least: 5.9
 Requires PHP: 7.2
-Stable tag: 1.2.24
+Stable tag: 1.2.25
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,10 @@ https://www.rawpixel.com/image/3864892/illustration-image-tree-art-vincent-van-g
 
 
 == Changelog ==
+= 1.2.25 =
+* Tweak: Page title has been removed from the template page named "Blank Canvas"
+
+
 = 1.2.24 =
 * Fixed: Overlay Header z-index issue.
 
