@@ -3,7 +3,7 @@ Contributors: kemet
 Tested up to: 6.2
 Requires at least: 6.1
 Requires PHP: 7.2
-Stable tag: 1.2.25
+Stable tag: 1.2.26
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,9 @@ https://www.rawpixel.com/image/3864892/illustration-image-tree-art-vincent-van-g
 
 
 == Changelog ==
+= 1.2.26 =
+* Fixed: Cpnsole error in footer 4 Columns template part. 
+
 = 1.2.25 =
 * Tweak: Page title has been removed from the template page named "Blank Canvas"
 
