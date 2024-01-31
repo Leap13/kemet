@@ -1,4 +1,4 @@
-# Copyright (C) 2022 Kemet Wordpress Block Theme
+# Copyright (C) 2024 Kemet Wordpress Block Theme
 # This file is distributed under the same license as the Kemet Wordpress Block Theme package.
 msgid ""
 msgstr ""
@@ -178,7 +178,7 @@ msgid "Fusce varius, dolor tempor interdum tristique."
 msgstr ""
 
 #: inc/patterns/4-columns-footer-with-map.php:77, inc/patterns/footer.php:56, inc/patterns/minimal-one-column-footer.php:61
-msgid "Copyright © 2022 | "
+msgid "Copyright © 2024 | "
 msgstr ""
 
 #: inc/patterns/4-columns-footer-with-map.php:78, inc/patterns/footer.php:57, inc/patterns/minimal-one-column-footer.php:62

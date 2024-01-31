@@ -3,7 +3,7 @@ Contributors: kemet
 Tested up to: 6.4
 Requires at least: 6.1
 Requires PHP: 7.3
-Stable tag: 1.2.27
+Stable tag: 1.2.28
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,10 @@ https://www.rawpixel.com/image/3864892/illustration-image-tree-art-vincent-van-g
 
 
 == Changelog ==
+= 1.2.28 =
+* Fixed: Separator style issue.
+* Tweak: Update Google Fonts library.
+
 = 1.2.27 =
 * Fixed: Style issues in single post template.
 
