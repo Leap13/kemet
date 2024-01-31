@@ -4,9 +4,10 @@ const gulp = require('gulp'),
 	zip = require('gulp-zip'),
 	sass = require('gulp-sass')(require('sass')),
 	rtlcss = require('gulp-rtlcss'),
+	request = require('request'),
+	fs = require('fs'),
 	rename = require('gulp-rename');
-	var wpPot = require('gulp-wp-pot');
-
+var wpPot = require('gulp-wp-pot');
 
 gulp.task('sass', function () {
 	return gulp.src('./inc/kemet-panel/scss/kemet-panel.scss')
@@ -104,14 +105,14 @@ gulp.task('release', function () {
 });
 
 
- 
+
 gulp.task('makepot', function () {
-    return gulp.src('./**/*.php')
-        .pipe(wpPot( {
-            domain: 'kemet',
-            package: 'Kemet Wordpress Block Theme'
-        } ))
-        .pipe(gulp.dest('languages/kemet.pot'));
+	return gulp.src('./**/*.php')
+		.pipe(wpPot({
+			domain: 'kemet',
+			package: 'Kemet Wordpress Block Theme'
+		}))
+		.pipe(gulp.dest('languages/kemet.pot'));
 });
 gulp.task(
 	'minify',
@@ -131,4 +132,15 @@ gulp.task(
 		'minify'
 	)
 );
+
+gulp.task('update-gfonts', function (done) {
+	request('https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyBuGR3CTgxme22k16nzq4LN-3P2Yyt3XUs', function (error, response, body) {
+		fs.writeFile('assets/fonts/google-fonts.json', body, function (err) {
+			if (!err) {
+				console.log('Fonts updated successfully');
+			}
+			done();
+		});
+	});
+});
 
