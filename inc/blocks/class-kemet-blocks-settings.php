@@ -112,9 +112,17 @@ if ( ! class_exists( 'Kemet_Blocks_Settings' ) ) {
 		 * @param  array  $source_block block.
 		 * @return string
 		 */
+		// public function edit_group( $block_content, $source_block ) {
+		// 	if ( str_contains( $block_content, 'is-style-fit-to-screen' ) ) {
+		// 		self::$blocks_assets['js']['fit-screen'] = 'fit-screen';
+		// 	}
+		// 	return $block_content;
+		// }
 		public function edit_group( $block_content, $source_block ) {
-			if ( str_contains( $block_content, 'is-style-fit-to-screen' ) ) {
-				self::$blocks_assets['js']['fit-screen'] = 'fit-screen';
+			// Ensure modifications do not affect the overall block structure.
+			if ( strpos( $block_content, 'is-style-fit-to-screen' ) !== false ) {
+				// Apply necessary modifications while preserving the block's core structure.
+				$block_content = str_replace( 'is-style-fit-to-screen', '', $block_content );
 			}
 			return $block_content;
 		}

@@ -53,67 +53,82 @@ if ( ! class_exists( 'Kemet_Font_Families' ) ) :
 		public static function get_google_fonts() {
 
 			if ( empty( self::$google_fonts ) ) {
-
+		
 				$google_fonts_file = apply_filters( 'kemet_google_fonts_json_file', KEMET_THEME_DIR . 'assets/fonts/google-fonts.json' );
-
-				if ( ! file_exists( KEMET_THEME_DIR . 'assets/fonts/google-fonts.json' ) ) {
+		
+				if ( ! file_exists( $google_fonts_file ) ) {
 					return array();
 				}
-
-				$file_contants     = file_get_contents( $google_fonts_file );
-				$google_fonts_json = json_decode( $file_contants, 1 );
+		
+				$file_contents     = file_get_contents( $google_fonts_file );
+				$google_fonts_json = json_decode( $file_contents, true );
+				
+				// Check if 'items' key exists in the decoded JSON
+				if ( ! isset( $google_fonts_json['items'] ) ) {
+					return array(); // Return empty array if 'items' doesn't exist
+				}
+		
 				$google_fonts_json = $google_fonts_json['items'];
-
+		
 				foreach ( $google_fonts_json as $font ) {
 					$variants = array();
+		
 					foreach ( $font['variants'] as $variant_key => $variant ) {
-
+		
 						$prefix = 'n';
-						$sufix  = '4';
-						$value  = strtolower( trim( $variant ) );
-						$value  = str_replace( ' ', '', $variant );
-						if ( is_numeric( $value ) && isset( $value[0] ) ) {
-							$sufix  = $value[0];
+						$suffix  = '4';
+						$value  = strtolower( trim( str_replace( ' ', '', $variant ) ) ); // Clean up the variant value
+		
+						// Handle numeric values
+						if ( is_numeric( $value[0] ?? '' ) ) { // Using null coalescing to avoid undefined index warnings
+							$suffix  = $value[0];
 							$prefix = 'n';
 						}
-						if ( preg_match( '#italic#', $value ) ) {
-							if ( 'italic' === $value ) {
-								$sufix  = 4;
+		
+						// Handle 'italic'
+						if ( strpos( $value, 'italic' ) !== false ) {
+							if ( isset( $value ) && is_string( $value ) && strpos( $value, 'italic' ) !== false ) {
+								$suffix  = '4';
 								$prefix = 'i';
 							} else {
-								$value = trim( str_replace( 'italic', '', $value ) );
-								if ( is_numeric( $value ) && isset( $value[0] ) ) {
-									$sufix  = $value[0];
+								$value = str_replace( 'italic', '', $value );
+								if ( is_numeric( $value[0] ?? '' ) ) {
+									$suffix  = $value[0];
 									$prefix = 'i';
 								}
 							}
 						}
-						if ( preg_match( '#regular|normal#', $value ) ) {
-							if ( 'regular' === $value ) {
-								$sufix  = 4;
+		
+						// Handle 'regular' or 'normal'
+						if ( strpos( $value, 'regular' ) !== false || strpos( $value, 'normal' ) !== false ) {
+							if ( $value === 'regular' || $value === 'normal' ) {
+								$suffix  = '4';
 								$prefix = 'n';
 							} else {
-								$value = trim( str_replace( array( 'regular', 'normal' ), '', $value ) );
-
-								if ( is_numeric( $value ) && isset( $value[0] ) ) {
-									$sufix  = $value[0];
+								$value = str_replace( ['regular', 'normal'], '', $value );
+								if ( is_numeric( $value[0] ?? '' ) ) {
+									$suffix  = $value[0];
 									$prefix = 'n';
 								}
 							}
 						}
-						$variants[ $variant_key ] = "{$prefix}{$sufix}";
+		
+						// Store the variant with the correct prefix and suffix
+						$variants[ $variant_key ] = "{$prefix}{$suffix}";
 					}
-
-					$font_data                             = array(
+		
+					// Store the font data (variants and category)
+					$font_data = array(
 						$variants,
 						$font['category'],
 					);
 					self::$google_fonts[ $font['family'] ] = $font_data;
 				}
 			}
-
+		
 			return apply_filters( 'kemet_google_fonts', self::$google_fonts );
 		}
+		
 
 	}
 

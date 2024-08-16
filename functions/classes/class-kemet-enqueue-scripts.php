@@ -22,7 +22,6 @@ if ( ! class_exists( 'Kemet_Enqueue_Scripts' ) ) {
 	 */
 	class Kemet_Enqueue_Scripts {
 
-
 		/**
 		 * Class styles.
 		 *
@@ -48,34 +47,36 @@ if ( ! class_exists( 'Kemet_Enqueue_Scripts' ) ) {
 			add_filter( 'block_editor_settings_all', array( $this, 'filter_global_styles_settings' ) );
 			add_action( 'rest_api_init', array( $this, 'register_global_styles_rest_route' ), 20 );
 			add_action( 'wp_enqueue_scripts', array( $this, 'add_fonts_enqueue_scripts' ) );
+
 		}
 
 		/**
 		 * Enqueue Editor styles.
 		 */
 		public function editor_styles() {
-			/* Directory and Extension */
-			
+			// Directory and Extension
 			$dir_name    = ( SCRIPT_DEBUG ) ? 'unminified' : 'minified';
 			$file_prefix = ( SCRIPT_DEBUG ) ? '' : '.min';
-if ( is_rtl() ) {
+			if ( is_rtl() ) {
 				$file_prefix = '-rtl.min';
 				if ( SCRIPT_DEBUG ) {
 					$file_prefix = '-rtl';
 				}
 			}
-			// Generate CSS URL.
-			$css_file = './assets/css/' . $dir_name . '/editor' . $file_prefix . '.css';
 
-			//add_editor_style( './assets/css/' . $dir_name . '/editor' . $file_prefix . '.css' );
+    // Generate CSS URL.
+    $css_file = KEMET_THEME_URI . "assets/css/{$dir_name}/editor{$file_prefix}.css";
 
-			add_editor_style(
-				array(
-					$css_file,
-					$this->get_google_fonts_url(),
-				)
-			);
-		}
+    // Enqueue styles for the editor.
+    add_editor_style( 'kemet-editor-style', $css_file );
+
+    // Optionally, you can add Google Fonts as well.
+    $google_fonts_url = $this->get_google_fonts_url();
+    if ( $google_fonts_url ) {
+        add_editor_style( 'kemet-editor-google-fonts', $google_fonts_url );
+    }
+}
+
 
 		/**
 		 * Updates the Global Styles controller route.
@@ -155,12 +156,12 @@ if ( is_rtl() ) {
 		 * @param  string $delimiter
 		 * @return string
 		 */
-		public function create_slug( $str, $delimiter = '-' ) {
+		public function create_slug(string $str, string $delimiter = '-'): string
+			{
+				$slug = strtolower(trim(preg_replace('/[\s-]+/', $delimiter, preg_replace('/[^a-zA-Z0-9-]+/', $delimiter, preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', str_replace(' ', '-', $str)))))));
+				return $slug;
+			}
 
-			$slug = strtolower( trim( preg_replace( '/[\s-]+/', $delimiter, preg_replace( '/[^A-Za-z0-9-]+/', $delimiter, preg_replace( '/[&]/', 'and', preg_replace( '/[\']/', '', iconv( 'UTF-8', 'ASCII//TRANSLIT', $str ) ) ) ) ), $delimiter ) );
-			return $slug;
-
-		}
 
 		/**
 		 * Google Font URL
