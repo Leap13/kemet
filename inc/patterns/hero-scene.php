@@ -6,6 +6,7 @@
 return array(
 	'title'      => __( 'Hero Scene', 'kemet' ),
     'categories' => array( 'kemet-patterns' ),
+    'keywords'   => array( 'hero scene', 'button', 'image', 'call to action' ), 
 	'content'    => '<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"110px","bottom":"110px"}}},"backgroundColor":"tertiary","className":"is-style-default"} -->
     <div class="wp-block-group alignfull is-style-default has-tertiary-background-color has-background" style="padding-top:110px;padding-bottom:110px"><!-- wp:group {"align":"full","className":"is-style-default","layout":{"inherit":true}} -->
     <div class="wp-block-group alignfull is-style-default"><!-- wp:columns {"verticalAlignment":"center"} -->

@@ -4,7 +4,8 @@
  */
 return array(
 	'title'      => __( 'Header with Button & Social Icons', 'kemet' ),
-	'categories' => array( 'kemet-headers', 'header' ),
+	'categories' => array( 'kemet-patterns', 'header' ),
+    'keywords'   => array( 'header', 'button', 'social icons', 'menu', 'navigation' ), 
 	'blockTypes' => array( 'core/template-part/header' ),
 	'content'    => '
     <!-- wp:group {"align":"full","backgroundColor":"background"} -->

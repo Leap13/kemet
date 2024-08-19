@@ -3,8 +3,9 @@
  * 404 content.
  */
 return array(
-	'title'    => __( '404 content', 'kemet' ),
-	'inserter' => false,
+	'title'    => __( '404 Content', 'kemet' ),
+	'categories' => array( 'kemet-patterns' ),
+	'keywords'   => array( '404', 'not found' ), 
 	'content'  => '<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"5rem","bottom":"7rem"}}},"layout":{"inherit":true}} -->
 	<main class="wp-block-group" style="padding-top:5rem;padding-bottom:7rem"><!-- wp:heading {"textAlign":"center","align":"wide"} -->
 	<h2 class="alignwide has-text-align-center" id="oops-this-page-can-t-be-found-1">' . esc_html__( "Oops! This page can't be found.", "kemet" ) . '</h2>

@@ -1,10 +1,11 @@
 <?php
 /**
- * 4 Columns Footer With Map
+ * Four Columns Footer With Map
  */
 return array(
-	'title'      => __( '4 Columns Footer With Map', 'kemet' ),
-	'categories' => array( 'kemet-footers' ),
+	'title'      => __( 'Four Columns Footer With Map', 'kemet' ),
+	'categories' => array( 'kemet-patterns', 'footer' ),
+	'keywords'   => array( 'four columns', 'footer' ), 
 	'blockTypes' => array( 'core/template-part/footer' ),
 	'content'    => '<!-- wp:cover {"overlayColor":"foreground","contentPosition":"center center","align":"full","style":{"spacing":{"padding":{"top":"80px","bottom":"20px","right":"30px","left":"30px"}}}} -->
 	<div class="wp-block-cover alignfull" style="padding-top:80px;padding-right:30px;padding-bottom:20px;padding-left:30px"><span aria-hidden="true" class="wp-block-cover__background has-foreground-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"layout":{"inherit":true,"type":"constrained"},"UAGDay":[]} -->

@@ -1,12 +1,15 @@
 <?php
 /**
- * 3 Columns Footer with Contact Information
+ * Title: Three Columns Footer with Contact Information
+ * Slug: kemet/three-columns-footer-with-contact-information
+ * Keywords: Three Columns Footer with Contact Information
  */
 return array(
-	'title'      => __( '3 Columns Footer with Contact Information', 'kemet' ),
-	'categories' => array( 'kemet-footers' ),
+	'title'      => __( 'Three Columns Footer with Contact Information', 'kemet' ),
+	'categories' => array( 'kemet-patterns', 'footer' ),
+	'keywords'   => array( 'footer', 'three columns' ), 
 	'blockTypes' => array( 'core/template-part/footer' ),
-	'content'    => '<!-- wp:cover {"url":"http://localhost/site1/wp-content/themes/kemet/assets/images/lined-bg.jpg","id":2119,"dimRatio":90,"overlayColor":"tertiary","contentPosition":"center center","metadata":{"categories":["kemet-footers"],"patternName":"kemet/3-columns-footer-with-contact-information","name":"3 Columns Footer with Contact Information"},"align":"full"} -->
+	'content'    => '<!-- wp:cover {"url":"' . esc_url( get_template_directory_uri() ) . '/assets/images/lined-bg.jpg","id":2119,"dimRatio":90,"overlayColor":"tertiary","contentPosition":"center center","metadata":{"patternName":"kemet/three-columns-footer-with-contact-information","name":"3 Columns Footer with Contact Information"},"align":"full"} -->
 <div class="wp-block-cover alignfull"><span aria-hidden="true" class="wp-block-cover__background has-tertiary-background-color has-background-dim-90 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2119" alt="" src="http://localhost/site1/wp-content/themes/kemet/assets/images/lined-bg.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"60px","bottom":"60px","left":"10px","right":"10px"}}},"layout":{"inherit":true,"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:60px;padding-right:10px;padding-bottom:60px;padding-left:10px"><!-- wp:group {"layout":{"inherit":true,"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:columns -->

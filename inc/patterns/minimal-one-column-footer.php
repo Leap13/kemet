@@ -4,7 +4,8 @@
  */
 return array(
 	'title'      => __( 'Minimal One Column Footer', 'kemet' ),
-	'categories' => array( 'kemet-footers' ),
+	'categories' => array( 'kemet-patterns', 'footer' ),
+    'keywords'   => array( 'footer' , 'social icons'), 
 	'blockTypes' => array( 'core/template-part/footer' ),
 	'content'    => '
     <!-- wp:group {"align":"full"} -->

@@ -4,7 +4,8 @@
  */
 return array(
 	'title'      => __( 'Default Footer', 'kemet' ),
-	'categories' => array( 'kemet-footers' ),
+	'categories' => array( 'kemet-patterns', 'footer' ),
+    'keywords'   => array( 'footer' ), 
 	'blockTypes' => array( 'core/template-part/footer' ),
 	'content'    => '
     <!-- wp:group {"className":"has-secondary-color has-text-color","style":{"spacing":{"blockGap":"0px","padding":{"top":"0px","bottom":"0px"}}},"backgroundColor":"tertiary","layout":{"inherit":true,"type":"constrained"}} -->

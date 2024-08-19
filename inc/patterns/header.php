@@ -4,7 +4,8 @@
  */
 return array(
 	'title'      => __( 'Default Header', 'kemet' ),
-	'categories' => array( 'kemet-headers', 'header' ),
+	'categories' => array( 'kemet-patterns', 'header' ),
+	'keywords'   => array( 'header', 'menu', 'navigation' ), 
 	'blockTypes' => array( 'core/template-part/header' ),
 	'content'    => '
 	<!-- wp:group {"style":{"spacing":{"blockGap":"0px","padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}},"backgroundColor":"background","layout":{"inherit":true}} -->

@@ -5,6 +5,7 @@
 return array(
 	'title'      => __( ' Testimonials Section', 'kemet' ),
 	'categories' => array( 'kemet-patterns' ),
+    'keywords'   => array( 'testimonial' ), 
 	'content'    => '<!-- wp:cover {"url":"' . esc_url( get_template_directory_uri() ) . '/assets/images/art-bg.jpg","id":640,"hasParallax":true,"dimRatio":50,"overlayColor":"tertiary","minHeight":575,"minHeightUnit":"px","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"100px","bottom":"100px"}}}} -->
 <div class="wp-block-cover alignfull is-light has-parallax" style="padding-top:100px;padding-bottom:100px;background-image:url(' . esc_url( get_template_directory_uri() ) . '/assets/images/art-bg.jpg);min-height:575px"><span aria-hidden="true" class="wp-block-cover__background has-tertiary-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"layout":{"inherit":true}} -->
 <div class="wp-block-group"><!-- wp:columns -->
