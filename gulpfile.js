@@ -93,6 +93,7 @@ gulp.task('release', function () {
 		'!./inc/blocks/react/package.json',
 		'!./inc/blocks/react/package-lock.json',
 		'!./assets/{sass,sass/*}',
+		'!./kemet.zip',
 		'!./gulpfile.js',
 		'!./package.json',
 		'!./package-lock.json',
