@@ -31,9 +31,17 @@ return array(
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","allowOrientation":false,"justifyContent":"right"}} -->
-<div class="wp-block-group"><!-- wp:navigation -->
-<!-- wp:page-list /-->
-<!-- /wp:navigation --></div>
+<div class="wp-block-group">
+<!-- wp:navigation {"textColor":"base","className":"is-style-justify-right","layout":{"type":"flex","orientation":"horizontal","justifyContent":"left","flexWrap":"wrap"},"style":{"typography":{"fontSize":"16px"},"spacing":{"blockGap":"56px"}},"fontFamily":"system-font"} -->
+    <!-- wp:navigation-link {"label":"Home","url":"#","kind":"custom","isTopLevelLink":true} /-->
+    
+    <!-- wp:navigation-link {"label":"About","url":"#","kind":"custom","isTopLevelLink":true} /-->
+    
+    <!-- wp:navigation-link {"label":"Blog","url":"#","kind":"custom","isTopLevelLink":true} /-->
+    
+    <!-- wp:navigation-link {"label":"Contact","url":"#","kind":"custom","isTopLevelLink":true} /-->
+    <!-- /wp:navigation -->
+</div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

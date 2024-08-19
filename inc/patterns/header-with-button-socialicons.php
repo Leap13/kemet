@@ -15,9 +15,16 @@ return array(
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","allowOrientation":false,"justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:navigation -->
-<!-- wp:page-list /-->
-<!-- /wp:navigation -->
+<div class="wp-block-group">
+<!-- wp:navigation {"textColor":"base","className":"is-style-justify-right","layout":{"type":"flex","orientation":"horizontal","justifyContent":"left","flexWrap":"wrap"},"style":{"typography":{"fontSize":"16px"},"spacing":{"blockGap":"56px"}},"fontFamily":"system-font"} -->
+    <!-- wp:navigation-link {"label":"Home","url":"#","kind":"custom","isTopLevelLink":true} /-->
+    
+    <!-- wp:navigation-link {"label":"About","url":"#","kind":"custom","isTopLevelLink":true} /-->
+    
+    <!-- wp:navigation-link {"label":"Blog","url":"#","kind":"custom","isTopLevelLink":true} /-->
+    
+    <!-- wp:navigation-link {"label":"Contact","url":"#","kind":"custom","isTopLevelLink":true} /-->
+    <!-- /wp:navigation -->
 
 <!-- wp:social-links {"iconColor":"background","iconColorValue":"#ffffff","iconBackgroundColor":"tertiary","iconBackgroundColorValue":"#02273a","size":"has-small-icon-size","className":"is-style-default","layout":{"type":"flex","justifyContent":"space-between"},"style":{"spacing":{"blockGap":"8px"}}} -->
 <ul class="wp-block-social-links has-small-icon-size has-icon-color has-icon-background-color is-style-default"><!-- wp:social-link {"url":"#","service":"facebook"} /-->

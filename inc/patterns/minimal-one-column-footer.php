@@ -15,9 +15,12 @@ return array(
 <div style="height:30px;width:72px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:navigation {"ref":19,"textColor":"foreground","overlayMenu":"never","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"20px"}}} -->
-<!-- wp:page-list /-->
-<!-- /wp:navigation -->
+<!-- wp:navigation {"textColor":"base","className":"is-style-justify-right","layout":{"type":"flex","orientation":"horizontal","justifyContent":"left","flexWrap":"wrap"},"style":{"typography":{"fontSize":"16px"},"spacing":{"blockGap":"56px"}},"fontFamily":"system-font"} -->
+    <!-- wp:navigation-link {"label":"Home","url":"#","kind":"custom","isTopLevelLink":true} /-->
+    
+    <!-- wp:navigation-link {"label":"About","url":"#","kind":"custom","isTopLevelLink":true} /-->
+
+    <!-- /wp:navigation -->
 <!-- wp:spacer {"height":"0px","width":"72px"} -->
 <div style="height:0px;width:72px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->

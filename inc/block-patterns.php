@@ -44,13 +44,13 @@ function kemet_register_block_patterns() {
 		'header-with-top-bar',
 		'header',
 		'header-with-button-socialicons',
-		'header-with-contact-information',
+	    'header-with-contact-information',
 		'footer',
 		'3-columns-footer-with-contact-information',
-		'4-columns-footer-with-map',
+	    '4-columns-footer-with-map',
 		'minimal-one-column-footer',
-		'sidebar',
-		'404-content',
+	    'sidebar',
+	    '404-content',
 		'kemet-left-right-loop'
 	);
 
