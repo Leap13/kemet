@@ -118,11 +118,16 @@ if ( ! class_exists( 'Kemet_Enqueue_Scripts' ) ) {
 		 * @return WP_REST_Response|WP_Error
 		 */
 		function get_theme_item_global_styles( $request ) {
-
 			$controller = new WP_REST_Global_Styles_Controller();
 			$response   = $controller->get_theme_item( $request );
 
-			if ( $response->data['settings'] ) {
+			// Check if the response is an error
+			if ( is_wp_error( $response ) ) {
+				return $response; // Return the error response
+			}
+
+			if ( isset( $response->data['settings'] ) ) {
+
 				$settings = $response->data['settings'];
 				$fonts    = $settings['typography']['fontFamilies']['theme'];
 				$settings['typography']['fontFamilies']['theme'] = $this->merge_fonts_to_theme_fonts( $fonts );

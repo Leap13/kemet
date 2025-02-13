@@ -1,9 +1,9 @@
 === kemet ===
 Contributors: kemet
-Tested up to: 6.4
+Tested up to: 6.7
 Requires at least: 6.1
 Requires PHP: 7.3
-Stable tag: 1.2.29
+Stable tag: 1.2.30
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,9 @@ https://www.rawpixel.com/image/3864892/illustration-image-tree-art-vincent-van-g
 
 
 == Changelog ==
+= 1.2.30 =
+* Fixed: PHP error notice in the editor.
+
 = 1.2.29 =
 * Fixed: Console errors in some templates.
 
