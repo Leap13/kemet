@@ -37,7 +37,7 @@
   .block-editor-block-list__block.is-style-kmt-rounded .wp-block-button__link{
     border-radius: 9999px;
   }
-  .wp-block-buttons.is-style-kmt-has-shadow .wp-block-button__link{
+  .wp-block-button.is-style-kmt-has-shadow{
     box-shadow: 0px 15px 25px 0px rgb(0 0 0 / 25%);
   }
   /* Core Image Styles */
@@ -81,7 +81,7 @@
     column-gap: 0 !important;
   }
 /* Headings styles */
-.is-style-kmt-vertical-border li {
+.is-style-kmt-vertical-border {
   padding-right: 15px;
   position: relative;
   list-style: none;
