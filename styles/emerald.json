@@ -1,5 +1,8 @@
 {
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
+    "title": "Emerald",
+    "slug": "emerald",
     "settings": {
         "color": {
             "palette": [

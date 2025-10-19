@@ -1,5 +1,8 @@
 {
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
+    "title": "Dark",
+    "slug": "dark",
     "settings": {
         "color": {
             "palette": [
@@ -33,29 +36,59 @@
     },
     "styles": {
         "color": {
-            "text": "var(--wp--preset--color--secondary)"
+            "text": "var(--wp--preset--color--secondary",
+            "background": "var(--wp--preset--color--background"
+        },
+        "typography": {
+            "fontFamily": "var(--wp--preset--font-family--lato",
+            "fontSize": "var(--wp--preset--font-size--normal",
+            "fontWeight": "300",
+            "lineHeight": "1.7"
+        },
+        "spacing": {
+            "padding": {
+                "top": "25px",
+                "bottom": "25px",
+                "left": "25px",
+                "right": "25px"
+            }
         },
         "elements": {
             "h1": {
                 "color": {
-                    "text": "var(--wp--preset--color--foreground)"
+                    "text": "var(--wp--preset--color--foreground"
+                },
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--lato",
+                    "fontWeight": "700"
                 }
-             },
-           "h2": {
+            },
+            "h2": {
                 "color": {
-                    "text": "var(--wp--preset--color--foreground)"
+                    "text": "var(--wp--preset--color--foreground"
+                },
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--lato",
+                    "fontWeight": "600"
                 }
-           },
-           "h3": {
+            },
+            "h3": {
                 "color": {
-                    "text": "var(--wp--preset--color--foreground)"
+                    "text": "var(--wp--preset--color--foreground"
+                },
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--lato",
+                    "fontWeight": "500"
                 }
-           },
-           "link": {
-               "color": {
-                   "text": "var(--wp--preset--color--foreground)"
-               }
-           }
+            },
+            "link": {
+                "color": {
+                    "text": "var(--wp--preset--color--primary"
+                },
+                "typography": {
+                    "textDecoration": "none"
+                }
+            }
         }
     }
 }
