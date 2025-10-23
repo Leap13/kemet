@@ -39,6 +39,15 @@ require_once KEMET_THEME_DIR . 'inc/blocks-styles.php';
 // Add Kemet block patterns
 require get_template_directory() . '/inc/block-patterns.php';
 
+// // Add style variations support
+// require get_template_directory() . '/inc/style-variations.php';
+
+// // Add style variations fix
+// require get_template_directory() . '/inc/style-variations-fix.php';
+
+// // Force style variations registration
+// require get_template_directory() . '/inc/force-style-variations.php';
+
 /**
  * Compatibility.
  */

@@ -1,64 +1,123 @@
 {
-    "$schema": "https://schemas.wp.org/trunk/theme.json",
-    "version": 2,
-    "title": "Soil",
-    "slug": "soli",
-    "settings": {
-        "color": {
-            "palette": [
-                {
-                    "slug": "foreground",
-                    "color": "#f0e9d3",
-                    "name": "Foreground"
-                },
-                {
-                    "slug": "background",
-                    "color": "#2b2623",
-                    "name": "Background"
-                },
-                {
-                    "slug": "primary",
-                    "color": "#ca965d",
-                    "name": "Primary"
-                },
-                {
-                    "slug": "secondary",
-                    "color": "#c6c0a9",
-                    "name": "Secondary"
-                },
-                {
-                    "slug": "tertiary",
-                    "color": "#37302c",
-                    "name": "Tertiary"
-                }
-            ]
-        }
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "title": "Soil",
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--background)",
+      "text": "var(--wp--preset--color--foreground)"
     },
-    "styles": {
-        "color": {
-            "text": "var(--wp--preset--color--secondary)"
-        },
-        "elements": {
-            "h1": {
-                "color": {
-                    "text": "var(--wp--preset--color--foreground)"
-                }
-             },
-           "h2": {
-                "color": {
-                    "text": "var(--wp--preset--color--foreground)"
-                }
-           },
-           "h3": {
-                "color": {
-                    "text": "var(--wp--preset--color--foreground)"
-                }
-           },
-           "link": {
-               "color": {
-                   "text": "var(--wp--preset--color--foreground)"
-               }
-           }
-        }
+    "spacing": {
+      "blockGap": "var(--wp--preset--spacing--x-small)"
     }
+  },
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "name": "Primary",
+          "color": "#a16207",
+          "slug": "primary"
+        },
+        {
+          "name": "Secondary",
+          "color": "#ca8a04",
+          "slug": "secondary"
+        },
+        {
+          "name": "Heading",
+          "color": "#3c2415",
+          "slug": "heading"
+        },
+        {
+          "name": "Body",
+          "color": "#451a03",
+          "slug": "body"
+        },
+        {
+          "name": "Background",
+          "color": "#fef7ed",
+          "slug": "background"
+        },
+        {
+          "name": "Tertiary",
+          "color": "#451a03",
+          "slug": "tertiary"
+        },
+        {
+          "name": "Quaternary",
+          "color": "#fef3c7",
+          "slug": "quaternary"
+        },
+        {
+          "name": "Surface",
+          "color": "#fffbeb",
+          "slug": "surface"
+        },
+        {
+          "name": "Foreground",
+          "color": "#3c2415",
+          "slug": "foreground"
+        },
+        {
+          "name": "Outline",
+          "color": "#fbbf24",
+          "slug": "outline"
+        },
+        {
+          "name": "Neutral",
+          "color": "#92400e",
+          "slug": "neutral"
+        },
+        {
+          "name": "Transparent",
+          "color": "transparent",
+          "slug": "transparent"
+        },
+        {
+          "name": "Current Color",
+          "color": "currentColor",
+          "slug": "currentColor"
+        },
+        {
+          "name": "Inherit",
+          "color": "inherit",
+          "slug": "inherit"
+        }
+      ],
+      "gradients": [
+        {
+          "slug": "primary",
+          "gradient": "linear-gradient(135deg, #a16207 0%, #ca8a04 50%, #451a03 100%)",
+          "name": "Primary"
+        }
+      ],
+      "duotone": [
+        {
+          "colors": [
+            "#a16207",
+            "#a16207"
+          ],
+          "slug": "primary",
+          "name": "Primary"
+        },
+        {
+          "colors": [
+            "#ffffff",
+            "#ffffff"
+          ],
+          "slug": "secondary",
+          "name": "Secondary"
+        },
+        {
+          "colors": [
+            "#3c2415",
+            "#3c2415"
+          ],
+          "slug": "tertiary",
+          "name": "Tertiary"
+        }
+      ]
+    }
+  }
 }
