@@ -58,6 +58,27 @@ if ( ! class_exists( 'Kemet_After_Setup_Theme' ) ) {
 			// Add support for editor styles.
 			add_theme_support( 'editor-styles' );
 
+
+			// Add support for post thumbnails.
+			add_theme_support( 'post-thumbnails' );
+
+			// Add support for HTML5 markup.
+			add_theme_support( 'html5', array(
+				'search-form',
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+				'style',
+				'script',
+			) );
+
+			// Add support for title tag.
+			add_theme_support( 'title-tag' );
+
+			// Add support for automatic feed links.
+			add_theme_support( 'automatic-feed-links' );
+
 			// Language support
 			load_theme_textdomain( 'kemet', KEMET_THEME_DIR . 'languages' );
 		}

@@ -1,6 +1,6 @@
 {
-    "$schema": "https://schemas.wp.org/trunk/theme.json",
-    "version": 2,
+    "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+    "version": 3,
     "title": "Stellar",
     "slug": "stellar",
     "settings": {
@@ -32,6 +32,37 @@
                     "name": "Tertiary"
                 }
             ]
+        }
+    },
+    "styles": {
+        "color": {
+            "text": "var(--wp--preset--color--foreground)",
+            "background": "var(--wp--preset--color--background)"
+        },
+        "elements": {
+            "h1": {
+                "color": {
+                    "text": "var(--wp--preset--color--foreground)"
+                }
+            },
+            "h2": {
+                "color": {
+                    "text": "var(--wp--preset--color--foreground)"
+                }
+            },
+            "h3": {
+                "color": {
+                    "text": "var(--wp--preset--color--foreground)"
+                }
+            },
+            "link": {
+                "color": {
+                    "text": "var(--wp--preset--color--primary)"
+                },
+                "typography": {
+                    "textDecoration": "none"
+                }
+            }
         }
     }
 }
