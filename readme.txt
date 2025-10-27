@@ -30,6 +30,12 @@ https://www.rawpixel.com/image/3864892/illustration-image-tree-art-vincent-van-g
 
 
 == Changelog ==
+= 1.2.32 =
+* Fixed: SVG path issues in image mask styles (flower, sketch, blob).
+* Fixed: HTML entity encoding in plugin names in Kemet panel.
+* Fixed: Color styles in patterns to be compatible with all style color palettes.
+* Tweak: Removed inline CSS from heading border styles for better performance.
+
 = 1.2.31 =
 * Fixed: Header template part issue.
 
