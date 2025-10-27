@@ -194,17 +194,7 @@ function register_block_styles() {
 		'core/heading',
 		array(
 			'name'         => 'kmt-top-border',
-			'label'        => __( 'Top Border', 'kemet' ),
-			'inline_style' => '
-				.wp-block-heading.is-style-kmt-top-border {
-					border-top: 2px solid var(--wp--preset--color--primary);
-					padding-top: 10px;
-				}
-				.editor-styles-wrapper .wp-block-heading.is-style-kmt-top-border {
-					border-top: 2px solid var(--wp--preset--color--primary);
-					padding-top: 10px;
-				}
-			'
+			'label'        => __( 'Top Border', 'kemet' )
 		)
 	);
 
@@ -212,17 +202,7 @@ function register_block_styles() {
 		'core/heading',
 		array(
 			'name'         => 'kmt-bottom-border',
-			'label'        => __( 'Bottom Border', 'kemet' ),
-			'inline_style' => '
-				.wp-block-heading.is-style-kmt-bottom-border {
-					border-bottom: 2px solid var(--wp--preset--color--primary);
-					padding-bottom: 10px;
-				}
-				.editor-styles-wrapper .wp-block-heading.is-style-kmt-bottom-border {
-					border-bottom: 2px solid var(--wp--preset--color--primary);
-					padding-bottom: 10px;
-				}
-			'
+			'label'        => __( 'Bottom Border', 'kemet' )
 		)
 	);
 
@@ -230,19 +210,7 @@ function register_block_styles() {
 		'core/heading',
 		array(
 			'name'         => 'kmt-horizontal-border',
-			'label'        => __( 'Horizontal Border', 'kemet' ),
-			'inline_style' => '
-				.wp-block-heading.is-style-kmt-horizontal-border {
-					border-top: 2px solid var(--wp--preset--color--primary);
-					border-bottom: 2px solid var(--wp--preset--color--primary);
-					padding: 10px 0;
-				}
-				.editor-styles-wrapper .wp-block-heading.is-style-kmt-horizontal-border {
-					border-top: 2px solid var(--wp--preset--color--primary);
-					border-bottom: 2px solid var(--wp--preset--color--primary);
-					padding: 10px 0;
-				}
-			'
+			'label'        => __( 'Horizontal Border', 'kemet' )
 		)
 	);
 
@@ -250,19 +218,7 @@ function register_block_styles() {
 		'core/heading',
 		array(
 			'name'         => 'kmt-vertical-border',
-			'label'        => __( 'Vertical Border', 'kemet' ),
-			'inline_style' => '
-				.wp-block-heading.is-style-kmt-vertical-border {
-					border-left: 2px solid var(--wp--preset--color--primary);
-					border-right: 2px solid var(--wp--preset--color--primary);
-					padding: 0 10px;
-				}
-				.editor-styles-wrapper .wp-block-heading.is-style-kmt-vertical-border {
-					border-left: 2px solid var(--wp--preset--color--primary);
-					border-right: 2px solid var(--wp--preset--color--primary);
-					padding: 0 10px;
-				}
-			'
+			'label'        => __( 'Vertical Border', 'kemet' )
 		)
 	);
 
