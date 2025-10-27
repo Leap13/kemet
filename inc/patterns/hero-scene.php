@@ -16,8 +16,8 @@ return array(
     <h6 class="is-style-kmt-bottom-border has-primary-color has-text-color" style="text-transform:uppercase"><strong>' . esc_html__( '+200 types of flowers', 'kemet') . '</strong></h6>
     <!-- /wp:heading -->
     
-    <!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":1.1}},"textColor":"background"} -->
-    <h2 class="has-background-color has-text-color" style="font-style:normal;font-weight:700;line-height:1.1">' . esc_html__( 'Provide You With the Most Beautiful Flowers', 'kemet') . '</h2>
+    <!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":1.1}}} -->
+    <h2 class="wp-block-heading has-secondary-color has-text-color" style="font-style:normal;font-weight:700;line-height:1.1">' . esc_html__( 'Provide You With the Most Beautiful Flowers', 'kemet') . '</h2>
     <!-- /wp:heading -->
     
     <!-- wp:paragraph {"textColor":"secondary"} -->

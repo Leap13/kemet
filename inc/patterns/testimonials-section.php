@@ -18,10 +18,10 @@ return array(
     <p class="has-text-align-center" style="font-size:28px"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color"><strong>★★★★★</strong></mark></p>
     <!-- /wp:paragraph -->
     <!-- wp:quote {"align":"center","style":{"typography":{"fontSize":"18px","lineHeight":1.3}},"textColor":"tertiary","className":"is-style-plain"} -->
-    <blockquote class="wp-block-quote has-text-align-center is-style-plain has-tertiary-color has-text-color" style="font-size:18px;line-height:1.3"><p>' . esc_html__( 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'kemet') . '</p><cite><strong>' . esc_html__( 'Michael V. Ford', 'kemet') . '</strong></cite></blockquote>
+    <blockquote class="wp-block-quote has-text-align-center is-style-plain has-foreground-color" style="font-size:18px;line-height:1.3"><p>' . esc_html__( 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'kemet') . '</p><cite><strong>' . esc_html__( 'Michael V. Ford', 'kemet') . '</strong></cite></blockquote>
     <!-- /wp:quote -->
     
-    <!-- wp:social-links {"iconColor":"tertiary","iconColorValue":"#02273a","iconBackgroundColor":"background","iconBackgroundColorValue":"#ffffff","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":{"top":"5px","left":"5px"}}}} -->
+    <!-- wp:social-links {"iconColor":"foreground","iconColorValue":"#02273a","iconBackgroundColor":"background","iconBackgroundColorValue":"#ffffff","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":{"top":"5px","left":"5px"}}}} -->
     <ul class="wp-block-social-links has-icon-color has-icon-background-color"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
     
     <!-- wp:social-link {"url":"#","service":"behance"} /-->
@@ -46,10 +46,10 @@ return array(
     <!-- /wp:paragraph -->
     
     <!-- wp:quote {"align":"center","style":{"typography":{"fontSize":"18px","lineHeight":1.3}},"textColor":"tertiary","className":"is-style-plain"} -->
-    <blockquote class="wp-block-quote has-text-align-center is-style-plain has-tertiary-color has-text-color" style="font-size:18px;line-height:1.3"><p>' . esc_html__( 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'kemet') . '</p><cite><strong>' . esc_html__( 'Tony E. Clark', 'kemet') . '</strong></cite></blockquote>
+    <blockquote class="wp-block-quote has-text-align-center is-style-plain has-foreground-color" style="font-size:18px;line-height:1.3"><p>' . esc_html__( 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'kemet') . '</p><cite><strong>' . esc_html__( 'Tony E. Clark', 'kemet') . '</strong></cite></blockquote>
     <!-- /wp:quote -->
     
-    <!-- wp:social-links {"iconColor":"tertiary","iconColorValue":"#02273a","iconBackgroundColor":"background","iconBackgroundColorValue":"#ffffff","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":{"top":"5px","left":"5px"}}}} -->
+    <!-- wp:social-links {"iconColor":"foreground","iconColorValue":"#02273a","iconBackgroundColor":"background","iconBackgroundColorValue":"#ffffff","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":{"top":"5px","left":"5px"}}}} -->
     <ul class="wp-block-social-links has-icon-color has-icon-background-color"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
     
     <!-- wp:social-link {"url":"#","service":"behance"} /-->
@@ -74,10 +74,10 @@ return array(
     <!-- /wp:paragraph -->
     
     <!-- wp:quote {"align":"center","style":{"typography":{"fontSize":"18px","lineHeight":1.3}},"textColor":"tertiary","className":"is-style-plain"} -->
-    <blockquote class="wp-block-quote has-text-align-center is-style-plain has-tertiary-color has-text-color" style="font-size:18px;line-height:1.3"><p>' . esc_html__( 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'kemet') . '</p><cite><strong>' . esc_html__( 'Kyle S. Witt', 'kemet') . '</strong></cite></blockquote>
+    <blockquote class="wp-block-quote has-text-align-center is-style-plain has-foreground-color" style="font-size:18px;line-height:1.3"><p>' . esc_html__( 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'kemet') . '</p><cite><strong>' . esc_html__( 'Kyle S. Witt', 'kemet') . '</strong></cite></blockquote>
     <!-- /wp:quote -->
     
-    <!-- wp:social-links {"iconColor":"tertiary","iconColorValue":"#02273a","iconBackgroundColor":"background","iconBackgroundColorValue":"#ffffff","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":{"top":"5px","left":"5px"}}}} -->
+    <!-- wp:social-links {"iconColor":"foreground","iconColorValue":"#02273a","iconBackgroundColor":"background","iconBackgroundColorValue":"#ffffff","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":{"top":"5px","left":"5px"}}}} -->
     <ul class="wp-block-social-links has-icon-color has-icon-background-color"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
     
     <!-- wp:social-link {"url":"#","service":"behance"} /-->

@@ -21,9 +21,9 @@ return array(
         <!-- wp:heading {"textAlign":"left","style":{"typography":{"fontStyle":"normal","fontWeight":"700","textTransform":"uppercase","lineHeight":"1.2"},"spacing":{"margin":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}},"textColor":"secondary"} -->
         <h2 class="has-text-align-left has-secondary-color has-text-color" style="font-style:normal;font-weight:700;line-height:1.2;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;text-transform:uppercase">' . esc_html__( 'IT Solutions for You Business', 'kemet') . '</h2>
         <!-- /wp:heading -->
-        
-        <!-- wp:paragraph {"placeholder":"Content…","style":{"typography":{"fontSize":"19px","fontStyle":"normal","fontWeight":"400","lineHeight":"1.5"}},"textColor":"background"} -->
-        <p class="has-background-color has-text-color" style="font-size:19px;font-style:normal;font-weight:400;line-height:1.5">' . esc_html__( 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.', 'kemet') . '</p>
+
+        <!-- wp:paragraph {"className":"has-secondary-color has-text-color","style":{"typography":{"fontStyle":"normal","fontWeight":"400"}}} -->
+        <p class="has-secondary-color has-text-color" style="font-style:normal;font-weight:400">' . esc_html__( 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.', 'kemet') . '</p>
         <!-- /wp:paragraph -->
         
         <!-- wp:spacer {"height":"20px"} -->
