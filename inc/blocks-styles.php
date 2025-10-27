@@ -72,14 +72,14 @@ function register_block_styles() {
 			'label'        => __( 'Mask Flower', 'kemet' ),
 			'inline_style' => '
 				.wp-block-image.is-style-image-mask-flower img {
-					-webkit-mask-image: url(' . get_template_directory_uri() . '/assets/svg/flower.svg);
+					-webkit-mask-image: url(../assets/svg/flower.svg);
 					-webkit-mask-size: contain;
 					-webkit-mask-position: center;
 					-webkit-mask-repeat: no-repeat;
 					filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
 				}
 				.editor-styles-wrapper .wp-block-image.is-style-image-mask-flower img {
-					-webkit-mask-image: url(' . get_template_directory_uri() . '/assets/svg/flower.svg);
+					-webkit-mask-image: url(../assets/svg/flower.svg);
 					-webkit-mask-size: contain;
 					-webkit-mask-position: center;
 					-webkit-mask-repeat: no-repeat;
@@ -95,14 +95,14 @@ function register_block_styles() {
 			'label'        => __( 'Mask Sketch', 'kemet' ),
 			'inline_style' => '
 				.wp-block-image.is-style-image-mask-sketch img {
-					-webkit-mask-image: url(' . get_template_directory_uri() . '/assets/svg/sketch.svg);
+					-webkit-mask-image: url(../../svg/sketch.svg);
 					-webkit-mask-size: contain;
 					-webkit-mask-position: center;
 					-webkit-mask-repeat: no-repeat;
 					filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
 				}
 				.editor-styles-wrapper .wp-block-image.is-style-image-mask-sketch img {
-					-webkit-mask-image: url(' . get_template_directory_uri() . '/assets/svg/sketch.svg);
+					-webkit-mask-image: url(../../svg/sketch.svg);
 					-webkit-mask-size: contain;
 					-webkit-mask-position: center;
 					-webkit-mask-repeat: no-repeat;
@@ -118,14 +118,14 @@ function register_block_styles() {
 			'label'        => __( 'Mask Blob', 'kemet' ),
 			'inline_style' => '
 				.wp-block-image.is-style-image-mask-blob img {
-					-webkit-mask-image: url(' . get_template_directory_uri() . '/assets/svg/blob.svg);
+					-webkit-mask-image: url(../../svg/blob.svg);
 					-webkit-mask-size: contain;
 					-webkit-mask-position: center;
 					-webkit-mask-repeat: no-repeat;
 					filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
 				}
 				.editor-styles-wrapper .wp-block-image.is-style-image-mask-blob img {
-					-webkit-mask-image: url(' . get_template_directory_uri() . '/assets/svg/blob.svg);
+					-webkit-mask-image: url(../../svg/blob.svg);
 					-webkit-mask-size: contain;
 					-webkit-mask-position: center;
 					-webkit-mask-repeat: no-repeat;
